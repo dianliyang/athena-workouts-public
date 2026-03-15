@@ -1,0 +1,6 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "athena-workouts-public",
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2026-03-15"
+}
