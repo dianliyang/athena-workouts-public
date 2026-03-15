@@ -7,14 +7,15 @@ export type ManifestSnapshot = {
 };
 
 export type R2BucketLike = {
-  get(key: string): Promise<string | null>;
+  get(key: string): Promise<{ text(): Promise<string> } | null>;
 };
 
 export async function readJson<T>(bucket: R2BucketLike, key: string): Promise<T> {
-  const raw = await bucket.get(key);
-  if (!raw) {
+  const obj = await bucket.get(key);
+  if (!obj) {
     throw new Error(`Missing R2 object: ${key}`);
   }
+  const raw = await obj.text();
   return JSON.parse(raw) as T;
 }
 
