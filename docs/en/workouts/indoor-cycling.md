@@ -7,7 +7,7 @@ layout: doc
 
 5 variants.
 
-## Indoor Cycling dienstags
+## Indoor Cycling Tuesdays
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -17,7 +17,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Tue 18:10-19:10</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>
@@ -27,7 +27,7 @@ layout: doc
 </div>
 </div>
 
-## Indoor Cycling donnerstags
+## Indoor Cycling Thursdays
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -37,7 +37,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Thu 18:10-19:10</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>
@@ -47,7 +47,7 @@ layout: doc
 </div>
 </div>
 
-## Indoor Cycling Fortgeschrittene donnerstags
+## Indoor Cycling Advanced Participants Thursdays
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -57,7 +57,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Thu 17:05-18:05</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>
@@ -67,7 +67,7 @@ layout: doc
 </div>
 </div>
 
-## Indoor Cycling mittwochs
+## Indoor Cycling Wednesdays
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -77,7 +77,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Wed 17:40-18:40</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>
@@ -87,7 +87,7 @@ layout: doc
 </div>
 </div>
 
-## Indoor Cycling montags
+## Indoor Cycling Mondays
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -97,7 +97,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Mon 17:05-18:05</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>

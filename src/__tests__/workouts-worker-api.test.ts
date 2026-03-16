@@ -130,4 +130,15 @@ describe("workouts worker api", () => {
     expect(body.slug).toBe("spin-intervals-monday-evening");
     expect(body.schedule).toEqual(["Monday 18:00-19:00"]);
   });
+
+  test("returns the full detail catalog for build consumers", async () => {
+    const worker = createWorkoutsWorker({ bucket: createBucket() });
+
+    const response = await worker.fetch(new Request("https://example.com/api/workouts/build"));
+    const body = await response.json();
+
+    expect(response.status).toBe(200);
+    expect(body.items["spin-intervals-monday-evening"]).toBeDefined();
+    expect(body.items["spin-intervals-monday-evening"].slug).toBe("spin-intervals-monday-evening");
+  });
 });

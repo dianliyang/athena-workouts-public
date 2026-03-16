@@ -5,31 +5,31 @@ layout: doc
 
 # Kanu
 
-6 variants.
+6 Varianten.
 
 ## Kanu Anfänger
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Anbieter: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon 17:00-20:00</div>
+      <div class="workout-row-schedule">Mo 17:00-20:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Geplant</span></div>
+        <div class="workout-opens-at">Öffnet 29. März 2026, 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Louis, Swantje</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 13 - May 18, 2026</strong><span>6 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€65</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€65</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Louis, Swantje</strong><span>Leitung</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>13. Apr - 18. Mai 2026</strong><span>6 Termine</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Studierende</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Mitarbeitende</span><span class="workout-price-value">€65</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Extern</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Extern ermäßigt</span><span class="workout-price-value">€65</span></div></div>
   </div>
 </div>
 </div>
 
 ## Kanu Anfänger Wochenendkurs
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Anbieter: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
@@ -37,39 +37,39 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Sa-So 10:30-15:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Geplant</span></div>
+        <div class="workout-opens-at">Öffnet 29. März 2026, 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Stine, Henrik</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>May 16 - 24, 2026</strong><span>4 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€65</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€65</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Stine, Henrik</strong><span>Leitung</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>16. - 24. Mai 2026</strong><span>4 Termine</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Studierende</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Mitarbeitende</span><span class="workout-price-value">€65</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Extern</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Extern ermäßigt</span><span class="workout-price-value">€65</span></div></div>
   </div>
 </div>
 </div>
 
 ## Kanu Fortgeschrittene: Surfski
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Anbieter: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Tue 17:00-20:00</div>
+      <div class="workout-row-schedule">Di 17:00-20:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Geplant</span></div>
+        <div class="workout-opens-at">Öffnet 29. März 2026, 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Tarik</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 28 - May 26, 2026</strong><span>5 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€65</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€65</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Tarik</strong><span>Leitung</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>28. Apr - 26. Mai 2026</strong><span>5 Termine</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Studierende</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Mitarbeitende</span><span class="workout-price-value">€65</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Extern</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Extern ermäßigt</span><span class="workout-price-value">€65</span></div></div>
   </div>
 </div>
 </div>
 
 ## Kanu freies Training Hauptsaison
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Anbieter: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
@@ -77,49 +77,49 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Mo-Fr 17:30-20:30</div>
       <div class="workout-status-block">
-        <div class="workout-status "><span class="workout-status-dot"></span><span>see text</span></div>
+        <div class="workout-status "><span class="workout-status-dot"></span><span>Siehe Text</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Ohne Betreuung</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>May 2 - Aug 31, 2026</strong><span>2 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€25</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€55</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Ohne Betreuung</strong><span>Leitung</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2. Mai - 31. Aug 2026</strong><span>2 Termine</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Studierende</span><span class="workout-price-value">€25</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Mitarbeitende</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Extern</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Extern ermäßigt</span><span class="workout-price-value">€55</span></div></div>
   </div>
 </div>
 </div>
 
 ## Kanu freies Training Nachsaison
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Anbieter: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Tue 17:00-20:00</div>
+      <div class="workout-row-schedule">Di 17:00-20:00</div>
       <div class="workout-status-block">
-        <div class="workout-status "><span class="workout-status-dot"></span><span>see text</span></div>
+        <div class="workout-status "><span class="workout-status-dot"></span><span>Siehe Text</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Ohne Betreuung</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Sep 1 - 29, 2026</strong><span>9 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€25</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€55</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Ohne Betreuung</strong><span>Leitung</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>1. - 29. Sep 2026</strong><span>9 Termine</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Studierende</span><span class="workout-price-value">€25</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Mitarbeitende</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Extern</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Extern ermäßigt</span><span class="workout-price-value">€55</span></div></div>
   </div>
 </div>
 </div>
 
 ## Kanu freies Training Vorsaison
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Anbieter: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Tue 17:00-20:00</div>
+      <div class="workout-row-schedule">Di 17:00-20:00</div>
       <div class="workout-status-block">
-        <div class="workout-status "><span class="workout-status-dot"></span><span>see text</span></div>
+        <div class="workout-status "><span class="workout-status-dot"></span><span>Siehe Text</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Ohne Betreuung</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 14 - 30, 2026</strong><span>6 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€25</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€55</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Ohne Betreuung</strong><span>Leitung</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>14. - 30. Apr 2026</strong><span>6 Termine</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Studierende</span><span class="workout-price-value">€25</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Mitarbeitende</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Extern</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Extern ermäßigt</span><span class="workout-price-value">€55</span></div></div>
   </div>
 </div>
 </div>

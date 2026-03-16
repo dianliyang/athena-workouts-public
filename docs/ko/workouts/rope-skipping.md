@@ -1,28 +1,28 @@
 ---
-title: "Rope Skipping"
+title: "로프 스키핑"
 layout: doc
 ---
 
-# Rope Skipping
+# 로프 스키핑
 
-1 variant.
+1개 강좌
 
-## Rope Skipping
+## 로프 스키핑
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon 17:00-18:00</div>
+      <div class="workout-row-schedule">월 17:00-18:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>예정</span></div>
+        <div class="workout-opens-at">오픈 2026년 3월 29일 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Fechthalle</strong><span>Olshausenstr. 72, 24118 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Clara</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>May 11 - Jul 20, 2026</strong><span>10 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€50</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€60</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€70</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€60</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>펜싱장</strong><span>Olshausenstr. 72, 24118 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Clara</strong><span>강사</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026년 5월 11일 - 7월 20일</strong><span>10회</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€50</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€60</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€70</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€60</span></div></div>
   </div>
 </div>
 </div>

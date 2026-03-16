@@ -1,13 +1,13 @@
 ---
-title: "Pilates (Präventionssport)"
+title: "Pilates (Preventive Sport)"
 layout: doc
 ---
 
-# Pilates (Präventionssport)
+# Pilates (Preventive Sport)
 
 1 variant.
 
-## Pilates (Präventionssport)
+## Pilates (Preventive Sport)
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -17,7 +17,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Fri 10:00-11:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>

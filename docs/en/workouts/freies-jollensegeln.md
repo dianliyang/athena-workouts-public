@@ -1,13 +1,13 @@
 ---
-title: "freies Jollensegeln"
+title: "Open Dinghy Sailing"
 layout: doc
 ---
 
-# freies Jollensegeln
+# Open Dinghy Sailing
 
 1 variant.
 
-## freies Jollensegeln samstags 5h
+## Open Dinghy Sailing Saturdays 5h
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 

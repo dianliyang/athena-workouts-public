@@ -1,28 +1,28 @@
 ---
-title: "K-Pop Dance"
+title: "K-POPダンス"
 layout: doc
 ---
 
-# K-Pop Dance
+# K-POPダンス
 
-1 variant.
+1件のコース
 
-## K-Pop Dance
+## K-POPダンス
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Tue 18:15-19:45</div>
+      <div class="workout-row-schedule">火 18:15-19:45</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
+        <div class="workout-opens-at">受付開始 2026年3月29日 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Entspannungshalle oben</strong><span>Olshausenstr. 72, 24118 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Memo</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 14 - Jul 14, 2026</strong><span>14 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€70</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€80</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€90</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€80</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Entspannungshalle oben</strong><span>Olshausenstr. 72, 24118 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Memo</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月14日 - 7月14日</strong><span>14回</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€70</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">スタッフ</span><span class="workout-price-value">€80</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外</span><span class="workout-price-value">€90</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外割引</span><span class="workout-price-value">€80</span></div></div>
   </div>
 </div>
 </div>

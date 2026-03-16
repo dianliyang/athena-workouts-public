@@ -1,13 +1,13 @@
 ---
-title: "Step Aerobic"
+title: "Step Aerobics"
 layout: doc
 ---
 
-# Step Aerobic
+# Step Aerobics
 
 2 variants.
 
-## Step Aerobic
+## Step Aerobics
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -17,7 +17,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Thu 19:15-20:15</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>
@@ -27,7 +27,7 @@ layout: doc
 </div>
 </div>
 
-## Step Aerobic Step+Workout
+## Step Aerobics Step+Workout
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -37,7 +37,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Mon 16:00-17:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>

@@ -1,146 +1,146 @@
 ---
-title: "Volleyball"
+title: "排球"
 layout: doc
 ---
 
-# Volleyball
+# 排球
 
-7 variants.
+7 个项目
 
-## Volleyball Anfänger
+## 排球 初学者
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon 16:00-18:00</div>
+      <div class="workout-row-schedule">周一 16:00-18:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>即将开放</span></div>
+        <div class="workout-opens-at">开放时间 2026年3月29日 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Große Sporthalle</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Andreas</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 13 - Jul 20, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€50</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€65</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€80</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€65</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Große Sporthalle</strong><span>地点</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Andreas</strong><span>教练</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月13日 - 7月20日</strong><span>时长</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€50</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">员工</span><span class="workout-price-value">€65</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外</span><span class="workout-price-value">€80</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外优惠</span><span class="workout-price-value">€65</span></div></div>
   </div>
 </div>
 </div>
 
-## Volleyball Fortgeschrittene
+## 排球 进阶学员
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon 16:00-18:00</div>
+      <div class="workout-row-schedule">周一 16:00-18:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Apr 13, 2026 at 12:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>即将开放</span></div>
+        <div class="workout-opens-at">开放时间 2026年4月13日 12:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Große Sporthalle</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Lukas</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 13 - Jul 20, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€50</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€65</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€80</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€65</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Große Sporthalle</strong><span>地点</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Lukas</strong><span>教练</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月13日 - 7月20日</strong><span>时长</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€50</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">员工</span><span class="workout-price-value">€65</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外</span><span class="workout-price-value">€80</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外优惠</span><span class="workout-price-value">€65</span></div></div>
   </div>
 </div>
 </div>
 
-## Volleyball freies Spiel
+## 排球 自由练习
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Thu 20:00-22:00</div>
+      <div class="workout-row-schedule">周四 20:00-22:00</div>
       <div class="workout-status-block">
-        <div class="workout-status "><span class="workout-status-dot"></span><span>see text</span></div>
+        <div class="workout-status "><span class="workout-status-dot"></span><span>见说明</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Große Sporthalle</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Ohne Betreuung</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 9 - Jul 23, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€20</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€50</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€70</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€50</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Große Sporthalle</strong><span>地点</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>无监督</strong><span>教练</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月9日 - 7月23日</strong><span>时长</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€20</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">员工</span><span class="workout-price-value">€50</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外</span><span class="workout-price-value">€70</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外优惠</span><span class="workout-price-value">€50</span></div></div>
   </div>
 </div>
 </div>
 
-## Volleyball Mixed
+## 排球 混合
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon 20:00-22:00</div>
+      <div class="workout-row-schedule">周一 20:00-22:00</div>
       <div class="workout-status-block">
-        <div class="workout-status "><span class="workout-status-dot"></span><span>see text</span></div>
+        <div class="workout-status "><span class="workout-status-dot"></span><span>见说明</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Spielhalle</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Volker</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 13 - Jul 20, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€30</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€70</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€95</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€70</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Spielhalle</strong><span>地点</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Volker</strong><span>教练</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月13日 - 7月20日</strong><span>时长</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€30</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">员工</span><span class="workout-price-value">€70</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外</span><span class="workout-price-value">€95</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外优惠</span><span class="workout-price-value">€70</span></div></div>
   </div>
 </div>
 </div>
 
-## Volleyball norddeutsche Hochschulliga
+## 排球 北德大学联赛
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon 18:00-20:00</div>
+      <div class="workout-row-schedule">周一 18:00-20:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Apr 12, 2026 at 18:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>即将开放</span></div>
+        <div class="workout-opens-at">开放时间 2026年4月12日 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Große Sporthalle</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Bassam, Christoph</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 13 - Jul 20, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€50</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Große Sporthalle</strong><span>地点</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Bassam, Christoph</strong><span>教练</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月13日 - 7月20日</strong><span>时长</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€50</span></div></div>
   </div>
 </div>
 </div>
 
-## Volleyball norddeutsche Hochschulliga Sichtungstraining
+## 排球 北德大学联赛 选拔训练
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon 18:00-20:00</div>
+      <div class="workout-row-schedule">周一 18:00-20:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>即将开放</span></div>
+        <div class="workout-opens-at">开放时间 2026年3月29日 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Große Sporthalle</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Bassam, Christoph</strong><span>Instructor</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€0</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Große Sporthalle</strong><span>地点</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Bassam, Christoph</strong><span>教练</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">员工</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外优惠</span><span class="workout-price-value">€0</span></div></div>
   </div>
 </div>
 </div>
 
-## Volleyball Tryout Fortgeschrittene
+## 排球 选拔 进阶学员
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon 16:00-18:00</div>
+      <div class="workout-row-schedule">周一 16:00-18:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>即将开放</span></div>
+        <div class="workout-opens-at">开放时间 2026年3月29日 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Große Sporthalle</strong></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€0</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Große Sporthalle</strong><span>地点</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">员工</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外优惠</span><span class="workout-price-value">€0</span></div></div>
   </div>
 </div>
 </div>

@@ -4,6 +4,13 @@ type ParsedWorkoutDate = {
   year: number;
 };
 
+type FormattedWorkoutDate = {
+  monthShort: string;
+  day: number;
+  year: number;
+  date: Date;
+};
+
 function inferYearFromSemester(month: number, semester?: string): number | null {
   if (!semester) return null;
 
@@ -55,19 +62,101 @@ function parseWorkoutDate(value: string, semester?: string): ParsedWorkoutDate |
   return { day, month, year };
 }
 
-function formatParsedDate(parts: ParsedWorkoutDate): { month: string; day: number; year: number } {
+function formatParsedDate(parts: ParsedWorkoutDate, locale = "en-US"): FormattedWorkoutDate {
   const date = new Date(Date.UTC(parts.year, parts.month - 1, parts.day));
   return {
-    month: date.toLocaleString("en-US", { month: "short", timeZone: "UTC" }),
+    monthShort: date.toLocaleString(locale, { month: "short", timeZone: "UTC" }),
     day: date.getUTCDate(),
     year: date.getUTCFullYear(),
+    date,
   };
+}
+
+function formatLocalizedSingle(display: FormattedWorkoutDate, locale: string): string {
+  if (locale === "en-US") {
+    return `${display.monthShort} ${display.day}, ${display.year}`;
+  }
+
+  return display.date.toLocaleDateString(locale, {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+}
+
+function formatLocalizedRange(
+  startDisplay: FormattedWorkoutDate,
+  endDisplay: FormattedWorkoutDate,
+  locale: string,
+): string {
+  if (locale === "en-US") {
+    if (startDisplay.year === endDisplay.year && startDisplay.monthShort === endDisplay.monthShort) {
+      return `${startDisplay.monthShort} ${startDisplay.day} - ${endDisplay.day}, ${startDisplay.year}`;
+    }
+
+    if (startDisplay.year === endDisplay.year) {
+      return `${startDisplay.monthShort} ${startDisplay.day} - ${endDisplay.monthShort} ${endDisplay.day}, ${startDisplay.year}`;
+    }
+
+    return `${startDisplay.monthShort} ${startDisplay.day}, ${startDisplay.year} - ${endDisplay.monthShort} ${endDisplay.day}, ${endDisplay.year}`;
+  }
+
+  const sameYear = startDisplay.year === endDisplay.year;
+  const sameMonth = sameYear && startDisplay.monthShort === endDisplay.monthShort;
+
+  if (locale === "zh-CN") {
+    if (sameMonth) {
+      return `${startDisplay.year}年${startDisplay.date.getUTCMonth() + 1}月${startDisplay.day}日 - ${endDisplay.day}日`;
+    }
+    if (sameYear) {
+      return `${startDisplay.year}年${startDisplay.date.getUTCMonth() + 1}月${startDisplay.day}日 - ${endDisplay.date.getUTCMonth() + 1}月${endDisplay.day}日`;
+    }
+  }
+
+  if (locale === "ja-JP") {
+    if (sameMonth) {
+      return `${startDisplay.year}年${startDisplay.date.getUTCMonth() + 1}月${startDisplay.day}日 - ${endDisplay.day}日`;
+    }
+    if (sameYear) {
+      return `${startDisplay.year}年${startDisplay.date.getUTCMonth() + 1}月${startDisplay.day}日 - ${endDisplay.date.getUTCMonth() + 1}月${endDisplay.day}日`;
+    }
+  }
+
+  if (locale === "ko-KR") {
+    if (sameMonth) {
+      return `${startDisplay.year}년 ${startDisplay.date.getUTCMonth() + 1}월 ${startDisplay.day}일 - ${endDisplay.day}일`;
+    }
+    if (sameYear) {
+      return `${startDisplay.year}년 ${startDisplay.date.getUTCMonth() + 1}월 ${startDisplay.day}일 - ${endDisplay.date.getUTCMonth() + 1}월 ${endDisplay.day}일`;
+    }
+  }
+
+  if (locale === "de-DE") {
+    if (sameMonth) {
+      return `${startDisplay.day}. - ${endDisplay.day}. ${startDisplay.monthShort} ${startDisplay.year}`;
+    }
+    if (sameYear) {
+      return `${startDisplay.day}. ${startDisplay.monthShort} - ${endDisplay.day}. ${endDisplay.monthShort} ${startDisplay.year}`;
+    }
+  }
+
+  return `${formatLocalizedSingle(startDisplay, locale)} - ${formatLocalizedSingle(endDisplay, locale)}`;
 }
 
 export function formatWorkoutDuration(
   startDate?: string | null,
   endDate?: string | null,
   semester?: string,
+): string {
+  return formatWorkoutDurationLocalized(startDate, endDate, semester, "en-US");
+}
+
+export function formatWorkoutDurationLocalized(
+  startDate?: string | null,
+  endDate?: string | null,
+  semester?: string,
+  locale = "en-US",
 ): string {
   const start = startDate?.trim() ?? "";
   const end = endDate?.trim() ?? "";
@@ -80,24 +169,16 @@ export function formatWorkoutDuration(
       return start === end ? start : `${start} to ${end}`;
     }
 
-    const startDisplay = formatParsedDate(startParts);
-    const endDisplay = formatParsedDate(endParts);
+    const startDisplay = formatParsedDate(startParts, locale);
+    const endDisplay = formatParsedDate(endParts, locale);
 
-    if (startDisplay.year === endDisplay.year && startDisplay.month === endDisplay.month) {
-      return `${startDisplay.month} ${startDisplay.day} - ${endDisplay.day}, ${startDisplay.year}`;
-    }
-
-    if (startDisplay.year === endDisplay.year) {
-      return `${startDisplay.month} ${startDisplay.day} - ${endDisplay.month} ${endDisplay.day}, ${startDisplay.year}`;
-    }
-
-    return `${startDisplay.month} ${startDisplay.day}, ${startDisplay.year} - ${endDisplay.month} ${endDisplay.day}, ${endDisplay.year}`;
+    return formatLocalizedRange(startDisplay, endDisplay, locale);
   }
 
   const single = start || end;
   const singleParts = parseWorkoutDate(single, semester);
   if (!singleParts) return single;
 
-  const display = formatParsedDate(singleParts);
-  return `${display.month} ${display.day}, ${display.year}`;
+  const display = formatParsedDate(singleParts, locale);
+  return formatLocalizedSingle(display, locale);
 }

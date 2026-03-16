@@ -2,9 +2,40 @@ import { describe, expect, test, vi } from "vitest";
 import { loadWorkoutDetailCatalogFromApi } from "../lib/workoutsApiBuild";
 
 describe("loadWorkoutDetailCatalogFromApi", () => {
+  test("prefers the bulk build endpoint when available", async () => {
+    const fetchMock = vi.fn(async (input: string | URL | Request) => {
+      const url = typeof input === "string" ? input : input instanceof URL ? input.toString() : input.url;
+
+      if (url.endsWith("/api/workouts/build")) {
+        return new Response(
+          JSON.stringify({
+            items: {
+              "yoga-flow": { slug: "yoga-flow", title: "Yoga Flow" },
+              "boxing-basics": { slug: "boxing-basics", title: "Boxing Basics" },
+            },
+          }),
+        );
+      }
+
+      return new Response("not found", { status: 404 });
+    });
+
+    const catalog = await loadWorkoutDetailCatalogFromApi("https://example.com", fetchMock as typeof fetch);
+
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+    expect(catalog).toEqual({
+      "yoga-flow": { slug: "yoga-flow", title: "Yoga Flow" },
+      "boxing-basics": { slug: "boxing-basics", title: "Boxing Basics" },
+    });
+  });
+
   test("loads all browse pages and detail records", async () => {
     const fetchMock = vi.fn(async (input: string | URL | Request) => {
       const url = typeof input === "string" ? input : input instanceof URL ? input.toString() : input.url;
+
+      if (url.endsWith("/api/workouts/build")) {
+        return new Response("not found", { status: 404 });
+      }
 
       if (url.includes("/api/workouts?page=1&pageSize=200")) {
         return new Response(
@@ -43,7 +74,7 @@ describe("loadWorkoutDetailCatalogFromApi", () => {
 
     const catalog = await loadWorkoutDetailCatalogFromApi("https://example.com", fetchMock as typeof fetch);
 
-    expect(fetchMock).toHaveBeenCalledTimes(4);
+    expect(fetchMock).toHaveBeenCalledTimes(5);
     expect(catalog).toEqual({
       "yoga-flow": { slug: "yoga-flow", title: "Yoga Flow" },
       "boxing-basics": { slug: "boxing-basics", title: "Boxing Basics" },
@@ -53,6 +84,10 @@ describe("loadWorkoutDetailCatalogFromApi", () => {
   test("skips browse entries whose detail endpoint returns 404", async () => {
     const fetchMock = vi.fn(async (input: string | URL | Request) => {
       const url = typeof input === "string" ? input : input instanceof URL ? input.toString() : input.url;
+
+      if (url.endsWith("/api/workouts/build")) {
+        return new Response("not found", { status: 404 });
+      }
 
       if (url.includes("/api/workouts?page=1&pageSize=200")) {
         return new Response(

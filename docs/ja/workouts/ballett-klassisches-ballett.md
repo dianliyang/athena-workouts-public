@@ -1,28 +1,28 @@
 ---
-title: "Ballett, klassisches Ballett"
+title: "バレエ、クラシックバレエ"
 layout: doc
 ---
 
-# Ballett, klassisches Ballett
+# バレエ、クラシックバレエ
 
-1 variant.
+1件のコース
 
-## Ballett, klassisches Ballett Anfänger*innen
+## バレエ、クラシックバレエ 初心者
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon 16:30-18:00</div>
+      <div class="workout-row-schedule">月 16:30-18:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
+        <div class="workout-opens-at">受付開始 2026年3月29日 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Gymnastikhalle</strong><span>Olshausenstr. 74, 24118 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Greta</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 13 - Jun 29, 2026</strong><span>11 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€60</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€70</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€80</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€70</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>体育館</strong><span>Olshausenstr. 74, 24118 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Greta</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月13日 - 6月29日</strong><span>11回</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€60</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">スタッフ</span><span class="workout-price-value">€70</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外</span><span class="workout-price-value">€80</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外割引</span><span class="workout-price-value">€70</span></div></div>
   </div>
 </div>
 </div>

@@ -1,9 +1,9 @@
 ---
-title: "CAU Alumni Cup:"
+title: "CAU Alumni Cup"
 layout: doc
 ---
 
-# CAU Alumni Cup:
+# CAU Alumni Cup
 
 1 variant.
 
@@ -15,7 +15,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">tägl 09:00-18:00</div>
+      <div class="workout-row-schedule">Daily 09:00-18:00</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>

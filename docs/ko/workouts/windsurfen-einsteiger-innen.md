@@ -1,236 +1,236 @@
 ---
-title: "Windsurfen Einsteiger*innen"
+title: "초보자용 윈드서핑"
 layout: doc
 ---
 
-# Windsurfen Einsteiger*innen
+# 초보자용 윈드서핑
 
-12 variants.
+12개 강좌
 
-## Windsurfen Einsteiger*innen 5x3h Kurs 1: Mo
+## 초보자용 윈드서핑 5x3h 코스 1: Mo
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon 16:00-19:00</div>
+      <div class="workout-row-schedule">월 16:00-19:00</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 13 - Oct 5, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€215</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong><span>장소</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>강사</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026년 4월 13일 - 10월 5일</strong><span>기간</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
 </div>
 
-## Windsurfen Einsteiger*innen 5x3h Kurs 2: Mi
+## 초보자용 윈드서핑 5x3h 코스 2: Mi
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Wed 16:00-19:00</div>
+      <div class="workout-row-schedule">수 16:00-19:00</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 8 - Oct 7, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€215</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong><span>장소</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>강사</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026년 4월 8일 - 10월 7일</strong><span>기간</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
 </div>
 
-## Windsurfen Einsteiger*innen kompakt Kurs 1
+## 초보자용 윈드서핑 집중 코스 1
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">tägl 15:00-18:00</div>
+      <div class="workout-row-schedule">매일 15:00-18:00</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 7 - Oct 11, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€215</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong><span>장소</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>강사</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026년 4월 7일 - 10월 11일</strong><span>기간</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
 </div>
 
-## Windsurfen Einsteiger*innen kompakt Kurs 10
+## 초보자용 윈드서핑 집중 코스 10
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">tägl 15:00-18:00</div>
+      <div class="workout-row-schedule">매일 15:00-18:00</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 7 - Oct 11, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€215</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong><span>장소</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>강사</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026년 4월 7일 - 10월 11일</strong><span>기간</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
 </div>
 
-## Windsurfen Einsteiger*innen kompakt Kurs 2
+## 초보자용 윈드서핑 집중 코스 2
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">tägl 15:00-18:00</div>
+      <div class="workout-row-schedule">매일 15:00-18:00</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 7 - Oct 11, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€215</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong><span>장소</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>강사</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026년 4월 7일 - 10월 11일</strong><span>기간</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
 </div>
 
-## Windsurfen Einsteiger*innen kompakt Kurs 3
+## 초보자용 윈드서핑 집중 코스 3
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">tägl 15:00-18:00</div>
+      <div class="workout-row-schedule">매일 15:00-18:00</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 7 - Oct 11, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€215</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong><span>장소</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>강사</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026년 4월 7일 - 10월 11일</strong><span>기간</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
 </div>
 
-## Windsurfen Einsteiger*innen kompakt Kurs 4
+## 초보자용 윈드서핑 집중 코스 4
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">tägl 15:00-18:00</div>
+      <div class="workout-row-schedule">매일 15:00-18:00</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 7 - Oct 11, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€215</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong><span>장소</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>강사</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026년 4월 7일 - 10월 11일</strong><span>기간</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
 </div>
 
-## Windsurfen Einsteiger*innen kompakt Kurs 5
+## 초보자용 윈드서핑 집중 코스 5
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">tägl 15:00-18:00</div>
+      <div class="workout-row-schedule">매일 15:00-18:00</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 7 - Oct 11, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€215</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong><span>장소</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>강사</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026년 4월 7일 - 10월 11일</strong><span>기간</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
 </div>
 
-## Windsurfen Einsteiger*innen kompakt Kurs 6
+## 초보자용 윈드서핑 집중 코스 6
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">tägl 15:00-18:00</div>
+      <div class="workout-row-schedule">매일 15:00-18:00</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 7 - Oct 11, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€215</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong><span>장소</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>강사</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026년 4월 7일 - 10월 11일</strong><span>기간</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
 </div>
 
-## Windsurfen Einsteiger*innen kompakt Kurs 7
+## 초보자용 윈드서핑 집중 코스 7
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">tägl 15:00-18:00</div>
+      <div class="workout-row-schedule">매일 15:00-18:00</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 7 - Oct 11, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€215</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong><span>장소</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>강사</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026년 4월 7일 - 10월 11일</strong><span>기간</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
 </div>
 
-## Windsurfen Einsteiger*innen kompakt Kurs 8
+## 초보자용 윈드서핑 집중 코스 8
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">tägl 15:00-18:00</div>
+      <div class="workout-row-schedule">매일 15:00-18:00</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 7 - Oct 11, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€215</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong><span>장소</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>강사</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026년 4월 7일 - 10월 11일</strong><span>기간</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
 </div>
 
-## Windsurfen Einsteiger*innen kompakt Kurs 9
+## 초보자용 윈드서핑 집중 코스 9
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">tägl 15:00-18:00</div>
+      <div class="workout-row-schedule">매일 15:00-18:00</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 7 - Oct 11, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€215</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Laboe</strong><span>장소</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Rasmus Angenendt</strong><span>강사</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026년 4월 7일 - 10월 11일</strong><span>기간</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
 </div>

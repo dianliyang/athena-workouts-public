@@ -1,13 +1,13 @@
 ---
-title: "Jollen Einstufungssegeln"
+title: "Dinghy Placement Sailing"
 layout: doc
 ---
 
-# Jollen Einstufungssegeln
+# Dinghy Placement Sailing
 
 5 variants.
 
-## Jollen Einstufungssegeln Kurs 1
+## Dinghy Placement Sailing Course 1
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -17,7 +17,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Fri 14:00-18:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>available</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Jasmin</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 17 - 17, 2026</strong><span>1 session</span></div></div></div>
@@ -26,7 +26,7 @@ layout: doc
 </div>
 </div>
 
-## Jollen Einstufungssegeln Kurs 2
+## Dinghy Placement Sailing Course 2
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -36,7 +36,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Mon 12:00-16:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>available</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Heiko Focke Grieße</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 20 - 20, 2026</strong><span>1 session</span></div></div></div>
@@ -45,7 +45,7 @@ layout: doc
 </div>
 </div>
 
-## Jollen Einstufungssegeln Kurs 3
+## Dinghy Placement Sailing Course 3
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -55,7 +55,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Tue 12:00-16:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>available</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Heiko Focke Grieße</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 21 - 21, 2026</strong><span>1 session</span></div></div></div>
@@ -64,7 +64,7 @@ layout: doc
 </div>
 </div>
 
-## Jollen Einstufungssegeln Kurs 4
+## Dinghy Placement Sailing Course 4
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -74,7 +74,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Wed 12:00-16:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>available</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Heiko Focke Grieße</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 22 - 22, 2026</strong><span>1 session</span></div></div></div>
@@ -83,7 +83,7 @@ layout: doc
 </div>
 </div>
 
-## Jollen Einstufungssegeln Kurs 5
+## Dinghy Placement Sailing Course 5
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -93,7 +93,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Wed 17:00-21:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>available</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Simon Hanker</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 22 - 22, 2026</strong><span>1 session</span></div></div></div>

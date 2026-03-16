@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { formatWorkoutDuration } from "../lib/workoutDate";
+import { formatWorkoutDuration, formatWorkoutDurationLocalized } from "../lib/workoutDate";
 
 describe("formatWorkoutDuration", () => {
   test("formats ISO ranges in the same year", () => {
@@ -22,5 +22,11 @@ describe("formatWorkoutDuration", () => {
 
   test("falls back to the raw value when parsing is not possible", () => {
     expect(formatWorkoutDuration("soon", "later", "Summer 2026")).toBe("soon to later");
+  });
+
+  test("formats ranges in the requested locale", () => {
+    expect(formatWorkoutDurationLocalized("2026-04-16", "2026-07-09", "Summer 2026", "zh-CN")).toBe(
+      "2026年4月16日 - 7月9日",
+    );
   });
 });

@@ -62,3 +62,7 @@ export function buildWorkoutsBrowseUrl(
 export function buildWorkoutDetailUrl(baseUrl: string, slug: string): string {
   return new URL(`/api/workouts/${slug}`, baseUrl).toString();
 }
+
+export function buildWorkoutsBuildUrl(baseUrl: string): string {
+  return new URL("/api/workouts/build", baseUrl).toString();
+}

@@ -1,27 +1,27 @@
 ---
-title: "CAU Alumni Cup:"
+title: "CAU 校友杯"
 layout: doc
 ---
 
-# CAU Alumni Cup:
+# CAU 校友杯
 
-1 variant.
+1 个项目
 
-## CAU Alumni Cup: Kiel-Eckernförde
+## CAU 校友杯: Kiel-Eckernförde
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">tägl 09:00-18:00</div>
+      <div class="workout-row-schedule">每日 09:00-18:00</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Nikolas Fleischmann</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Jun 6 - 7, 2026</strong><span>2 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€0</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Nikolas Fleischmann</strong><span>教练</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年6月6日 - 7日</strong><span>2次课</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">员工</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外</span><span class="workout-price-value">€0</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外优惠</span><span class="workout-price-value">€0</span></div></div>
   </div>
 </div>
 </div>

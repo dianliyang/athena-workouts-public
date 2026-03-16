@@ -1,13 +1,13 @@
 ---
-title: "Yachtsegeln Inklusion:"
+title: "Inclusive Yacht Sailing"
 layout: doc
 ---
 
-# Yachtsegeln Inklusion:
+# Inclusive Yacht Sailing
 
 1 variant.
 
-## Yachtsegeln Inklusion: Inklusives Segeln dienstags
+## Inclusive Yacht Sailing: Inklusives Segeln Tuesdays
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -20,7 +20,7 @@ layout: doc
         <div class="workout-status "><span class="workout-status-dot"></span><span>unknown</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Moritz Kriese, Jan Hamann</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 28 - Jun 16, 2026</strong><span></span></div></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Location</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Moritz Kriese, Jan Hamann</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 28 - Jun 16, 2026</strong><span>Duration</span></div></div></div>
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€105</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€130</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€235</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€195</span></div></div>
   </div>
 </div>

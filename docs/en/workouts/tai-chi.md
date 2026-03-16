@@ -7,7 +7,7 @@ layout: doc
 
 2 variants.
 
-## Tai Chi Anfänger*innen
+## Tai Chi Beginners
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -17,7 +17,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Wed 16:00-17:30</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>
@@ -27,7 +27,7 @@ layout: doc
 </div>
 </div>
 
-## Tai Chi Mittelstufe und Fortgeschrittene
+## Tai Chi Intermediate and Advanced Participants
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -37,7 +37,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Wed 17:30-18:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>

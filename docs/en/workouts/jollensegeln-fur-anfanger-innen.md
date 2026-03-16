@@ -1,13 +1,13 @@
 ---
-title: "Jollensegeln für Anfänger*innen"
+title: "Dinghy Sailing for Beginners"
 layout: doc
 ---
 
-# Jollensegeln für Anfänger*innen
+# Dinghy Sailing for Beginners
 
 14 variants.
 
-## Jollensegeln für Anfänger*innen Kurs 1: Fr
+## Dinghy Sailing for Beginners Course 1: Fr
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -17,7 +17,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Fri 16:15-21:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>available</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Heiko Focke Grieße</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>May 8 - Jun 19, 2026</strong><span>5 sessions</span></div></div></div>
@@ -26,7 +26,7 @@ layout: doc
 </div>
 </div>
 
-## Jollensegeln für Anfänger*innen Kurs 1: Kompaktkurs
+## Dinghy Sailing for Beginners Course 1: Compact Course
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -34,9 +34,9 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mo-Fr 09:00-17:00</div>
+      <div class="workout-row-schedule">Mon-Fri 09:00-17:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>available</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Alfred Böttger, Anne-Sophie Jahncke</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Jul 27 - 31, 2026</strong><span>5 sessions</span></div></div></div>
@@ -45,7 +45,7 @@ layout: doc
 </div>
 </div>
 
-## Jollensegeln für Anfänger*innen Kurs 2: Kompaktkurs
+## Dinghy Sailing for Beginners Course 2: Compact Course
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -53,9 +53,9 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mo-Fr 09:00-17:00</div>
+      <div class="workout-row-schedule">Mon-Fri 09:00-17:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Jun 1, 2026 at 10:00</div>
       </div>
     </div>
@@ -65,7 +65,7 @@ layout: doc
 </div>
 </div>
 
-## Jollensegeln für Anfänger*innen Kurs 2: Mo
+## Dinghy Sailing for Beginners Course 2: Mo
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -75,7 +75,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Mon 14:15-18:30</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>available</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Sören Friedrichs</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 27 - Jul 6, 2026</strong><span>9 sessions</span></div></div></div>
@@ -84,7 +84,7 @@ layout: doc
 </div>
 </div>
 
-## Jollensegeln für Anfänger*innen Kurs 3: Di
+## Dinghy Sailing for Beginners Course 3: Di
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -94,7 +94,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Tue 16:45-21:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>available</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Ulrike Kirchner</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 28 - Jun 30, 2026</strong><span>9 sessions</span></div></div></div>
@@ -103,7 +103,7 @@ layout: doc
 </div>
 </div>
 
-## Jollensegeln für Anfänger*innen Kurs 3: Kompaktkurs
+## Dinghy Sailing for Beginners Course 3: Compact Course
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -111,9 +111,9 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">tägl 09:00-17:00</div>
+      <div class="workout-row-schedule">Daily 09:00-17:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Jun 1, 2026 at 10:00</div>
       </div>
     </div>
@@ -123,7 +123,7 @@ layout: doc
 </div>
 </div>
 
-## Jollensegeln für Anfänger*innen Kurs 4: Kompaktkurs
+## Dinghy Sailing for Beginners Course 4: Compact Course
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -131,9 +131,9 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mo-Fr 09:00-17:00</div>
+      <div class="workout-row-schedule">Mon-Fri 09:00-17:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Jun 1, 2026 at 10:00</div>
       </div>
     </div>
@@ -143,7 +143,7 @@ layout: doc
 </div>
 </div>
 
-## Jollensegeln für Anfänger*innen Kurs 4: Mi
+## Dinghy Sailing for Beginners Course 4: Mi
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -153,7 +153,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Wed 16:45-21:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>available</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Leonie Hamer, Moritz Kriese</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 29 - Jul 8, 2026</strong><span>9 sessions</span></div></div></div>
@@ -162,7 +162,7 @@ layout: doc
 </div>
 </div>
 
-## Jollensegeln für Anfänger*innen Kurs 5: Do
+## Dinghy Sailing for Beginners Course 5: Do
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -172,7 +172,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Thu 16:45-21:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>available</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Felix Schindler, Anne-Sophie Jahncke</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 30 - Jul 9, 2026</strong><span>9 sessions</span></div></div></div>
@@ -181,7 +181,7 @@ layout: doc
 </div>
 </div>
 
-## Jollensegeln für Anfänger*innen Kurs 6: Kompaktkurs über Himmelfahrt
+## Dinghy Sailing for Beginners Course 6: Compact Course over Ascension Day
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -191,7 +191,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Thu 09:00-18:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>available</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Finn Paulmann</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>May 14 - 17, 2026</strong><span>4 sessions</span></div></div></div>
@@ -200,7 +200,7 @@ layout: doc
 </div>
 </div>
 
-## Jollensegeln für Anfänger*innen Kurs 6: Kompaktkurs/unbesetzt
+## Dinghy Sailing for Beginners Course 6: Compact Course/vacant
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -208,9 +208,9 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mo-Fr 09:00-17:00</div>
+      <div class="workout-row-schedule">Mon-Fri 09:00-17:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Jun 1, 2026 at 10:00</div>
       </div>
     </div>
@@ -220,7 +220,7 @@ layout: doc
 </div>
 </div>
 
-## Jollensegeln für Anfänger*innen Kurs 7: Kompaktkurs über Himmelfahrt
+## Dinghy Sailing for Beginners Course 7: Compact Course over Ascension Day
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -230,7 +230,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Thu 09:00-18:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>available</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Ernst Joachim Heinz</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>May 14 - 17, 2026</strong><span>4 sessions</span></div></div></div>
@@ -239,7 +239,7 @@ layout: doc
 </div>
 </div>
 
-## Jollensegeln für Anfänger*innen Kurs 7: Kompaktkurs/unbesetzt
+## Dinghy Sailing for Beginners Course 7: Compact Course/vacant
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -247,9 +247,9 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mo-Fr 09:00-17:00</div>
+      <div class="workout-row-schedule">Mon-Fri 09:00-17:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Jun 1, 2026 at 10:00</div>
       </div>
     </div>
@@ -259,7 +259,7 @@ layout: doc
 </div>
 </div>
 
-## Jollensegeln für Anfänger*innen Kurs 8: Kompaktkurs
+## Dinghy Sailing for Beginners Course 8: Compact Course
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -267,9 +267,9 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mo-Fr 09:00-17:00</div>
+      <div class="workout-row-schedule">Mon-Fri 09:00-17:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Jun 1, 2026 at 10:00</div>
       </div>
     </div>

@@ -1,4 +1,8 @@
-import { buildWorkoutDetailUrl, buildWorkoutsBrowseUrl } from "./workoutsApiUrls";
+import {
+  buildWorkoutDetailUrl,
+  buildWorkoutsBrowseUrl,
+  buildWorkoutsBuildUrl,
+} from "./workoutsApiUrls";
 
 type BrowseItem = {
   slug: string;
@@ -10,6 +14,10 @@ type BrowseResponse = {
   page: number;
   pageSize: number;
   pages: number;
+};
+
+type BuildResponse = {
+  items: Record<string, Record<string, unknown>>;
 };
 
 export type ApiFetch = typeof fetch;
@@ -34,6 +42,14 @@ export async function loadWorkoutDetailCatalogFromApi(
   baseUrl: string,
   fetchImpl: ApiFetch = fetch,
 ): Promise<Record<string, Record<string, unknown>>> {
+  const buildUrl = buildWorkoutsBuildUrl(baseUrl);
+  const buildResponse = await fetchImpl(buildUrl);
+
+  if (buildResponse.ok) {
+    const buildPayload = await readJson<BuildResponse>(buildResponse);
+    return buildPayload.items;
+  }
+
   const firstPageUrl = buildWorkoutsBrowseUrl(baseUrl, { page: 1, pageSize: 200 });
   const firstPage = await readJson<BrowseResponse>(await fetchImpl(firstPageUrl));
 

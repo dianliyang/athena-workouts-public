@@ -1,13 +1,13 @@
 ---
-title: "Gerätturnen"
+title: "Artistic Gymnastics"
 layout: doc
 ---
 
-# Gerätturnen
+# Artistic Gymnastics
 
 2 variants.
 
-## Gerätturnen Anf. + Fortg.
+## Artistic Gymnastics Beg. + Adv.
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -17,7 +17,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Wed 18:00-20:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>
@@ -27,7 +27,7 @@ layout: doc
 </div>
 </div>
 
-## Gerätturnen Fortg.
+## Artistic Gymnastics Adv.
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -37,7 +37,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Fri 18:00-20:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>

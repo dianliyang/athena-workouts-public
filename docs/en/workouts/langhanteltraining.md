@@ -1,13 +1,13 @@
 ---
-title: "Langhanteltraining"
+title: "Barbell Training"
 layout: doc
 ---
 
-# Langhanteltraining
+# Barbell Training
 
 1 variant.
 
-## Langhanteltraining
+## Barbell Training
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -17,7 +17,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Wed 18:50-19:50</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>

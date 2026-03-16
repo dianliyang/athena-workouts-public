@@ -1,13 +1,13 @@
 ---
-title: "Aqua-Jogging"
+title: "Aqua Jogging"
 layout: doc
 ---
 
-# Aqua-Jogging
+# Aqua Jogging
 
 2 variants.
 
-## Aqua-Jogging donnerstags
+## Aqua Jogging Thursdays
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -17,7 +17,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Thu 16:15-17:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>
@@ -30,7 +30,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Thu 17:15-18:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>
@@ -40,7 +40,7 @@ layout: doc
 </div>
 </div>
 
-## Aqua-Jogging montags
+## Aqua Jogging Mondays
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -50,7 +50,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Mon 16:15-17:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>
@@ -63,7 +63,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Mon 17:15-18:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>

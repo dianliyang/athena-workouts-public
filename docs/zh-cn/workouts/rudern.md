@@ -1,105 +1,105 @@
 ---
-title: "Rudern"
+title: "赛艇"
 layout: doc
 ---
 
-# Rudern
+# 赛艇
 
-5 variants.
+5 个项目
 
-## Rudern Anfänger
+## 赛艇 初学者
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon 17:00-20:00</div>
+      <div class="workout-row-schedule">周一 17:00-20:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>即将开放</span></div>
+        <div class="workout-opens-at">开放时间 2026年3月29日 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>noch offen N.N., noch offen N.N.</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 13 - Jul 6, 2026</strong><span>11 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€80</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€85</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€80</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- 及 Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>待定 (N.N.), 待定 (N.N.)</strong><span>教练</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月13日 - 7月6日</strong><span>11次课</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">员工</span><span class="workout-price-value">€80</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外</span><span class="workout-price-value">€85</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外优惠</span><span class="workout-price-value">€80</span></div></div>
   </div>
 </div>
 </div>
 
-## Rudern Fortgeschrittene
+## 赛艇 进阶学员
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Wed 18:00-20:00</div>
+      <div class="workout-row-schedule">周三 18:00-20:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>即将开放</span></div>
+        <div class="workout-opens-at">开放时间 2026年3月29日 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>noch offen N.N., noch offen N.N.</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 15 - Jul 15, 2026</strong><span>13 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€60</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€65</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€60</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- 及 Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>待定 (N.N.), 待定 (N.N.)</strong><span>教练</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月15日 - 7月15日</strong><span>13次课</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">员工</span><span class="workout-price-value">€60</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外</span><span class="workout-price-value">€65</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外优惠</span><span class="workout-price-value">€60</span></div></div>
   </div>
 </div>
 </div>
 
-## Rudern freies Training Hauptsaison
+## 赛艇 自由训练 Hauptsaison
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mo-Fr 17:30-20:30</div>
+      <div class="workout-row-schedule">周一至周五 17:30-20:30</div>
       <div class="workout-status-block">
-        <div class="workout-status "><span class="workout-status-dot"></span><span>see text</span></div>
+        <div class="workout-status "><span class="workout-status-dot"></span><span>见说明</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Ohne Betreuung</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>May 2 - Aug 31, 2026</strong><span>2 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€25</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€55</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- 及 Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>无监督</strong><span>教练</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年5月2日 - 8月31日</strong><span>2次课</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€25</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">员工</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外优惠</span><span class="workout-price-value">€55</span></div></div>
   </div>
 </div>
 </div>
 
-## Rudern freies Training Nachsaison
+## 赛艇 自由训练 Nachsaison
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Tue 17:00-20:00</div>
+      <div class="workout-row-schedule">周二 17:00-20:00</div>
       <div class="workout-status-block">
-        <div class="workout-status "><span class="workout-status-dot"></span><span>see text</span></div>
+        <div class="workout-status "><span class="workout-status-dot"></span><span>见说明</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Ohne Betreuung</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Sep 1 - 29, 2026</strong><span>9 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€25</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€55</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- 及 Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>无监督</strong><span>教练</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年9月1日 - 29日</strong><span>9次课</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€25</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">员工</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外优惠</span><span class="workout-price-value">€55</span></div></div>
   </div>
 </div>
 </div>
 
-## Rudern freies Training Vorsaison
+## 赛艇 自由训练 Vorsaison
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Tue 17:00-20:00</div>
+      <div class="workout-row-schedule">周二 17:00-20:00</div>
       <div class="workout-status-block">
-        <div class="workout-status "><span class="workout-status-dot"></span><span>see text</span></div>
+        <div class="workout-status "><span class="workout-status-dot"></span><span>见说明</span></div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Ohne Betreuung</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 14 - 28, 2026</strong><span>5 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€25</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€55</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- 及 Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>无监督</strong><span>教练</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月14日 - 28日</strong><span>5次课</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€25</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">员工</span><span class="workout-price-value">€55</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外</span><span class="workout-price-value">€75</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">校外优惠</span><span class="workout-price-value">€55</span></div></div>
   </div>
 </div>
 </div>

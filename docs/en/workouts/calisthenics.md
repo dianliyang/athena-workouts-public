@@ -15,9 +15,9 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mo-Fr 08:00-22:00</div>
+      <div class="workout-row-schedule">Mon-Fri 08:00-22:00</div>
       <div class="workout-status-block">
-        <div class="workout-status "><span class="workout-status-dot"></span><span>see text</span></div>
+        <div class="workout-status "><span class="workout-status-dot"></span><span>See text</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Calisthenics Anlage am Uni Stadion</strong><span>Olshausenstra?e 70, 24098 Kiel</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 7 - Oct 11, 2026</strong><span>2 sessions</span></div></div></div>

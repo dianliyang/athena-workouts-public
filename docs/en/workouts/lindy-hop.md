@@ -7,7 +7,7 @@ layout: doc
 
 2 variants.
 
-## Lindy Hop Anfänger*innen
+## Lindy Hop Beginners
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -17,7 +17,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Mon 18:05-19:05</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>
@@ -27,7 +27,7 @@ layout: doc
 </div>
 </div>
 
-## Lindy Hop für Teilnehmer*innen mit Vorkenntnissen
+## Lindy Hop for participants with Previous Knowledge
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -37,7 +37,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Mon 19:05-20:05</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>

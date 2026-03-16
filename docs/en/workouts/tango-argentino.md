@@ -1,13 +1,13 @@
 ---
-title: "Tango Argentino"
+title: "Argentine Tango"
 layout: doc
 ---
 
-# Tango Argentino
+# Argentine Tango
 
 1 variant.
 
-## Tango Argentino Anfänger*innen
+## Argentine Tango Beginners
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -17,7 +17,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Mon 20:15-21:45</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>

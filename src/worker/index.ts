@@ -59,6 +59,15 @@ async function handleDetail(slug: string, deps: WorkerDeps) {
   return Response.json(record);
 }
 
+async function handleBuildCatalog(deps: WorkerDeps) {
+  const { detail } = await loadSnapshotSet<WorkoutBrowseRecord[], Record<string, WorkoutDetailRecord>>(
+    deps.bucket,
+    deps.baseKey || 'workouts',
+  );
+
+  return Response.json({ items: detail });
+}
+
 export function createWorkoutsWorker(deps: WorkerDeps) {
   return {
     async fetch(request: Request): Promise<Response> {
@@ -71,6 +80,10 @@ export function createWorkoutsWorker(deps: WorkerDeps) {
 
       if (path === '/api/workouts') {
         return handleBrowse(request, deps);
+      }
+
+      if (path === '/api/workouts/build') {
+        return handleBuildCatalog(deps);
       }
 
       if (path.startsWith('/api/workouts/')) {

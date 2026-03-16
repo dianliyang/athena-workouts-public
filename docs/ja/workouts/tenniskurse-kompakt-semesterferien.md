@@ -1,88 +1,88 @@
 ---
-title: "Tenniskurse kompakt Semesterferien"
+title: "学期間休暇の短期集中テニス講座"
 layout: doc
 ---
 
-# Tenniskurse kompakt Semesterferien
+# 学期間休暇の短期集中テニス講座
 
-4 variants.
+4件のコース
 
-## Tenniskurse kompakt Semesterferien Anf.
+## 学期間休暇の短期集中テニス講座 初級
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mo-Fr 12:00-13:30</div>
+      <div class="workout-row-schedule">月-金 12:00-13:30</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
+        <div class="workout-opens-at">受付開始 2026年3月29日 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Tennisplatz 5</strong><span>Olshausenstr. 70, 24118 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>noch offen N.N.</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Aug 3 - 7, 2026</strong><span>5 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€98</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€105</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€133</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€105</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Tennisplatz 5</strong><span>Olshausenstr. 70, 24118 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>未定 (N.N.)</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年8月3日 - 7日</strong><span>5回</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€98</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">スタッフ</span><span class="workout-price-value">€105</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外</span><span class="workout-price-value">€133</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外割引</span><span class="workout-price-value">€105</span></div></div>
   </div>
 </div>
 </div>
 
-## Tenniskurse kompakt Semesterferien fortg. Anf.
+## 学期間休暇の短期集中テニス講座 上級 初級
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mo-Fr 18:30-20:00</div>
+      <div class="workout-row-schedule">月-金 18:30-20:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
+        <div class="workout-opens-at">受付開始 2026年3月29日 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Tennisplatz 4</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>noch offen N.N.</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Aug 3 - 7, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€98</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€105</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€133</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€105</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Tennisplatz 4</strong><span>場所</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>未定 (N.N.)</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年8月3日 - 7日</strong><span>期間</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€98</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">スタッフ</span><span class="workout-price-value">€105</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外</span><span class="workout-price-value">€133</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外割引</span><span class="workout-price-value">€105</span></div></div>
   </div>
 </div>
 </div>
 
-## Tenniskurse kompakt Semesterferien Fortg. I
+## 学期間休暇の短期集中テニス講座 上級 I
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mo-Fr 12:00-13:30</div>
+      <div class="workout-row-schedule">月-金 12:00-13:30</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
+        <div class="workout-opens-at">受付開始 2026年3月29日 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Tennisplatz 4</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>noch offen N.N.</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Aug 3 - 7, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€98</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€105</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€133</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€105</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Tennisplatz 4</strong><span>場所</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>未定 (N.N.)</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年8月3日 - 7日</strong><span>期間</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€98</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">スタッフ</span><span class="workout-price-value">€105</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外</span><span class="workout-price-value">€133</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外割引</span><span class="workout-price-value">€105</span></div></div>
   </div>
 </div>
 </div>
 
-## Tenniskurse kompakt Semesterferien Fortg. II
+## 学期間休暇の短期集中テニス講座 上級 II
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mo-Fr 17:00-18:30</div>
+      <div class="workout-row-schedule">月-金 17:00-18:30</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
-        <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
+        <div class="workout-opens-at">受付開始 2026年3月29日 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Tennisplatz 5</strong></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>noch offen N.N.</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Aug 3 - 7, 2026</strong><span></span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€98</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€105</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€133</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€105</span></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Tennisplatz 5</strong><span>場所</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>未定 (N.N.)</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年8月3日 - 7日</strong><span>期間</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€98</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">スタッフ</span><span class="workout-price-value">€105</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外</span><span class="workout-price-value">€133</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外割引</span><span class="workout-price-value">€105</span></div></div>
   </div>
 </div>
 </div>

@@ -30,6 +30,20 @@ const categoryLabels: Record<string, Partial<Record<SidebarLocale, string>>> = {
     ja: "アクロバット",
     ko: "아크로바틱",
   },
+  "Anf.": {
+    en: "Beg.",
+    de: "Anf.",
+    "zh-CN": "初级",
+    ja: "初級",
+    ko: "초급",
+  },
+  "Fortg.": {
+    en: "Adv.",
+    de: "Fortg.",
+    "zh-CN": "高级",
+    ja: "上級",
+    ko: "고급",
+  },
   "Aqua-Jogging": {
     en: "Aqua Jogging",
     de: "Aqua-Jogging",
@@ -479,6 +493,237 @@ const categoryLabels: Record<string, Partial<Record<SidebarLocale, string>>> = {
     "zh-CN": "竞技攀岩",
     ja: "スポーツクライミング",
     ko: "스포츠 클라이밍",
+  },
+  Klettertreff: {
+    en: "Meet-up",
+    de: "Klettertreff",
+    "zh-CN": "见面会",
+    ja: "ミートアップ",
+    ko: "미트업",
+  },
+  Schnupperkurs: {
+    en: "Taster Course",
+    de: "Schnupperkurs",
+    "zh-CN": "体验课",
+    ja: "お試しコース",
+    ko: "체험 코스",
+  },
+  Aufbaukurs: {
+    en: "Advanced Course",
+    de: "Aufbaukurs",
+    "zh-CN": "进阶课程",
+    ja: "上級コース",
+    ko: "심화 코스",
+  },
+  Vorstieg: {
+    en: "Lead Climbing",
+    de: "Vorstieg",
+    "zh-CN": "先锋攀登",
+    ja: "リードクライミング",
+    ko: "리드 클라이밍",
+  },
+  Auffrischerkurs: {
+    en: "Refresher Course",
+    de: "Auffrischerkurs",
+    "zh-CN": "复习课程",
+    ja: "リフレッシュコース",
+    ko: "복습 코스",
+  },
+  "Erwachsenen Gruppe": {
+    en: "Adult Group",
+    de: "Erwachsenen Gruppe",
+    "zh-CN": "成人组",
+    ja: "大人グループ",
+    ko: "성인 그룹",
+  },
+  Jugendgruppe: {
+    en: "Youth Group",
+    de: "Jugendgruppe",
+    "zh-CN": "青年组",
+    ja: "ユースグループ",
+    ko: "청소년 그룹",
+  },
+  "freies Klettern": {
+    en: "Free Climbing",
+    de: "freies Klettern",
+    "zh-CN": "自由攀岩",
+    ja: "フリークライミング",
+    ko: "자유 클라이밍",
+  },
+  Kletteranlage: {
+    en: "Climbing Facility",
+    de: "Kletteranlage",
+    "zh-CN": "攀岩设施",
+    ja: "クライミング施設",
+    ko: "클라이밍 시설",
+  },
+  "(ab 18J)": {
+    en: "(ages 18+)",
+    de: "(ab 18J)",
+    "zh-CN": "(18岁以上)",
+    ja: "(18歳以上)",
+    ko: "(18세 이상)",
+  },
+  "(6-18 Jahre)": {
+    en: "(ages 6-18)",
+    de: "(6-18 Jahre)",
+    "zh-CN": "(6-18岁)",
+    ja: "(6-18歳)",
+    ko: "(6-18세)",
+  },
+  Jahre: {
+    en: "years",
+    de: "Jahre",
+    "zh-CN": "岁",
+    ja: "歳",
+    ko: "세",
+  },
+  Januar: {
+    en: "January",
+    de: "Januar",
+    "zh-CN": "一月",
+    ja: "1月",
+    ko: "1월",
+  },
+  Februar: {
+    en: "February",
+    de: "Februar",
+    "zh-CN": "二月",
+    ja: "2月",
+    ko: "2월",
+  },
+  März: {
+    en: "March",
+    de: "März",
+    "zh-CN": "三月",
+    ja: "3月",
+    ko: "3월",
+  },
+  April: {
+    en: "April",
+    de: "April",
+    "zh-CN": "四月",
+    ja: "4月",
+    ko: "4월",
+  },
+  Mai: {
+    en: "May",
+    de: "Mai",
+    "zh-CN": "五月",
+    ja: "5月",
+    ko: "5월",
+  },
+  Juni: {
+    en: "June",
+    de: "Juni",
+    "zh-CN": "六月",
+    ja: "6月",
+    ko: "6월",
+  },
+  Juli: {
+    en: "July",
+    de: "Juli",
+    "zh-CN": "七月",
+    ja: "7月",
+    ko: "7월",
+  },
+  August: {
+    en: "August",
+    de: "August",
+    "zh-CN": "八月",
+    ja: "8月",
+    ko: "8월",
+  },
+  September: {
+    en: "September",
+    de: "September",
+    "zh-CN": "九月",
+    ja: "9月",
+    ko: "9월",
+  },
+  Oktober: {
+    en: "October",
+    de: "Oktober",
+    "zh-CN": "十月",
+    ja: "10月",
+    ko: "10월",
+  },
+  November: {
+    en: "November",
+    de: "November",
+    "zh-CN": "十一月",
+    ja: "11月",
+    ko: "11월",
+  },
+  Dezember: {
+    en: "December",
+    de: "Dezember",
+    "zh-CN": "十二月",
+    ja: "12月",
+    ko: "12월",
+  },
+  Monatsgebühr: {
+    en: "Monthly fee",
+    de: "Monatsgebühr",
+    "zh-CN": "月费",
+    ja: "月額料金",
+    ko: "월 이용료",
+  },
+  Gymnastikhalle: {
+    en: "Gymnastics Hall",
+    de: "Gymnastikhalle",
+    "zh-CN": "体操馆",
+    ja: "体育館",
+    ko: "체조관",
+  },
+  Fechthalle: {
+    en: "Fencing Hall",
+    de: "Fechthalle",
+    "zh-CN": "击剑馆",
+    ja: "フェンシング場",
+    ko: "펜싱장",
+  },
+  Schwimmhalle: {
+    en: "Swimming Pool",
+    de: "Schwimmhalle",
+    "zh-CN": "游泳池",
+    ja: "スイミングプール",
+    ko: "수영장",
+  },
+  "Uni-Sporthalle": {
+    en: "University Sports Hall",
+    de: "Uni-Sporthalle",
+    "zh-CN": "大学体育馆",
+    ja: "大学体育館",
+    ko: "대학 체육관",
+  },
+  "Ohne Betreuung": {
+    en: "Unsupervised",
+    de: "Ohne Betreuung",
+    "zh-CN": "无监督",
+    ja: "指導なし",
+    ko: "지도 없음",
+  },
+  "noch offen N.N.": {
+    en: "TBD (N.N.)",
+    de: "noch offen N.N.",
+    "zh-CN": "待定 (N.N.)",
+    ja: "未定 (N.N.)",
+    ko: "미정 (N.N.)",
+  },
+  "Vorbereitungskurs Felsklettern": {
+    en: "Rock Climbing Preparation Course",
+    de: "Vorbereitungskurs Felsklettern",
+    "zh-CN": "攀岩准备课程",
+    ja: "ロッククライミング準備コース",
+    ko: "암벽 등반 준비 코스",
+  },
+  "auch mit DAV-Berechtigung": {
+    en: "also with DAV authorization",
+    de: "auch mit DAV-Berechtigung",
+    "zh-CN": "也包括 DAV 授权",
+    ja: "DAV許可証持参者も可",
+    ko: "DAV 권한 포함",
   },
   "Kung Fu": {
     en: "Kung Fu",
@@ -1117,6 +1362,13 @@ const categoryLabels: Record<string, Partial<Record<SidebarLocale, string>>> = {
     ja: "初心者",
     ko: "초보자",
   },
+  "Anfänger*innenkurs": {
+    en: "Beginners Course",
+    de: "Anfänger*innenkurs",
+    "zh-CN": "初学者课程",
+    ja: "初心者コース",
+    ko: "초보자 코스",
+  },
   "Anfänger*innen 40+": {
     en: "Beginners 40+",
     de: "Anfänger*innen 40+",
@@ -1285,7 +1537,480 @@ const categoryLabels: Record<string, Partial<Record<SidebarLocale, string>>> = {
     ja: "ズンバ",
     ko: "줌바",
   },
+  "Uni Wettk.Team": {
+    en: "Uni Competition Team",
+    de: "Uni Wettk.Team",
+    "zh-CN": "校竞赛队",
+    ja: "大学競技チーム",
+    ko: "대학 경기 팀",
+  },
+  "Frauen/Männer": {
+    en: "Women/Men",
+    de: "Frauen/Männer",
+    "zh-CN": "女性/男性",
+    ja: "女性/男性",
+    ko: "여성/남성",
+  },
+  "norddeutsche Hochschulliga": {
+    en: "North German University League",
+    de: "norddeutsche Hochschulliga",
+    "zh-CN": "北德大学联赛",
+    ja: "北ドイツ大学リーグ",
+    ko: "북독일 대학 리그",
+  },
+  Sichtungstraining: {
+    en: "Scouting Training",
+    de: "Sichtungstraining",
+    "zh-CN": "选拔训练",
+    ja: "セレクション・トレーニング",
+    ko: "선발 훈련",
+  },
+  Rollstuhlbasketball: {
+    en: "Wheelchair Basketball",
+    de: "Rollstuhlbasketball",
+    "zh-CN": "轮椅篮球",
+    ja: "車いすバスケットボール",
+    ko: "휠체어 농구",
+  },
+  Uniliga: {
+    en: "University League",
+    de: "Uniliga",
+    "zh-CN": "大学联赛",
+    ja: "学内リーグ",
+    ko: "대학 리그",
+  },
+  Frauen: {
+    en: "Women",
+    de: "Frauen",
+    "zh-CN": "女性",
+    ja: "女性",
+    ko: "여성",
+  },
+  Damen: {
+    en: "Women",
+    de: "Damen",
+    "zh-CN": "女性",
+    ja: "女性",
+    ko: "여성",
+  },
+  Herren: {
+    en: "Men",
+    de: "Herren",
+    "zh-CN": "男性",
+    ja: "男性",
+    ko: "남성",
+  },
+  Einsteiger: {
+    en: "Beginners",
+    de: "Einsteiger",
+    "zh-CN": "初学者",
+    ja: "初心者",
+    ko: "입문자",
+  },
+  innenkurs: {
+    en: "Course for Women",
+    de: "innenkurs",
+    "zh-CN": "女性课程",
+    ja: "女性向けコース",
+    ko: "여성 코스",
+  },
+  "alle Level": {
+    en: "all Levels",
+    de: "alle Level",
+    "zh-CN": "所有级别",
+    ja: "全レベル",
+    ko: "모든 레벨",
+  },
+  "freies Training": {
+    en: "Open Training",
+    de: "freies Training",
+    "zh-CN": "自由训练",
+    ja: "フリートレーニング",
+    ko: "자유 훈련",
+  },
+  "Wettkampf/Fortgeschritten": {
+    en: "Competition/Advanced",
+    de: "Wettkampf/Fortgeschritten",
+    "zh-CN": "竞赛/高级",
+    ja: "競技/上級",
+    ko: "경기/고급",
+  },
+  "Kumite-Formen": {
+    en: "Kumite Forms",
+    de: "Kumite-Formen",
+    "zh-CN": "组手形式",
+    ja: "組手形式",
+    ko: "쿠미테 형식",
+  },
+  "Unter- bis Oberstufe": {
+    en: "Lower to Upper Level",
+    de: "Unter- bis Oberstufe",
+    "zh-CN": "初级至高级",
+    ja: "初級から上級",
+    ko: "초급에서 고급",
+  },
+  Unterstufe: {
+    en: "Lower Level",
+    de: "Unterstufe",
+    "zh-CN": "初级",
+    ja: "初級",
+    ko: "초급",
+  },
+  Oberstufe: {
+    en: "Upper Level",
+    de: "Oberstufe",
+    "zh-CN": "高级",
+    ja: "上級",
+    ko: "고급",
+  },
+  "Wiederholung und Vertiefung": {
+    en: "Review and Deepening",
+    de: "Wiederholung und Vertiefung",
+    "zh-CN": "复习与巩固",
+    ja: "復習と深化",
+    ko: "복습 및 심화",
+  },
+  Wettkampftraining: {
+    en: "Competition Training",
+    de: "Wettkampftraining",
+    "zh-CN": "竞赛训练",
+    ja: "競技トレーニング",
+    ko: "경기 훈련",
+  },
+  Mittelstufe: {
+    en: "Intermediate",
+    de: "Mittelstufe",
+    "zh-CN": "中级",
+    ja: "中級",
+    ko: "중급",
+  },
+  "mit Grundkenntnissen": {
+    en: "with Basic Knowledge",
+    de: "mit Grundkenntnissen",
+    "zh-CN": "具有基础知识",
+    ja: "基礎知識あり",
+    ko: "기초 지식 있음",
+  },
+  "mit Vorkenntnissen": {
+    en: "with Previous Knowledge",
+    de: "mit Vorkenntnissen",
+    "zh-CN": "具有先验知识",
+    ja: "予備知識あり",
+    ko: "사전 지식 있음",
+  },
+  dienstags: {
+    en: "Tuesdays",
+    de: "dienstags",
+    "zh-CN": "每周二",
+    ja: "火曜日",
+    ko: "화요일",
+  },
+  donnerstags: {
+    en: "Thursdays",
+    de: "donnerstags",
+    "zh-CN": "每周四",
+    ja: "木曜日",
+    ko: "목요일",
+  },
+  mittwochs: {
+    en: "Wednesdays",
+    de: "mittwochs",
+    "zh-CN": "每周三",
+    ja: "水曜日",
+    ko: "수요일",
+  },
+  montags: {
+    en: "Mondays",
+    de: "montags",
+    "zh-CN": "每周一",
+    ja: "月曜日",
+    ko: "월요일",
+  },
+  samstags: {
+    en: "Saturdays",
+    de: "samstags",
+    "zh-CN": "每周六",
+    ja: "土曜日",
+    ko: "토요일",
+  },
+  "präventives Rückentraining": {
+    en: "Preventive Back Training",
+    de: "präventives Rückentraining",
+    "zh-CN": "预防性背部训练",
+    ja: "予防的背中トレーニング",
+    ko: "예방적 등 훈련",
+  },
+  "Hochintensives Intervalltraining": {
+    en: "High Intensity Interval Training",
+    de: "Hochintensives Intervalltraining",
+    "zh-CN": "高强度间歇训练",
+    ja: "高強度インターバルトレーニング",
+    ko: "고강도 인터벌 트레이닝",
+  },
+  Kurs: {
+    en: "Course",
+    de: "Kurs",
+    "zh-CN": "课程",
+    ja: "コース",
+    ko: "코스",
+  },
+  kompakt: {
+    en: "Compact",
+    de: "kompakt",
+    "zh-CN": "紧凑",
+    ja: "コンパクト",
+    ko: "집중",
+  },
+  "über Himmelfahrt": {
+    en: "over Ascension Day",
+    de: "über Himmelfahrt",
+    "zh-CN": "耶稣升天节期间",
+    ja: "キリスト昇天祭期間中",
+    ko: "예수 승천일 기간",
+  },
+  "Spi A": {
+    en: "Spinnaker Beginners",
+    de: "Spi A",
+    "zh-CN": "球帆初学者",
+    ja: "スピンネーカー初級",
+    ko: "스피네이커 초급",
+  },
+  "Spi F": {
+    en: "Spinnaker Advanced",
+    de: "Spi F",
+    "zh-CN": "球帆进阶班",
+    ja: "スピンネーカー上級",
+    ko: "스피네이커 고급",
+  },
+  Wup: {
+    en: "Warm-up",
+    de: "Wup",
+    "zh-CN": "热身",
+    ja: "ウォームアップ",
+    ko: "워밍업",
+  },
+  "Gruppensegeln in einem Kielboot": {
+    en: "Group Sailing in a Keelboat",
+    de: "Gruppensegeln in einem Kielboot",
+    "zh-CN": "龙骨艇团体帆船",
+    ja: "キールボートでのグループセーリング",
+    ko: "킬보트 단체 세일링",
+  },
+  Jollenkurs: {
+    en: "Dinghy Course",
+    de: "Jollenkurs",
+    "zh-CN": "小艇课程",
+    ja: "ディンギーコース",
+    ko: "딩기 코스",
+  },
+  "Uni Jolle": {
+    en: "Uni Dinghy",
+    de: "Uni Jolle",
+    "zh-CN": "大学小艇",
+    ja: "大学ディンギー",
+    ko: "대학 딩기",
+  },
+  "mit und ohne Spi": {
+    en: "with and without Spinnaker",
+    de: "mit und ohne Spi",
+    "zh-CN": "带或不带球帆",
+    ja: "スピンネーカーあり/なし",
+    ko: "스피네이커 유무",
+  },
+  "5h": {
+    en: "5h",
+    de: "5h",
+    "zh-CN": "5小时",
+    ja: "5時間",
+    ko: "5시간",
+  },
+  Mixed: {
+    en: "Mixed",
+    de: "Mixed",
+    "zh-CN": "混合",
+    ja: "ミックス",
+    ko: "혼합",
+  },
+  Tryout: {
+    en: "Tryout",
+    de: "Tryout",
+    "zh-CN": "选拔",
+    ja: "トライアウト",
+    ko: "트라이아웃",
+  },
+  "Beginners (English Class)": {
+    en: "Beginners (English Class)",
+    de: "Beginners (English Class)",
+    "zh-CN": "初学者（英文授课）",
+    ja: "初心者（英語クラス）",
+    ko: "초보자 (영어 수업)",
+  },
+  Wochenende: {
+    en: "Weekend",
+    de: "Wochenende",
+    "zh-CN": "周末",
+    ja: "週末",
+    ko: "주말",
+  },
+  auch: {
+    en: "also",
+    de: "auch",
+    "zh-CN": "也包括",
+    ja: "も",
+    ko: "포함",
+  },
+  und: {
+    en: "and",
+    de: "und",
+    "zh-CN": "及",
+    ja: "と",
+    ko: "및",
+  },
+  neue: {
+    en: "new",
+    de: "neue",
+    "zh-CN": "新",
+    ja: "新しい",
+    ko: "새로운",
+  },
+  Anfängergruppe: {
+    en: "Beginners Group",
+    de: "Anfängergruppe",
+    "zh-CN": "初学者小组",
+    ja: "初心者グループ",
+    ko: "초보자 그룹",
+  },
+  "Mittelstufe bis Fortgeschrittene": {
+    en: "Intermediate to Advanced",
+    de: "Mittelstufe bis Fortgeschrittene",
+    "zh-CN": "中级至高级",
+    ja: "中級から上級",
+    ko: "중급에서 고급",
+  },
+  "Anf. und Fortg.": {
+    en: "Beg. and Adv.",
+    de: "Anf. und Fortg.",
+    "zh-CN": "初级及高级",
+    ja: "初級と上級",
+    ko: "초급 및 고급",
+  },
+  "Performance Class": {
+    en: "Performance Class",
+    de: "Performance Class",
+    "zh-CN": "表演班",
+    ja: "パフォーマンスクラス",
+    ko: "퍼포먼스 클래스",
+  },
+  "für Teilnehmer*innen": {
+    en: "for participants",
+    de: "für Teilnehmer*innen",
+    "zh-CN": "适合学员",
+    ja: "参加者向け",
+    ko: "참가자용",
+  },
+  "mit Grundk.": {
+    en: "with basic skills",
+    de: "mit Grundk.",
+    "zh-CN": "具有基础",
+    ja: "基礎知識あり",
+    ko: "기초 지식 있음",
+  },
+  "mit Fion": {
+    en: "with Fion",
+    de: "mit Fion",
+    "zh-CN": "随 Fion 号",
+    ja: "Fion号で",
+    ko: "Fion호와 함께",
+  },
+  "für Anfänger": {
+    en: "for beginners",
+    de: "für Anfänger",
+    "zh-CN": "适合初学者",
+    ja: "初心者向け",
+    ko: "초보자용",
+  },
+  Kompaktkurs: {
+    en: "Compact Course",
+    de: "Kompaktkurs",
+    "zh-CN": "紧凑课程",
+    ja: "集中コース",
+    ko: "집중 코스",
+  },
+  unbesetzt: {
+    en: "vacant",
+    de: "unbesetzt",
+    "zh-CN": "空置",
+    ja: "空席",
+    ko: "미배정",
+  },
+  Himmelfahrt: {
+    en: "Ascension Day",
+    de: "Himmelfahrt",
+    "zh-CN": "耶稣升天节",
+    ja: "キリスト昇天祭",
+    ko: "예수 승천일",
+  },
+  Grundstufe: {
+    en: "Basic Level",
+    de: "Grundstufe",
+    "zh-CN": "基础级",
+    ja: "初級",
+    ko: "기초 단계",
+  },
+  "Vinyasa Flow": {
+    en: "Vinyasa Flow",
+    de: "Vinyasa Flow",
+    "zh-CN": "流瑜伽",
+    ja: "ヴィンヤサフロー",
+    ko: "빈야사 플로우",
+  },
+  "Souveränes Zweihandsegeln": {
+    en: "Confident Two-Handed Sailing",
+    de: "Souveränes Zweihandsegeln",
+    "zh-CN": "自信的双人帆船",
+    ja: "自信のツーハンドセーリング",
+    ko: "자신감 있는 2인 세일링",
+  },
+  Sommersegeltörn: {
+    en: "Summer Sailing Trip",
+    de: "Sommersegeltörn",
+    "zh-CN": "夏季航海旅行",
+    ja: "夏季セーリングツアー",
+    ko: "여름 세일링 투어",
+  },
+  Etappe: {
+    en: "Stage",
+    de: "Etappe",
+    "zh-CN": "阶段",
+    ja: "ステージ",
+    ko: "스테이지",
+  },
+  Ausbildungstörn: {
+    en: "Training Trip",
+    de: "Ausbildungstörn",
+    "zh-CN": "培训航行",
+    ja: "トレーニング航海",
+    ko: "교육 항해",
+  },
+  "SKS Prüfung": {
+    en: "SKS Exam",
+    de: "SKS Prüfung",
+    "zh-CN": "SKS 考试",
+    ja: "SKS試験",
+    ko: "SKS 시험",
+  },
 };
+
+export function getAllCategoryLabelMappings(): Record<
+  string,
+  Partial<Record<SidebarLocale, string>>
+> {
+  return { ...categoryLabels };
+}
+
+function escapeRegex(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
 
 export function getCategoryLabel(
   locale: SidebarLocale,
@@ -1295,6 +2020,30 @@ export function getCategoryLabel(
   return trimSidebarLabel(
     categoryLabels[normalizedKey]?.[locale] ?? normalizedKey,
   );
+}
+
+export function localizeKnownCategoryFragments(
+  locale: SidebarLocale,
+  value: string,
+): string {
+  const activeKeys = Object.keys(categoryLabels)
+    .filter((key) => {
+      const localized = categoryLabels[key]?.[locale];
+      return localized && localized !== key;
+    })
+    .sort((left, right) => right.length - left.length);
+
+  if (activeKeys.length === 0) return value;
+
+  const pattern = new RegExp(
+    `(^|[\\s,(+/:-])(${activeKeys.map(escapeRegex).join("|")})(?=$|[\\s),+/:-])`,
+    "gu",
+  );
+
+  return value.replace(pattern, (match, prefix, key) => {
+    const localized = categoryLabels[key]?.[locale];
+    return `${prefix}${localized ?? key}`;
+  });
 }
 
 type SidebarLinkItem = {
@@ -1547,4 +2296,163 @@ export function localizeSidebarItems(
   );
 
   return [...standaloneItems, ...groupedItems];
+}
+
+const titlePhraseMaps: Record<
+  SidebarLocale,
+  Array<{
+    pattern: RegExp;
+    replacement: string;
+  }>
+> = {
+  de: [],
+  en: [
+    {
+      pattern:
+        /\bBallett, American Technique Anf\. mit Grundk\. und Mittelstufe\b/gu,
+      replacement:
+        "Ballet, American Technique Beg. with basic skills and Intermediate",
+    },
+    {
+      pattern: /\bMittelstufe\s+bis\s+Fortgeschrittene\b/gu,
+      replacement: "Intermediate to Advanced",
+    },
+    { pattern: /\bAnf\.\s*und\s*Fortg\./gu, replacement: "Beg. and Adv." },
+    { pattern: /\bAnf\.\s*\+\s*Fortg\./gu, replacement: "Beg. + Adv." },
+    {
+      pattern: /\bTenniskurse kompakt Semesterferien\b/gu,
+      replacement: "Compact Tennis Courses during Semester Break",
+    },
+    {
+      pattern: /\bTenniskurse Semester\b/gu,
+      replacement: "Semester Tennis Courses",
+    },
+    { pattern: /\bSemesterferien\b/gu, replacement: "Semester Break" },
+    { pattern: /freies Spiel/gu, replacement: "Open Play" },
+    { pattern: /Jedermann/gu, replacement: "Open to All" },
+    { pattern: /Wettkampfteam/gu, replacement: "Competition Team" },
+    { pattern: /fortg\.\s*Anfänger/gu, replacement: "Advanced Beginners" },
+    { pattern: /Fortg\.\s*Anf\./gu, replacement: "Advanced Beginners" },
+    { pattern: /Fortg\.\s*I\b/gu, replacement: "Advanced I" },
+    { pattern: /Fortg\.\s*II\b/gu, replacement: "Advanced II" },
+    { pattern: /Anfänger/gu, replacement: "Beginners" },
+    { pattern: /Anf\./gu, replacement: "Beginners" },
+    { pattern: /fortg\./gu, replacement: "Advanced" },
+    { pattern: /Fortg\./gu, replacement: "Advanced" },
+    { pattern: /tägl\./gu, replacement: "Daily" },
+  ],
+  ja: [
+    {
+      pattern:
+        /\bBallett, American Technique Anf\. mit Grundk\. und Mittelstufe\b/gu,
+      replacement: "バレエ、アメリカンテクニック 初級（基礎知識あり）と中級",
+    },
+    {
+      pattern: /\bMittelstufe\s+bis\s+Fortgeschrittene\b/gu,
+      replacement: "中級から上級",
+    },
+    { pattern: /\bAnf\.\s*und\s*Fortg\./gu, replacement: "初級と上級" },
+    { pattern: /\bAnf\.\s*\+\s*Fortg\./gu, replacement: "初級 + 上級" },
+    {
+      pattern: /\bTenniskurse kompakt Semesterferien\b/gu,
+      replacement: "学期間休暇の短期集中テニス講座",
+    },
+    { pattern: /\bTenniskurse Semester\b/gu, replacement: "学期テニス講座" },
+    { pattern: /\bSemesterferien\b/gu, replacement: "学期間休暇" },
+    { pattern: /freies Spiel/gu, replacement: "自由プレー" },
+    { pattern: /Jedermann/gu, replacement: "誰でも参加可" },
+    { pattern: /Wettkampfteam/gu, replacement: "競技チーム" },
+    { pattern: /fortg\.\s*Anfänger/gu, replacement: "初中級" },
+    { pattern: /Fortg\.\s*Anf\./gu, replacement: "初中級" },
+    { pattern: /Fortg\.\s*I\b/gu, replacement: "上級 I" },
+    { pattern: /Fortg\.\s*II\b/gu, replacement: "上級 II" },
+    { pattern: /Anfänger/gu, replacement: "初心者" },
+    { pattern: /Anf\./gu, replacement: "初心者" },
+    { pattern: /fortg\./gu, replacement: "上級" },
+    { pattern: /Fortg\./gu, replacement: "上級" },
+    { pattern: /tägl\./gu, replacement: "毎日" },
+  ],
+  ko: [
+    {
+      pattern:
+        /\bBallett, American Technique Anf\. mit Grundk\. und Mittelstufe\b/gu,
+      replacement: "발레, 아메리칸 테크닉 초급(기초 지식 있음) 및 중급",
+    },
+    {
+      pattern: /\bMittelstufe\s+bis\s+Fortgeschrittene\b/gu,
+      replacement: "중급에서 고급",
+    },
+    { pattern: /\bAnf\.\s*und\s*Fortg\./gu, replacement: "초급 및 고급" },
+    { pattern: /\bAnf\.\s*\+\s*Fortg\./gu, replacement: "초급 + 고급" },
+    {
+      pattern: /\bTenniskurse kompakt Semesterferien\b/gu,
+      replacement: "학기 방학 집중 테니스 강좌",
+    },
+    { pattern: /\bTenniskurse Semester\b/gu, replacement: "학기 테니스 강좌" },
+    { pattern: /\bSemesterferien\b/gu, replacement: "학기 방학" },
+    { pattern: /freies Spiel/gu, replacement: "자유 플레이" },
+    { pattern: /Jedermann/gu, replacement: "누구나 참여 가능" },
+    { pattern: /Wettkampfteam/gu, replacement: "경기 팀" },
+    { pattern: /fortg\.\s*Anfänger/gu, replacement: "초중급" },
+    { pattern: /Fortg\.\s*Anf\./gu, replacement: "초중급" },
+    { pattern: /Fortg\.\s*I\b/gu, replacement: "고급 I" },
+    { pattern: /Fortg\.\s*II\b/gu, replacement: "고급 II" },
+    { pattern: /Anfänger/gu, replacement: "초급" },
+    { pattern: /Anf\./gu, replacement: "초급" },
+    { pattern: /fortg\./gu, replacement: "고급" },
+    { pattern: /Fortg\./gu, replacement: "고급" },
+    { pattern: /tägl\./gu, replacement: "매일" },
+  ],
+  "zh-CN": [
+    {
+      pattern:
+        /\bBallett, American Technique Anf\. mit Grundk\. und Mittelstufe\b/gu,
+      replacement: "芭蕾，美式技巧 初级（具有基础知识）及中级",
+    },
+    {
+      pattern: /\bMittelstufe\s+bis\s+Fortgeschrittene\b/gu,
+      replacement: "中级至高级",
+    },
+    { pattern: /\bAnf\.\s*und\s*Fortg\./gu, replacement: "初级及高级" },
+    { pattern: /\bAnf\.\s*\+\s*Fortg\./gu, replacement: "初级 + 高级" },
+    {
+      pattern: /\bTenniskurse kompakt Semesterferien\b/gu,
+      replacement: "假期紧凑网球课程",
+    },
+    { pattern: /\bTenniskurse Semester\b/gu, replacement: "学期网球课程" },
+    { pattern: /\bSemesterferien\b/gu, replacement: "学期假期" },
+    { pattern: /freies Spiel/gu, replacement: "自由练习" },
+    { pattern: /Jedermann/gu, replacement: "所有人均可参加" },
+    { pattern: /Wettkampfteam/gu, replacement: "竞赛队" },
+    { pattern: /fortg\.\s*Anfänger/gu, replacement: "初中级" },
+    { pattern: /Fortg\.\s*Anf\./gu, replacement: "初中级" },
+    { pattern: /Fortg\.\s*I\b/gu, replacement: "进阶 I" },
+    { pattern: /Fortg\.\s*II\b/gu, replacement: "进阶 II" },
+    { pattern: /Anfänger/gu, replacement: "初学者" },
+    { pattern: /Anf\./gu, replacement: "初学者" },
+    { pattern: /fortg\./gu, replacement: "进阶" },
+    { pattern: /Fortg\./gu, replacement: "进阶" },
+    { pattern: /tägl\./gu, replacement: "每日" },
+  ],
+};
+
+export function localizeWorkoutTitle(
+  value: string,
+  locale: SidebarLocale,
+): string {
+  // 1. Exact match priority (discovery mapping)
+  const directLabel = getCategoryLabel(locale, value);
+  if (directLabel !== value) {
+    return directLabel;
+  }
+
+  // 2. Fallback to fragment-based replacement
+  let result = localizeKnownCategoryFragments(locale, value);
+
+  // 3. Fallback to phrase maps (legacy rules)
+  for (const rule of titlePhraseMaps[locale]) {
+    result = result.replace(rule.pattern, rule.replacement);
+  }
+
+  return result.replace(/\s+/g, " ").trim();
 }

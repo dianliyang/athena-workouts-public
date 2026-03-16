@@ -1,13 +1,13 @@
 ---
-title: "Kitesurfen am Wochenende"
+title: "Weekend Kitesurfing"
 layout: doc
 ---
 
-# Kitesurfen am Wochenende
+# Weekend Kitesurfing
 
 31 variants.
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 1
+## Weekend Kitesurfing Beginners Course 1
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -15,7 +15,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -26,7 +26,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 10
+## Weekend Kitesurfing Beginners Course 10
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -34,7 +34,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -45,7 +45,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 11
+## Weekend Kitesurfing Beginners Course 11
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -53,7 +53,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -64,7 +64,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 12
+## Weekend Kitesurfing Beginners Course 12
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -72,7 +72,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -83,7 +83,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 13
+## Weekend Kitesurfing Beginners Course 13
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -91,7 +91,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -102,7 +102,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 14
+## Weekend Kitesurfing Beginners Course 14
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -110,7 +110,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -121,7 +121,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 15
+## Weekend Kitesurfing Beginners Course 15
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -129,7 +129,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -140,7 +140,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 16
+## Weekend Kitesurfing Beginners Course 16
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -148,7 +148,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -159,7 +159,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 17
+## Weekend Kitesurfing Beginners Course 17
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -167,7 +167,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -178,7 +178,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 18
+## Weekend Kitesurfing Beginners Course 18
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -186,7 +186,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -197,7 +197,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 19
+## Weekend Kitesurfing Beginners Course 19
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -205,7 +205,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -216,7 +216,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 2
+## Weekend Kitesurfing Beginners Course 2
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -224,7 +224,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -235,7 +235,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 20
+## Weekend Kitesurfing Beginners Course 20
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -243,7 +243,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -254,7 +254,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 21
+## Weekend Kitesurfing Beginners Course 21
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -262,7 +262,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -273,7 +273,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 22
+## Weekend Kitesurfing Beginners Course 22
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -281,7 +281,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -292,7 +292,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 23
+## Weekend Kitesurfing Beginners Course 23
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -300,7 +300,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -311,7 +311,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 24
+## Weekend Kitesurfing Beginners Course 24
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -319,7 +319,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -330,7 +330,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 25
+## Weekend Kitesurfing Beginners Course 25
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -338,7 +338,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -349,7 +349,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 26
+## Weekend Kitesurfing Beginners Course 26
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -357,7 +357,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -368,7 +368,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 27
+## Weekend Kitesurfing Beginners Course 27
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -376,7 +376,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -387,7 +387,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 28
+## Weekend Kitesurfing Beginners Course 28
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -395,7 +395,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -406,7 +406,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 29
+## Weekend Kitesurfing Beginners Course 29
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -414,7 +414,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -425,7 +425,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 3
+## Weekend Kitesurfing Beginners Course 3
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -433,7 +433,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -444,7 +444,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 30
+## Weekend Kitesurfing Beginners Course 30
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -452,7 +452,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -463,7 +463,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 31
+## Weekend Kitesurfing Beginners Course 31
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -471,7 +471,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -482,7 +482,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 4
+## Weekend Kitesurfing Beginners Course 4
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -490,7 +490,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -501,7 +501,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 5
+## Weekend Kitesurfing Beginners Course 5
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -509,7 +509,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -520,7 +520,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 6
+## Weekend Kitesurfing Beginners Course 6
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -528,7 +528,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -539,7 +539,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 7
+## Weekend Kitesurfing Beginners Course 7
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -547,7 +547,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -558,7 +558,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 8
+## Weekend Kitesurfing Beginners Course 8
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -566,7 +566,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -577,7 +577,7 @@ layout: doc
 </div>
 </div>
 
-## Kitesurfen am Wochenende Anfänger*innenkurs 9
+## Weekend Kitesurfing Beginners Course 9
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -585,7 +585,7 @@ layout: doc
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sa-So 10:00-14:30</div>
+      <div class="workout-row-schedule">Sat-Sun 10:00-14:30</div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>

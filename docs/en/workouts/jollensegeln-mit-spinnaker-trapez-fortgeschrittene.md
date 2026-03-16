@@ -1,13 +1,13 @@
 ---
-title: "Jollensegeln mit Spinnaker Trapez Fortgeschrittene"
+title: "Dinghy Sailing with Spinnaker and Trapeze for Advanced Participants"
 layout: doc
 ---
 
-# Jollensegeln mit Spinnaker Trapez Fortgeschrittene
+# Dinghy Sailing with Spinnaker and Trapeze for Advanced Participants
 
 1 variant.
 
-## Jollensegeln mit Spinnaker Trapez Fortgeschrittene Spi F Kurs 1
+## Dinghy Sailing with Spinnaker and Trapeze for Advanced Participants Spinnaker Advanced Course 1
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -17,7 +17,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Mon 15:00-20:30</div>
       <div class="workout-status-block">
-        <div class="workout-status is-waitlist"><span class="workout-status-dot"></span><span>waitlist</span></div>
+        <div class="workout-status is-waitlist"><span class="workout-status-dot"></span><span>Waitlist</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Niklas</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Jun 1 - Jul 6, 2026</strong><span>5 sessions</span></div></div></div>

@@ -1,13 +1,13 @@
 ---
-title: "Entspannung und Achtsamkeit"
+title: "Relaxation and Mindfulness"
 layout: doc
 ---
 
-# Entspannung und Achtsamkeit
+# Relaxation and Mindfulness
 
 1 variant.
 
-## Entspannung und Achtsamkeit durch Meditation, Atemtechnik & Yoga
+## Relaxation and Mindfulness durch Meditation, Atemtechnik & Yoga
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -17,7 +17,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Tue 16:45-18:00</div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>scheduled</span></div>
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
       </div>
     </div>

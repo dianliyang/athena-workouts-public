@@ -1,13 +1,13 @@
 ---
-title: "Fitnessgymnastik für Ältere"
+title: "Fitness Gymnastics for Older Adults"
 layout: doc
 ---
 
-# Fitnessgymnastik für Ältere
+# Fitness Gymnastics for Older Adults
 
 1 variant.
 
-## Fitnessgymnastik für Ältere
+## Fitness Gymnastics for Older Adults
 
 <p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
 
@@ -17,7 +17,7 @@ layout: doc
     <div class="workout-row-top">
       <div class="workout-row-schedule">Thu 16:00-17:00</div>
       <div class="workout-status-block">
-        <div class="workout-status "><span class="workout-status-dot"></span><span>see text</span></div>
+        <div class="workout-status "><span class="workout-status-dot"></span><span>See text</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Entspannungshalle unten</strong><span>Olshausenstr. 72, 24118 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Janne</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 9 - Oct 8, 2026</strong><span>20 sessions</span></div></div></div>
