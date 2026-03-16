@@ -1,16 +1,4 @@
-export type WorkoutBrowseRecord = {
-  id: string;
-  slug: string;
-  title: string;
-  provider: string;
-  category: string | null;
-  weekday: string | null;
-  timeLabel: string | null;
-  location: string | null;
-  bookingUrl: string | null;
-  excerpt: string | null;
-  searchText: string;
-};
+import type { WorkoutBrowseItem as WorkoutBrowseRecord } from "../lib/workoutsApiUrls";
 
 type FilterParams = {
   q: string;

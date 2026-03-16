@@ -2,7 +2,7 @@ import { describe, expect, test } from "vitest";
 import { createWorkoutsWorker } from "../worker/index";
 
 type FakeBucket = {
-  get(key: string): Promise<string | null>;
+  get(key: string): Promise<{ text(): Promise<string> } | null>;
 };
 
 const manifest = {
@@ -79,7 +79,16 @@ function createBucket(): FakeBucket {
 
   return {
     async get(key: string) {
-      return store.get(key) ?? null;
+      const value = store.get(key);
+      if (!value) {
+        return null;
+      }
+
+      return {
+        async text() {
+          return value;
+        },
+      };
     },
   };
 }

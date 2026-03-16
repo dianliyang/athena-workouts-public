@@ -4,7 +4,7 @@
   "main": "src/worker/index.ts",
   "compatibility_date": "2026-03-15",
   "assets": {
-    "directory": "./dist",
+    "directory": "./docs/.vitepress/dist",
     "binding": "ASSETS"
   },
   "vectorize": [

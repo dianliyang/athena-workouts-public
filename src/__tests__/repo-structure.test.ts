@@ -13,7 +13,7 @@ describe("athena-workouts-public repository structure", () => {
     expect(existsSync(path.join(repoRoot, "README.md"))).toBe(true);
     expect(existsSync(path.join(repoRoot, "wrangler.jsonc"))).toBe(true);
     expect(existsSync(path.join(repoRoot, "src"))).toBe(true);
-    expect(existsSync(path.join(repoRoot, "src", "app"))).toBe(true);
+    expect(existsSync(path.join(repoRoot, "src", "lib"))).toBe(true);
     expect(existsSync(path.join(repoRoot, "src", "worker"))).toBe(true);
   });
 });
