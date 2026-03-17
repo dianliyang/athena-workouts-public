@@ -14,3 +14,16 @@ The docs build fetches published snapshot files from `https://athena-public-snap
 ## Deployment
 
 Deploy this repo on Cloudflare Pages. Snapshot generation and publishing stay in the separate `athena-public-snapshots` Worker project.
+
+## GitHub Actions Deployment
+
+This repo includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml`.
+
+- Pushes to `main` deploy the site to Cloudflare Pages.
+- A scheduled rebuild runs every day at `03:00 UTC`.
+- You can also trigger it manually with `workflow_dispatch`.
+
+Required repository secrets:
+
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`
