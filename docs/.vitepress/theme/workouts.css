@@ -145,6 +145,35 @@
   object-fit: contain;
 }
 
+.vp-doc kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.6rem;
+  padding: 0.14rem 0.42rem;
+  border: 1px solid color-mix(in srgb, var(--vp-c-divider) 86%, var(--vp-c-brand-1) 14%);
+  border-radius: 0.45rem;
+  background: color-mix(in srgb, var(--vp-c-bg-soft) 88%, white 12%);
+  box-shadow:
+    inset 0 -1px 0 rgba(15, 23, 42, 0.08),
+    0 1px 1px rgba(15, 23, 42, 0.04);
+  color: var(--vp-c-text-1);
+  font-family: var(--vp-font-family-base);
+  font-size: 0.82em;
+  font-weight: 600;
+  line-height: 1.1;
+  vertical-align: baseline;
+}
+
+.dark .vp-doc kbd {
+  border-color: color-mix(in srgb, var(--vp-c-divider) 72%, var(--vp-c-brand-1) 28%);
+  background: color-mix(in srgb, var(--vp-c-bg-soft) 84%, black 16%);
+  box-shadow:
+    inset 0 -1px 0 rgba(248, 250, 252, 0.06),
+    0 1px 1px rgba(0, 0, 0, 0.22);
+}
+
+
 .VPHomeHero .image-container {
   overflow: visible;
 }
