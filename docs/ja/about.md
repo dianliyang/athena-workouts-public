@@ -1,6 +1,7 @@
 ---
 layout: doc
 title: このサイトについて
+search: false
 ---
 
 # このサイトについて

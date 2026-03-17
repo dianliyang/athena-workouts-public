@@ -4,9 +4,8 @@ import { localizeWorkoutTitle } from "../lib/workoutSidebarI18n";
 type Locale = "de" | "en" | "zh-CN" | "ja" | "ko";
 
 describe("Workout title localization (BDD)", () => {
-  describe("Given a German source title with detailed ballet level information", () => {
-    const source =
-      "Ballett, American Technique Anf. mit Grundk. und Mittelstufe";
+  describe("Given a standalone ballet course title with detailed level information", () => {
+    const source = "Anf. mit Grundk. und Mittelstufe";
 
     test("then the title is consistently localized across all supported locales", () => {
       const results: Record<Locale, string> = {
@@ -18,14 +17,10 @@ describe("Workout title localization (BDD)", () => {
       };
 
       expect(results.de).toBe(source);
-      expect(results.en).toBe(
-        "Ballet, American Technique Adv. Beginners and Intermediate",
-      );
-      expect(results.ja).toBe("バレエ（アメリカン・テクニック）初級経験者・中級");
-      expect(results.ko).toBe("발레 (아메리칸 테크닉) 초급경험자·중급");
-      expect(localizeWorkoutTitle(source, "zh-CN")).toBe(
-        "芭蕾（美式技巧）有基础初级与中级",
-      );
+      expect(results.en).toBe("Adv. Beginners and Intermediate");
+      expect(results.ja).toBe("初級経験者・中級");
+      expect(results.ko).toBe("초급경험자·중급");
+      expect(localizeWorkoutTitle(source, "zh-CN")).toBe("有基础初级与中级");
     });
   });
 
@@ -47,6 +42,17 @@ describe("Workout title localization (BDD)", () => {
       expect(localized).toContain("から");
       expect(localized).toContain("14");
       expect(localized).toContain("時");
+    });
+  });
+
+  describe("Given the bare phrase 'tägl. Sa ab 14 Uhr'", () => {
+    const source = "tägl. Sa ab 14 Uhr";
+
+    test("then it is localized through the generic i18n rules", () => {
+      expect(localizeWorkoutTitle(source, "en")).toBe("Daily Sat from 14");
+      expect(localizeWorkoutTitle(source, "ja")).toBe("毎日 土 14時から");
+      expect(localizeWorkoutTitle(source, "ko")).toBe("매일 토 14시부터");
+      expect(localizeWorkoutTitle(source, "zh-CN")).toBe("每日 周六 14点起");
     });
   });
 
@@ -157,22 +163,22 @@ describe("Workout title localization (BDD)", () => {
         {
           title: "Anf. und Fortg.",
           locale: "en",
-          expected: "Beg. and Adv.",
+          expected: "Beginners and Advanced",
         },
         {
           title: "Anf. und Fortg.",
           locale: "ja",
-          expected: "初級と上級",
+          expected: "初心者 と 上級",
         },
         {
           title: "Anf. und Fortg.",
           locale: "ko",
-          expected: "초급 및 고급",
+          expected: "초보자 및 고급",
         },
         {
           title: "Anf. und Fortg.",
           locale: "zh-CN",
-          expected: "初级及高级",
+          expected: "初学者 及 进阶",
         },
         {
           title: "Anf. + Fortg.",
@@ -263,22 +269,21 @@ describe("Workout title localization (BDD)", () => {
     });
   });
 
-  describe("Given the instructor insurance package title with an annual date range", () => {
-    const source =
-      "Versicherungspaket für Übungsleiter:innen jeweils 1.4. d.J. bis 31.3. des Folgejahres";
+  describe("Given the instructor insurance package title fragment with an annual date range", () => {
+    const source = "jeweils 1.4. d.J. bis 31.3. des Folgejahres";
 
     test("then the annual coverage window is translated explicitly in each locale", () => {
       expect(localizeWorkoutTitle(source, "en")).toBe(
-        "Insurance Package for Instructors (Apr 1 of the current year to Mar 31 of the following year)",
+        "(Apr 1 of the current year to Mar 31 of the following year)",
       );
       expect(localizeWorkoutTitle(source, "ja")).toBe(
-        "指導者向け保険パッケージ（毎年4月1日から翌年3月31日まで）",
+        "（毎年4月1日から翌年3月31日まで）",
       );
       expect(localizeWorkoutTitle(source, "ko")).toBe(
-        "강사용 보험 패키지 (매년 4월 1일부터 다음 해 3월 31일까지)",
+        "(매년 4월 1일부터 다음 해 3월 31일까지)",
       );
       expect(localizeWorkoutTitle(source, "zh-CN")).toBe(
-        "教练保险套餐（每年4月1日至次年3月31日）",
+        "（每年4月1日至次年3月31日）",
       );
     });
   });
@@ -294,74 +299,90 @@ describe("Workout title localization (BDD)", () => {
     });
   });
 
-  describe("Given advanced dinghy sailing course titles with compact-course and weekend variants", () => {
-    test("then explicit title-map translations use consistent course wording and guidance-vacancy labels", () => {
+  describe("Given advanced dinghy sailing course titles after category/title separation", () => {
+    test("then title-only overrides use consistent course wording and guidance-vacancy labels", () => {
       expect(
         localizeWorkoutTitle(
-          "Jollensegeln für Fortgeschrittene: Kurs 0: Mi plus 2 Woe",
+          "Kurs 0: Mi plus 2 Woe",
           "en",
         ),
-      ).toBe("Advanced Dinghy Sailing: Course 0 (Wed + 2 weekends)");
+      ).toBe("Course 0 (Wed + 2 weekends)");
       expect(
         localizeWorkoutTitle(
-          "Jollensegeln für Fortgeschrittene: Kurs 1: Kompaktkurs Mo-Fr",
+          "Kurs 1: Kompaktkurs Mo-Fr",
           "en",
         ),
-      ).toBe("Advanced Dinghy Sailing: Course 1 (Intensive Course, Mon-Fri)");
+      ).toBe("Course 1 (Intensive Course, Mon-Fri)");
       expect(
         localizeWorkoutTitle(
-          "Jollensegeln für Fortgeschrittene: Kurs 2: Kompaktkurs Sa-So/unbesetzt",
+          "Kurs 2: Kompaktkurs Sa-So/unbesetzt",
           "en",
         ),
-      ).toBe(
-        "Advanced Dinghy Sailing: Course 2 (Intensive Course, Sat-Sun; guidance vacancy)",
-      );
+      ).toBe("Course 2 (Intensive Course, Sat-Sun; guidance vacancy)");
       expect(
         localizeWorkoutTitle(
-          "Jollensegeln für Fortgeschrittene: Kurs 4: Kompaktkurs Mo-Fr/unbesetzt",
+          "Kurs 4: Kompaktkurs Mo-Fr/unbesetzt",
           "ja",
         ),
-      ).toBe(
-        "中上級ディンギーセーリング：コース4（集中コース 月〜金／指導枠空きあり）",
-      );
+      ).toBe("コース4（集中コース 月〜金／指導枠空きあり）");
       expect(
         localizeWorkoutTitle(
-          "Jollensegeln für Fortgeschrittene: Kurs 5: Kompaktkurs Sa-So/unbesetzt",
+          "Kurs 5: Kompaktkurs Sa-So/unbesetzt",
           "ko",
         ),
-      ).toBe(
-        "중급 딩기 세일링: 코스 5 (집중 과정 토-일 / 지도 공석)",
-      );
+      ).toBe("코스 5 (집중 과정 토-일 / 지도 공석)");
       expect(
         localizeWorkoutTitle(
-          "Jollensegeln für Fortgeschrittene: Kurs 3: Kompaktkurs Sa-So",
+          "Kurs 3: Kompaktkurs Sa-So",
           "zh-CN",
         ),
-      ).toBe("小艇帆船进阶课程：第3期（强化班 周六至周日）");
+      ).toBe("第3期（强化班 周六至周日）");
       expect(
         localizeWorkoutTitle(
-          "Jollensegeln für Fortgeschrittene: Kurs 5: Kompaktkurs Sa-So/unbesetzt",
+          "Kurs 5: Kompaktkurs Sa-So/unbesetzt",
           "zh-CN",
         ),
-      ).toBe("小艇帆船进阶课程：第5期（强化班 周六至周日／指导空缺）");
+      ).toBe("第5期（强化班 周六至周日／指导空缺）");
     });
   });
 
-  describe("Given an international sailing course title marked as '/ unbesetzt'", () => {
-    const source = "Yacht International Center: International Sailing Course/ unbesetzt";
+  describe("Given direct title-map entries for sailing labels", () => {
+    test("then base labels use explicit mappings instead of generic grouping rules", () => {
+      expect(localizeWorkoutTitle("kompakt", "en")).toBe("Intensive Course");
+      expect(localizeWorkoutTitle("mit mehreren Yachten: adh", "en")).toBe(
+        "with Several Yachts: adh",
+      );
+      expect(localizeWorkoutTitle("Inklusives Segeln", "en")).toBe(
+        "Inclusive Sailing",
+      );
+      expect(localizeWorkoutTitle("Anfänger*innenkurs", "en")).toBe(
+        "Beginners Course",
+      );
+      expect(localizeWorkoutTitle("dienstags", "en")).toBe("Tuesdays");
+      expect(localizeWorkoutTitle("donnerstags", "en")).toBe("Thursdays");
+      expect(localizeWorkoutTitle("mittwochs", "en")).toBe("Wednesdays");
+      expect(localizeWorkoutTitle("montags", "en")).toBe("Mondays");
+      expect(localizeWorkoutTitle("Kurs", "en")).toBe("Course");
+      expect(localizeWorkoutTitle("Spi A Kurs", "en")).toBe("Spi A Course");
+      expect(localizeWorkoutTitle("Spi F Kurs", "en")).toBe("Spi F Course");
+    });
+  });
+
+  describe("Given an international sailing course title fragment marked as '/ unbesetzt'", () => {
+    const source = "International Sailing Course/ unbesetzt";
 
     test("then it uses guidance-vacancy wording instead of a generic vacancy label", () => {
       expect(localizeWorkoutTitle(source, "en")).toBe(
-        "Yacht International Center: International Sailing Course / guidance vacancy",
+        "International Sailing Course / guidance vacancy",
       );
       expect(localizeWorkoutTitle(source, "ja")).toBe(
-        "ヨット国際センター：国際セーリングコース／指導枠空きあり",
+        "国際セーリングコース／指導枠空きあり",
       );
       expect(localizeWorkoutTitle(source, "ko")).toBe(
-        "요트 국제센터: 국제 세일링 코스 / 지도 공석",
+        "국제 세일링 코스 / 지도 공석",
       );
       expect(localizeWorkoutTitle(source, "zh-CN")).toBe(
-        "游艇国际中心：国际帆船课程／指导空缺",
+        "国际帆船课程／指导空缺",
       );
     });
   });

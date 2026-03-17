@@ -31,12 +31,14 @@ export type WorkoutCategoryPage = {
 export const UNCATEGORIZED_LABEL = "Uncategorized";
 export const CATEGORY_INDEX_PATH = "docs/workouts";
 
+const categoryAliases: Record<string, string> = {
+  "Gesellschaftstanz Semestergebühr": "Semestergebühr",
+  "Kanu-/Rudersport Semestergebühr": "Semestergebühr",
+};
+
 function normalizeCategory(category: string | null): string {
-  const trimmed = category?.trim() || UNCATEGORIZED_LABEL;
-  if (trimmed.startsWith("Ballett")) {
-    return "Ballett";
-  }
-  return trimmed;
+  const normalized = category?.trim() || UNCATEGORIZED_LABEL;
+  return categoryAliases[normalized] ?? normalized;
 }
 
 function slugifyCategory(category: string): string {
@@ -50,33 +52,7 @@ function slugifyCategory(category: string): string {
 }
 
 function normalizeTitleGroupKey(title: string): string {
-  return title
-    // Remove only the number and optional day from Kurs/Wochenende/Course suffixes: "Course 1: Mo" -> "Course"
-    .replace(
-      /(\s*(?:Kurs|Wochenende|Course))\s+\d+(?:\s*[:]\s*(?:Mo|Di|Mi|Do|Fr|Sa|So|Mon|Tue|Wed|Thu|Fri|Sat|Sun))?$/iu,
-      "$1",
-    )
-    // Remove group/day suffixes like "Gruppe Di", "Gruppe Sa/So", or "Gruppe Mi unbesetzt"
-    .replace(
-      /\s+Gruppe\s+(?:Mo|Di|Mi|Do|Fr|Sa|So|Mon|Tue|Wed|Thu|Fri|Sat|Sun)(?:\/|\\)?(?:Mo|Di|Mi|Do|Fr|Sa|So|Mon|Tue|Wed|Thu|Fri|Sat|Sun)?(?:\s+unbesetzt)?$/iu,
-      "",
-    )
-    // Remove time ranges: "Di 19.10 - 20.10 Uhr" or "10:00-11:00"
-    .replace(
-      /\s+(?:Mo|Di|Mi|Do|Fr|Sa|So|Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\s*\d{1,2}[:.]\d{2}\s*-\s*\d{1,2}[:.]\d{2}\s*(?:Uhr)?$/iu,
-      "",
-    )
-    // Remove simple day + number suffixes: ": Mi 12", " Di 13"
-    .replace(
-      /[:\s]+(?:Mo|Di|Mi|Do|Fr|Sa|So|Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\s*\d{1,2}$/iu,
-      "",
-    )
-    // Remove full German weekday suffixes: "montags", "dienstags", etc.
-    .replace(
-      /\s+(?:montags|dienstags|mittwochs|donnerstags|freitags|samstags|sonntags)$/iu,
-      "",
-    )
-    .trim();
+  return title.trim();
 }
 
 function normalizeLocations(location: string[] | string | null | undefined): string[] {
@@ -87,6 +63,36 @@ function normalizeLocations(location: string[] | string | null | undefined): str
     .filter(Boolean);
 }
 
+function normalizeText(value: string | null | undefined): string | undefined {
+  const trimmed = value?.trim();
+  return trimmed ? trimmed : undefined;
+}
+
+function normalizeDetails(
+  description: WorkoutDetailRecord["description"],
+): WorkoutDetailRecord["description"] | undefined {
+  const general = normalizeText(description?.general);
+  const price = normalizeText(description?.price);
+
+  if (!general && !price) {
+    return undefined;
+  }
+
+  return { general, price };
+}
+
+function normalizePrice(
+  price: WorkoutDetailRecord["price"] | null | undefined,
+): WorkoutDetailRecord["price"] | undefined {
+  if (!price) return undefined;
+
+  const normalized = Object.fromEntries(
+    Object.entries(price).filter(([, value]) => value != null),
+  ) as WorkoutDetailRecord["price"];
+
+  return Object.keys(normalized).length > 0 ? normalized : undefined;
+}
+
 function normalizeDetail(record: WorkoutDetailRecord): WorkoutDetailItem {
   const {
     bookingUrl: _legacyBookingUrl,
@@ -95,12 +101,20 @@ function normalizeDetail(record: WorkoutDetailRecord): WorkoutDetailItem {
   } = record as WorkoutDetailRecord & {
     bookingUrl?: string | null;
     location?: string[] | string | null;
+    description?: WorkoutDetailRecord["description"] | string | null;
   };
+
+  const legacyDescription =
+    typeof record.description === "string"
+      ? { general: record.description }
+      : record.description;
 
   return {
     ...rest,
     category: normalizeCategory(record.category),
+    description: normalizeDetails(legacyDescription),
     location: normalizeLocations(location),
+    price: normalizePrice(record.price),
   };
 }
 
@@ -121,13 +135,49 @@ const WEEKDAY_ORDER: Record<string, number> = {
   Sun: 7,
 };
 
+const naturalTitleCollator = new Intl.Collator("de", {
+  numeric: true,
+  sensitivity: "base",
+});
+
+const TITLE_WEEKDAY_ORDER: Array<[RegExp, number]> = [
+  [/\b(?:Mon|Mo)\b|周一|月曜日|月曜|月/, 1],
+  [/\b(?:Tue|Di)\b|周二|火曜日|火曜|火/, 2],
+  [/\b(?:Wed|Mi)\b|周三|水曜日|水曜|水/, 3],
+  [/\b(?:Thu|Do)\b|周四|木曜日|木曜|木/, 4],
+  [/\b(?:Fri|Fr)\b|周五|金曜日|金曜|金/, 5],
+  [/\b(?:Sat|Sa)\b|周六|土曜日|土曜|土/, 6],
+  [/\b(?:Sun|So)\b|周日|日曜日|日曜|日/, 7],
+];
+
+function getTitleWeekdayOrder(title: string): number | null {
+  for (const [pattern, order] of TITLE_WEEKDAY_ORDER) {
+    if (pattern.test(title)) return order;
+  }
+  return null;
+}
+
+function compareTitleGroups(left: string, right: string): number {
+  const leftWeekday = getTitleWeekdayOrder(left);
+  const rightWeekday = getTitleWeekdayOrder(right);
+
+  if (leftWeekday != null && rightWeekday != null && leftWeekday !== rightWeekday) {
+    return leftWeekday - rightWeekday;
+  }
+
+  if (leftWeekday != null && rightWeekday == null) return -1;
+  if (leftWeekday == null && rightWeekday != null) return 1;
+
+  return naturalTitleCollator.compare(left, right);
+}
+
 function buildTitleGroups(items: WorkoutDetailItem[]): WorkoutTitleGroup[] {
   const grouped = Object.groupBy(items, (item) =>
     normalizeTitleGroupKey(item.title),
   ) as Record<string, WorkoutDetailItem[]>;
 
   return Object.keys(grouped)
-    .sort((left, right) => left.localeCompare(right))
+    .sort(compareTitleGroups)
     .map((title) => {
       const groupItems = grouped[title] ?? [];
 

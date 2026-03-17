@@ -22,9 +22,11 @@ const detailRecords: Record<string, WorkoutDetailRecord> = {
     instructor: "Alex",
     startDate: "2026-04-01",
     endDate: "2026-06-30",
-    priceStudent: 10,
-    priceStaff: 20,
-    priceExternal: 30,
+    price: {
+      student: 10,
+      staff: 20,
+      external: 30,
+    },
     bookingStatus: "available",
     semester: "Summer 2026",
   },
@@ -41,9 +43,11 @@ const detailRecords: Record<string, WorkoutDetailRecord> = {
     instructor: "Taylor",
     startDate: "2026-04-02",
     endDate: "2026-07-01",
-    priceStudent: 11,
-    priceStaff: 21,
-    priceExternal: 31,
+    price: {
+      student: 11,
+      staff: 21,
+      external: 31,
+    },
     bookingStatus: "waitlist",
     semester: "Summer 2026",
   },
@@ -60,26 +64,29 @@ const detailRecords: Record<string, WorkoutDetailRecord> = {
     instructor: "Jordan",
     startDate: "2026-04-03",
     endDate: "2026-06-20",
-    priceStudent: 5,
-    priceStaff: 8,
-    priceExternal: 12,
+    price: {
+      student: 5,
+      staff: 8,
+      external: 12,
+    },
     bookingStatus: "available",
     semester: "Summer 2026",
   },
 };
 
 describe("workouts detail catalog transformations", () => {
-  test("groups detail records by category and then by exact title", () => {
+  test("keeps detail records grouped by category and exact title", () => {
     const catalog = buildWorkoutDetailCatalog(detailRecords);
 
     expect(catalog.categories).toEqual(["Dance", "Yoga"]);
     expect(catalog.groups.Yoga.titleGroups).toEqual([
       {
-        title: "Sunrise Yoga",
-        items: [
-          expect.objectContaining({ slug: "sunrise-yoga-a", instructor: "Alex" }),
-          expect.objectContaining({ slug: "sunrise-yoga-b", instructor: "Taylor" }),
-        ],
+        title: "Sunrise Yoga 08.00-09.00",
+        items: [expect.objectContaining({ slug: "sunrise-yoga-a", instructor: "Alex" })],
+      },
+      {
+        title: "Sunrise Yoga 10:00-11:00",
+        items: [expect.objectContaining({ slug: "sunrise-yoga-b", instructor: "Taylor" })],
       },
     ]);
     expect(catalog.groups.Dance.titleGroups).toEqual([
@@ -108,7 +115,36 @@ describe("workouts detail catalog transformations", () => {
     expect(catalog.groups.Dance.items[0]?.location).toEqual([]);
   });
 
-  test("groups Zumba with day and time suffixes correctly", () => {
+  test("normalizes structured details and falls back to the legacy description", () => {
+    const catalog = buildWorkoutDetailCatalog({
+      one: {
+        ...detailRecords.yogaA,
+        slug: "structured-details",
+        description: {
+          general: "  Bring indoor shoes  ",
+          price: "  Students: 10 EUR  ",
+        },
+      },
+      two: {
+        ...detailRecords.dance,
+        slug: "legacy-details-fallback",
+        description: {
+          general: "  No experience necessary  ",
+        },
+      },
+    });
+
+    expect(catalog.groups.Yoga.items[0]?.description).toEqual({
+      general: "Bring indoor shoes",
+      price: "Students: 10 EUR",
+    });
+    expect(catalog.groups.Dance.items[0]?.description).toEqual({
+      general: "No experience necessary",
+      price: undefined,
+    });
+  });
+
+  test("preserves titles that previously collapsed via generic grouping rules", () => {
     const records: Record<string, WorkoutDetailRecord> = {
       z1: {
         id: "z1",
@@ -121,88 +157,28 @@ describe("workouts detail catalog transformations", () => {
       z2: {
         id: "z2",
         slug: "z2",
-        title: "Zumba Di 20.20 - 21.20 Uhr",
-        provider: "UniSport",
-        category: "Dance",
-        schedule: [],
-      } as any,
-      z3: {
-        id: "z3",
-        slug: "z3",
-        title: "Zumba Do 18.10 - 19.10 Uhr",
-        provider: "UniSport",
-        category: "Dance",
-        schedule: [],
-      } as any,
-    };
-
-    const catalog = buildWorkoutDetailCatalog(records);
-    expect(catalog.groups.Dance.titleGroups).toHaveLength(1);
-    expect(catalog.groups.Dance.titleGroups[0].title).toBe("Zumba");
-    expect(catalog.groups.Dance.titleGroups[0].items).toHaveLength(3);
-  });
-
-  test("groups Yacht with colon, day and number suffixes correctly", () => {
-    const records: Record<string, WorkoutDetailRecord> = {
-      y1: {
-        id: "y1",
-        slug: "y1",
         title: "Yacht Anfänger*innen: Mi 12",
         provider: "UniSport",
         category: "Yacht",
         schedule: [],
       } as any,
-      y2: {
-        id: "y2",
-        slug: "y2",
-        title: "Yacht Anfänger*innen: Mi 13",
-        provider: "UniSport",
-        category: "Yacht",
-        schedule: [],
-      } as any,
-    };
-
-    const catalog = buildWorkoutDetailCatalog(records);
-    expect(catalog.groups.Yacht.titleGroups).toHaveLength(1);
-    expect(catalog.groups.Yacht.titleGroups[0].title).toBe("Yacht Anfänger*innen");
-    expect(catalog.groups.Yacht.titleGroups[0].items).toHaveLength(2);
-  });
-
-  test("groups Indoor Cycling with weekday suffixes correctly", () => {
-    const records: Record<string, WorkoutDetailRecord> = {
-      c1: {
-        id: "c1",
-        slug: "c1",
+      z3: {
+        id: "z3",
+        slug: "z3",
         title: "Indoor Cycling montags",
         provider: "UniSport",
         category: "Fitness",
         schedule: [],
       } as any,
-      c2: {
-        id: "c2",
-        slug: "c2",
-        title: "Indoor Cycling mittwochs",
-        provider: "UniSport",
-        category: "Fitness",
-        schedule: [],
-      } as any,
-      c3: {
-        id: "c3",
-        slug: "c3",
-        title: "Indoor Cycling donnerstags",
-        provider: "UniSport",
-        category: "Fitness",
-        schedule: [],
-      } as any,
     };
 
     const catalog = buildWorkoutDetailCatalog(records);
-    expect(catalog.groups.Fitness.titleGroups).toHaveLength(1);
-    expect(catalog.groups.Fitness.titleGroups[0].title).toBe("Indoor Cycling");
-    expect(catalog.groups.Fitness.titleGroups[0].items).toHaveLength(3);
+    expect(catalog.groups.Dance.titleGroups[0].title).toBe("Zumba Di 19.10 - 20.10 Uhr");
+    expect(catalog.groups.Yacht.titleGroups[0].title).toBe("Yacht Anfänger*innen: Mi 12");
+    expect(catalog.groups.Fitness.titleGroups[0].title).toBe("Indoor Cycling montags");
   });
 
-  test("sorts items within a title group by schedule (day and time)", () => {
+  test("keeps separate exact-title groups when schedules differ by title", () => {
     const records: Record<string, WorkoutDetailRecord> = {
       s3: {
         id: "s3",
@@ -231,14 +207,14 @@ describe("workouts detail catalog transformations", () => {
     };
 
     const catalog = buildWorkoutDetailCatalog(records);
-    const items = catalog.groups.Fitness.titleGroups[0].items;
-
-    expect(items[0].id).toBe("s1"); // Tue
-    expect(items[1].id).toBe("s2"); // Thu 09:30
-    expect(items[2].id).toBe("s3"); // Thu 13:15
+    expect(catalog.groups.Fitness.titleGroups.map((group) => group.title)).toEqual([
+      "Workout Thu 09:30-12:30",
+      "Workout Thu 13:15-16:15",
+      "Workout Tue 09:30-12:30",
+    ]);
   });
 
-  test("groups Sportbootführerschein with Gruppe and unbesetzt suffixes correctly", () => {
+  test("keeps group and course suffix titles as separate title groups", () => {
     const records: Record<string, WorkoutDetailRecord> = {
       b1: {
         id: "b1",
@@ -256,81 +232,6 @@ describe("workouts detail catalog transformations", () => {
         category: "Services",
         schedule: [],
       } as any,
-      b3: {
-        id: "b3",
-        slug: "b3",
-        title: "Sportbootführerschein See Gruppe Sa/So",
-        provider: "UniSport",
-        category: "Services",
-        schedule: [],
-      } as any,
-    };
-
-    const catalog = buildWorkoutDetailCatalog(records);
-    expect(catalog.groups.Services.titleGroups).toHaveLength(1);
-    expect(catalog.groups.Services.titleGroups[0].title).toBe(
-      "Sportbootführerschein See",
-    );
-  });
-
-  test("groups titles with 'Kurs [number]' suffixes correctly", () => {
-    const records: Record<string, WorkoutDetailRecord> = {
-      w1: {
-        id: "w1",
-        slug: "w1",
-        title: "Windsurfen Einsteiger*innen kompakt Kurs 1",
-        provider: "UniSport",
-        category: "Windsurf",
-        schedule: [],
-      } as any,
-      w2: {
-        id: "w2",
-        slug: "w2",
-        title: "Windsurfen Einsteiger*innen kompakt Kurs 6",
-        provider: "UniSport",
-        category: "Windsurf",
-        schedule: [],
-      } as any,
-    };
-
-    const catalog = buildWorkoutDetailCatalog(records);
-    expect(catalog.groups.Windsurf.titleGroups).toHaveLength(1);
-    expect(catalog.groups.Windsurf.titleGroups[0].title).toBe(
-      "Windsurfen Einsteiger*innen kompakt Kurs",
-    );
-  });
-
-  test("groups titles with 'Wochenende [number]' suffixes correctly", () => {
-    const records: Record<string, WorkoutDetailRecord> = {
-      w1: {
-        id: "w1",
-        slug: "w1",
-        title: "Windsurfen Einsteiger*innen Wochenende 1",
-        provider: "UniSport",
-        category: "Windsurf",
-        schedule: [],
-      } as any,
-      w2: {
-        id: "w2",
-        slug: "w2",
-        title: "Windsurfen Einsteiger*innen Wochenende Wochenende 2",
-        provider: "UniSport",
-        category: "Windsurf",
-        schedule: [],
-      } as any,
-    };
-
-    const catalog = buildWorkoutDetailCatalog(records);
-    // Note: the second one has double "Wochenende", we keep one via the regex if it ends with space number.
-    // Actually the regex (\s+(?:Kurs|Wochenende))\s+\d+$ will match the last one.
-    expect(catalog.groups.Windsurf.titleGroups).toHaveLength(2);
-    expect(catalog.groups.Windsurf.titleGroups[0].title).toBe(
-      "Windsurfen Einsteiger*innen Wochenende",
-    );
-  });
-
-  test("groups English Course titles with number and day suffixes correctly", () => {
-    const records: Record<string, WorkoutDetailRecord> = {
       w1: {
         id: "w1",
         slug: "w1",
@@ -350,40 +251,197 @@ describe("workouts detail catalog transformations", () => {
     };
 
     const catalog = buildWorkoutDetailCatalog(records);
-    expect(catalog.groups.Windsurf.titleGroups).toHaveLength(1);
-    expect(catalog.groups.Windsurf.titleGroups[0].title).toBe(
-      "Windsurfing for Beginners 5x3h Course",
-    );
+    expect(catalog.groups.Services.titleGroups.map((group) => group.title)).toEqual([
+      "Sportbootführerschein See Gruppe Di",
+      "Sportbootführerschein See Gruppe Mi unbesetzt",
+    ]);
+    expect(catalog.groups.Windsurf.titleGroups.map((group) => group.title)).toEqual([
+      "Windsurfing for Beginners 5x3h Course 1: Mo",
+      "Windsurfing for Beginners 5x3h Course 2: Mi",
+    ]);
   });
 
-  test("groups titles with colon-prefixed 'Kurs [number]' suffixes correctly", () => {
+  test("sorts numbered title groups in natural numeric order", () => {
     const records: Record<string, WorkoutDetailRecord> = {
-      w1: {
-        id: "w1",
-        slug: "w1",
-        title: "Windsurfen Fortgeschrittene Fortgeschrittene 5*3h: Kurs 1",
+      c10: {
+        id: "c10",
+        slug: "c10",
+        title: "Anfänger*innenkurs 10",
         provider: "UniSport",
-        category: "Windsurf",
+        category: "Sailing",
         schedule: [],
       } as any,
-      w2: {
-        id: "w2",
-        slug: "w2",
-        title: "Windsurfen Fortgeschrittene Fortgeschrittene 5*3h: Kurs 2",
+      c2: {
+        id: "c2",
+        slug: "c2",
+        title: "Anfänger*innenkurs 2",
         provider: "UniSport",
-        category: "Windsurf",
+        category: "Sailing",
+        schedule: [],
+      } as any,
+      c1: {
+        id: "c1",
+        slug: "c1",
+        title: "Anfänger*innenkurs 1",
+        provider: "UniSport",
+        category: "Sailing",
         schedule: [],
       } as any,
     };
 
     const catalog = buildWorkoutDetailCatalog(records);
-    expect(catalog.groups.Windsurf.titleGroups).toHaveLength(1);
-    expect(catalog.groups.Windsurf.titleGroups[0].title).toBe(
-      "Windsurfen Fortgeschrittene Fortgeschrittene 5*3h: Kurs",
-    );
+    expect(catalog.groups.Sailing.titleGroups.map((group) => group.title)).toEqual([
+      "Anfänger*innenkurs 1",
+      "Anfänger*innenkurs 2",
+      "Anfänger*innenkurs 10",
+    ]);
   });
 
-  test("groups different Ballett variants into a single Ballett category", () => {
+  test("sorts localized weekday titles by weekday before number", () => {
+    const records: Record<string, WorkoutDetailRecord> = {
+      tue1: {
+        id: "tue1",
+        slug: "tue1",
+        title: "基尔周 周二 1",
+        provider: "UniSport",
+        category: "Sailing",
+        schedule: [],
+      } as any,
+      tue2: {
+        id: "tue2",
+        slug: "tue2",
+        title: "基尔周 周二 2",
+        provider: "UniSport",
+        category: "Sailing",
+        schedule: [],
+      } as any,
+      thu1: {
+        id: "thu1",
+        slug: "thu1",
+        title: "基尔周 周四 1",
+        provider: "UniSport",
+        category: "Sailing",
+        schedule: [],
+      } as any,
+      thu2: {
+        id: "thu2",
+        slug: "thu2",
+        title: "基尔周 周四 2",
+        provider: "UniSport",
+        category: "Sailing",
+        schedule: [],
+      } as any,
+      fri1: {
+        id: "fri1",
+        slug: "fri1",
+        title: "基尔周 周五 1",
+        provider: "UniSport",
+        category: "Sailing",
+        schedule: [],
+      } as any,
+      fri2: {
+        id: "fri2",
+        slug: "fri2",
+        title: "基尔周 周五 2",
+        provider: "UniSport",
+        category: "Sailing",
+        schedule: [],
+      } as any,
+      wed1: {
+        id: "wed1",
+        slug: "wed1",
+        title: "基尔周 周三 1",
+        provider: "UniSport",
+        category: "Sailing",
+        schedule: [],
+      } as any,
+      wed2: {
+        id: "wed2",
+        slug: "wed2",
+        title: "基尔周 周三 2",
+        provider: "UniSport",
+        category: "Sailing",
+        schedule: [],
+      } as any,
+      mon1: {
+        id: "mon1",
+        slug: "mon1",
+        title: "基尔周 周一 1",
+        provider: "UniSport",
+        category: "Sailing",
+        schedule: [],
+      } as any,
+      mon2: {
+        id: "mon2",
+        slug: "mon2",
+        title: "基尔周 周一 2",
+        provider: "UniSport",
+        category: "Sailing",
+        schedule: [],
+      } as any,
+    };
+
+    const catalog = buildWorkoutDetailCatalog(records);
+    expect(catalog.groups.Sailing.titleGroups.map((group) => group.title)).toEqual([
+      "基尔周 周一 1",
+      "基尔周 周一 2",
+      "基尔周 周二 1",
+      "基尔周 周二 2",
+      "基尔周 周三 1",
+      "基尔周 周三 2",
+      "基尔周 周四 1",
+      "基尔周 周四 2",
+      "基尔周 周五 1",
+      "基尔周 周五 2",
+    ]);
+  });
+
+  test("sorts localized English weekday titles by weekday before time", () => {
+    const records: Record<string, WorkoutDetailRecord> = {
+      thu1: {
+        id: "thu1",
+        slug: "thu1",
+        title: "Thursdays 16:15–17:00",
+        provider: "UniSport",
+        category: "Fitness",
+        schedule: [],
+      } as any,
+      thu2: {
+        id: "thu2",
+        slug: "thu2",
+        title: "Thursdays 17:15–18:00",
+        provider: "UniSport",
+        category: "Fitness",
+        schedule: [],
+      } as any,
+      mon1: {
+        id: "mon1",
+        slug: "mon1",
+        title: "Mondays 16:15–17:00",
+        provider: "UniSport",
+        category: "Fitness",
+        schedule: [],
+      } as any,
+      mon2: {
+        id: "mon2",
+        slug: "mon2",
+        title: "Mondays 17:15–18:00",
+        provider: "UniSport",
+        category: "Fitness",
+        schedule: [],
+      } as any,
+    };
+
+    const catalog = buildWorkoutDetailCatalog(records);
+    expect(catalog.groups.Fitness.titleGroups.map((group) => group.title)).toEqual([
+      "Mondays 16:15–17:00",
+      "Mondays 17:15–18:00",
+      "Thursdays 16:15–17:00",
+      "Thursdays 17:15–18:00",
+    ]);
+  });
+
+  test("keeps different Ballett variants as separate categories", () => {
     const records: Record<string, WorkoutDetailRecord> = {
       b1: {
         id: "b1",
@@ -404,8 +462,10 @@ describe("workouts detail catalog transformations", () => {
     };
 
     const catalog = buildWorkoutDetailCatalog(records);
-    expect(catalog.categories).toContain("Ballett");
-    expect(catalog.groups.Ballett.titleGroups).toHaveLength(2);
+    expect(catalog.categories).toContain("Ballett, American Technique");
+    expect(catalog.categories).toContain("Ballett, klassisches Ballett");
+    expect(catalog.groups["Ballett, American Technique"].titleGroups).toHaveLength(1);
+    expect(catalog.groups["Ballett, klassisches Ballett"].titleGroups).toHaveLength(1);
   });
 
   test("builds sidebar/page metadata from detail category groups", () => {
@@ -439,6 +499,18 @@ describe("workouts detail catalog transformations", () => {
     expect(getCategoryLabel("zh-CN", "Calisthenics")).toBe("街头健身");
     expect(getCategoryLabel("zh-CN", "Yachtsegeln Inklusion")).toBe("融合游艇帆船");
     expect(getCategoryLabel("zh-CN", "Ballett, American Technique")).toBe("芭蕾，美式技巧");
+    expect(getCategoryLabel("en", "Schwimmen für SL")).toBe("Swimming for SL");
+    expect(getCategoryLabel("en", "Erwachsene")).toBe("Adults");
+    expect(getCategoryLabel("ja", "öff. Schwimmbetrieb")).toBe("一般開放遊泳");
+    expect(getCategoryLabel("ko", "Uni Wettkampf Mannschaft")).toBe("대학 경기 팀");
+    expect(getCategoryLabel("en", "für Anfänger*innen")).toBe("for Beginners");
+    expect(getCategoryLabel("zh-CN", "Ballett")).toBe("芭蕾");
+    expect(getCategoryLabel("ja", "Yacht Segeltörns mit \"Iuventa\"")).toBe(
+      "\"Iuventa\" でのヨットセーリングツアー",
+    );
+    expect(getCategoryLabel("ko", "Warming up Mantra")).toBe(
+      "Mantra 워밍업",
+    );
     expect(getCategoryLabel("en", "Nonexistent Category")).toBe("Nonexistent Category");
     expect(getCategoryLabel("ja", "Nonexistent Category")).toBe("Nonexistent Category");
     expect(getCategoryLabel("ko", "Nonexistent Category")).toBe("Nonexistent Category");
@@ -573,7 +645,7 @@ describe("workouts detail catalog transformations", () => {
           { text: "Salsa", link: "/en/workouts/salsa" },
           { text: "Social Dance", link: "/en/workouts/gesellschaftstanz" },
           {
-            text: "Standard and Latin",
+            text: "Tanzsport, Standard und Latein",
             link: "/en/workouts/tanzsport-standard-und-latein",
           },
           { text: "Zumba", link: "/en/workouts/zumba" },
@@ -594,10 +666,10 @@ describe("workouts detail catalog transformations", () => {
       },
       {
         collapsed: false,
-        text: "Dinghy Sailing",
+        text: "Jollensegeln",
         items: [
           { text: "Open Dinghy Sailing", link: "/en/workouts/freies-jollensegeln" },
-          { text: "Placement Sailing", link: "/en/workouts/jollen-einstufungssegeln" },
+          { text: "Dinghy Placement Sailing", link: "/en/workouts/jollen-einstufungssegeln" },
         ],
       },
       {
@@ -631,7 +703,7 @@ describe("workouts detail catalog transformations", () => {
         text: "Swimming",
         items: [
           { text: "Aqua Jogging", link: "/en/workouts/aqua-jogging" },
-          { text: "Children", link: "/en/workouts/schwimmkurse-kinder" },
+          { text: "Children's Swimming Courses", link: "/en/workouts/schwimmkurse-kinder" },
           { text: "Swimming", link: "/en/workouts/schwimmen" },
         ],
       },
@@ -660,23 +732,131 @@ describe("workouts detail catalog transformations", () => {
         collapsed: false,
         text: "Yacht",
         items: [
-          { text: "For Women", link: "/en/workouts/yachtsegeln-fur-frauen" },
-          { text: "Inclusion", link: "/en/workouts/yachtsegeln-inklusion" },
-          { text: "Two-Handed", link: "/en/workouts/yachtsegeln-zweihand" },
+          { text: "Yacht Sailing for Women", link: "/en/workouts/yachtsegeln-fur-frauen" },
+          { text: "Inclusive Yacht Sailing", link: "/en/workouts/yachtsegeln-inklusion" },
+          { text: "Two-Handed Yacht Sailing", link: "/en/workouts/yachtsegeln-zweihand" },
         ],
       },
       {
         collapsed: false,
         text: "Yoga",
         items: [
-          { text: "Aerial Yoga", link: "/en/workouts/yoga-aerial-yoga" },
-          { text: "Hatha Yoga", link: "/en/workouts/yoga-hatha-yoga" },
+          { text: "Yoga, Aerial Yoga", link: "/en/workouts/yoga-aerial-yoga" },
+          { text: "Yoga, Hatha Yoga", link: "/en/workouts/yoga-hatha-yoga" },
           {
-            text: "Hatha Yoga (Preventive Sport)",
+            text: "Yoga – Hatha Yoga (Certified Health Programme)",
             link: "/en/workouts/yoga-hatha-yoga-praventionssport",
           },
-          { text: "Vinyasa", link: "/en/workouts/yoga-vinyasa" },
-          { text: "Wake Up Yoga", link: "/en/workouts/yoga-wake-up-yoga" },
+          { text: "Yoga, Vinyasa", link: "/en/workouts/yoga-vinyasa" },
+          { text: "Yoga, Wake Up Yoga", link: "/en/workouts/yoga-wake-up-yoga" },
+        ],
+      },
+    ]);
+  });
+
+  test("merges specific semester-fee categories into the Semestergebühr page", () => {
+    const catalog = buildWorkoutDetailCatalog({
+      danceFee: {
+        id: "dance-fee",
+        slug: "dance-fee",
+        title: "Gesellschaftstanz Semestergebühr",
+        provider: "UniSport",
+        category: "Gesellschaftstanz Semestergebühr",
+        description: null,
+        schedule: [],
+        location: null,
+        url: null,
+      },
+      canoeFee: {
+        id: "canoe-fee",
+        slug: "canoe-fee",
+        title: "Kanu-/Rudersport Semestergebühr",
+        provider: "UniSport",
+        category: "Kanu-/Rudersport Semestergebühr",
+        description: null,
+        schedule: [],
+        location: null,
+        url: null,
+      },
+      genericFee: {
+        id: "generic-fee",
+        slug: "generic-fee",
+        title: "Semestergebühr",
+        provider: "UniSport",
+        category: "Semestergebühr",
+        description: null,
+        schedule: [],
+        location: null,
+        url: null,
+      },
+    });
+
+    expect(catalog.categories).toEqual(["Semestergebühr"]);
+    expect(catalog.groups.Semestergebühr.items).toHaveLength(3);
+    expect(catalog.groups.Semestergebühr.items.map((item) => item.slug)).toEqual([
+      "dance-fee",
+      "canoe-fee",
+      "generic-fee",
+    ]);
+  });
+
+  test("keeps Jollen Regatta CAU as its own category page", () => {
+    const catalog = buildWorkoutDetailCatalog({
+      regattaCau: {
+        id: "regatta-cau",
+        slug: "regatta-cau",
+        title: "Jollen Regatta CAU",
+        provider: "UniSport",
+        category: "Jollen Regatta CAU",
+        description: null,
+        schedule: [],
+        location: null,
+        url: null,
+      },
+      regattaTraining: {
+        id: "regatta-training",
+        slug: "regatta-training",
+        title: "Jollen Regattatraining",
+        provider: "UniSport",
+        category: "Jollen Regattatraining",
+        description: null,
+        schedule: [],
+        location: null,
+        url: null,
+      },
+    });
+
+    expect(catalog.categories).toEqual([
+      "Jollen Regatta CAU",
+      "Jollen Regattatraining",
+    ]);
+    expect(catalog.groups["Jollen Regatta CAU"].items.map((item) => item.slug)).toEqual([
+      "regatta-cau",
+    ]);
+    expect(catalog.groups["Jollen Regattatraining"].items.map((item) => item.slug)).toEqual([
+      "regatta-training",
+    ]);
+  });
+
+  test("groups Jollen Regatta CAU into the Jollensegeln family", () => {
+    expect(
+      localizeSidebarItems("en", [
+        { text: "Jollen Regatta CAU", link: "/en/workouts/jollen-regatta-cau" },
+        {
+          text: "Jollen Regattatraining",
+          link: "/en/workouts/jollen-regattatraining",
+        },
+      ]),
+    ).toEqual([
+      {
+        collapsed: false,
+        text: "Dinghy Sailing",
+        items: [
+          { text: "CAU Dinghy Regatta", link: "/en/workouts/jollen-regatta-cau" },
+          {
+            text: "Dinghy Regatta Training",
+            link: "/en/workouts/jollen-regattatraining",
+          },
         ],
       },
     ]);
@@ -723,7 +903,7 @@ describe("workouts detail catalog transformations", () => {
       {
         collapsed: false,
         text: "瑜伽",
-        items: [{ text: "空中瑜伽", link: "/zh-cn/workouts/yoga-aerial-yoga" }],
+        items: [{ text: "瑜伽, 空中瑜伽", link: "/zh-cn/workouts/yoga-aerial-yoga" }],
       },
     ]);
   });
@@ -753,7 +933,7 @@ describe("workouts detail catalog transformations", () => {
       {
         collapsed: false,
         text: "ヨガ",
-        items: [{ text: "エアリアルヨガ", link: "/ja/workouts/yoga-aerial-yoga" }],
+        items: [{ text: "ヨガ, エアリアルヨガ", link: "/ja/workouts/yoga-aerial-yoga" }],
       },
     ]);
 
@@ -781,7 +961,25 @@ describe("workouts detail catalog transformations", () => {
       {
         collapsed: false,
         text: "요가",
-        items: [{ text: "에어리얼 요가", link: "/ko/workouts/yoga-aerial-yoga" }],
+        items: [{ text: "요가, 에어리얼 요가", link: "/ko/workouts/yoga-aerial-yoga" }],
+      },
+    ]);
+  });
+
+  test("groups Bouldering into the Klettern family", () => {
+    expect(
+      localizeSidebarItems("en", [
+        { text: "Bouldering", link: "/en/workouts/bouldering" },
+        { text: "Klettern", link: "/en/workouts/klettern" },
+      ]),
+    ).toEqual([
+      {
+        collapsed: false,
+        text: "Climbing",
+        items: [
+          { text: "Bouldering", link: "/en/workouts/bouldering" },
+          { text: "Climbing", link: "/en/workouts/klettern" },
+        ],
       },
     ]);
   });

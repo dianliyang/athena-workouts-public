@@ -21,21 +21,29 @@ export type WorkoutDetailResponse = {
   title: string;
   provider: string;
   category: string | null;
-  description: string | null;
+  description: {
+    general?: string | null;
+    price?: string | null;
+  } | null;
+  price?: {
+    student?: number | null;
+    staff?: number | null;
+    external?: number | null;
+    externalReduced?: number | null;
+    adults?: number | null;
+    children?: number | null;
+    discount?: number | null;
+  };
   schedule: Array<{
     day: string;
     time: string;
     location: string;
   }>;
-  location: string[];
+  location: string[] | null;
   url: string | null;
   instructor?: string;
   startDate?: string;
   endDate?: string;
-  priceStudent?: number | null;
-  priceStaff?: number | null;
-  priceExternal?: number | null;
-  priceExternalReduced?: number | null;
   bookingStatus?: string;
   semester?: string;
   isEntgeltfrei?: boolean;

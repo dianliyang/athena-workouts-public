@@ -59,7 +59,9 @@ const detail = {
     title: "Spin Intervals",
     provider: "UniSport",
     category: "Cycling",
-    description: "High-intensity interval training on stationary bikes.",
+    description: {
+      general: "High-intensity interval training on stationary bikes.",
+    },
     schedule: ["Monday 18:00-19:00"],
     location: ["Studio A"],
     url: "https://example.com/workouts/spin",

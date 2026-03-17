@@ -1,17 +1,191 @@
+:root {
+  --vp-c-brand-1: #4f86e8;
+  --vp-c-brand-2: #3b82f6;
+  --vp-c-brand-3: #2f6fda;
+  --vp-c-brand-soft: rgba(79, 134, 232, 0.14);
+  --vp-c-text-1: #0f172a;
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(
+    120deg,
+    #0f172a 0%,
+    #274d8f 32%,
+    #3b82f6 68%,
+    #7daaf7 100%
+  );
+  --vp-home-hero-image-background-image:
+    radial-gradient(circle at 50% 45%, rgba(59, 130, 246, 0.22) 0%, rgba(59, 130, 246, 0.11) 30%, rgba(47, 111, 218, 0.07) 54%, transparent 72%),
+    linear-gradient(135deg, rgba(15, 23, 42, 0.08), rgba(79, 134, 232, 0.08));
+  --vp-home-hero-image-filter: blur(40px);
+}
+
+.dark {
+  --vp-c-brand-1: #78a7f6;
+  --vp-c-brand-2: #5d92f5;
+  --vp-c-brand-3: #3b82f6;
+  --vp-c-brand-soft: rgba(120, 167, 246, 0.18);
+  --vp-c-text-1: #f8fafc;
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(
+    120deg,
+    #f8fafc 0%,
+    #b7cdf6 38%,
+    #78a7f6 66%,
+    #3b82f6 100%
+  );
+  --vp-home-hero-image-background-image:
+    radial-gradient(circle at 50% 45%, rgba(120, 167, 246, 0.24) 0%, rgba(93, 146, 245, 0.16) 34%, rgba(15, 23, 42, 0.14) 58%, transparent 74%),
+    linear-gradient(135deg, rgba(120, 167, 246, 0.1), rgba(15, 23, 42, 0.2));
+  --vp-home-hero-image-filter: blur(48px);
+}
+
+.sportkiel-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: #0f172a;
+}
+
+.sportkiel-logo svg {
+  display: block;
+  width: auto;
+  height: calc(var(--vp-nav-height) - 26px);
+  max-height: 2.4rem;
+  overflow: visible;
+  flex: 0 0 auto;
+}
+
+.sportkiel-logo-mark {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 16;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.sportkiel-logo-wave {
+  fill: none;
+  stroke: #3b82f6;
+  stroke-width: 16;
+  stroke-linecap: round;
+}
+
+.sportkiel-logo-text {
+  color: currentColor;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
 .workout-group-provider {
   color: #6b7280;
   font-size: 0.95rem;
   margin: -0.35rem 0 1rem;
 }
 
-.workout-page-header-meta {
-  margin: -0.35rem 0 1rem;
+.workout-page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.workout-page-title {
+  margin: 0;
+}
+
+.vp-doc .workout-page-wikipedia,
+.vp-doc .workout-page-wikipedia:hover {
+  text-decoration: none;
 }
 
 .workout-page-wikipedia {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  color: var(--vp-c-text-2);
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.workout-page-wikipedia:hover {
+  border-color: var(--vp-c-brand-1);
   color: var(--vp-c-brand-1);
-  font-size: 0.95rem;
-  font-weight: 500;
+  background: var(--vp-c-bg-soft);
+}
+
+.workout-page-wikipedia:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
+.workout-page-wikipedia-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.workout-page-wikipedia-wordmark {
+  height: 0.95rem;
+  width: auto;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.VPHomeHero .image-container {
+  overflow: visible;
+}
+
+.VPHomeHero .image-bg {
+  width: 236px;
+  height: 236px;
+}
+
+.VPHomeHero :deep(.image-src) {
+  max-width: 224px;
+  max-height: 224px;
+  overflow: visible;
+}
+
+@media (min-width: 640px) {
+  .VPHomeHero .image-bg {
+    width: 312px;
+    height: 312px;
+  }
+
+  .VPHomeHero :deep(.image-src) {
+    max-width: 292px;
+    max-height: 292px;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPHomeHero .image-container {
+    transform: translate(-18px, -18px);
+  }
+
+  .VPHomeHero .image-bg {
+    width: 356px;
+    height: 356px;
+  }
+
+  .VPHomeHero :deep(.image-src) {
+    max-width: 336px;
+    max-height: 336px;
+  }
 }
 
 .workout-table {
@@ -212,6 +386,23 @@ a.workout-row:focus-visible {
 }
 
 @media (max-width: 640px) {
+  .sportkiel-logo {
+    gap: 0.55rem;
+  }
+
+  .sportkiel-logo svg {
+    height: calc(var(--vp-nav-height) - 28px);
+  }
+
+  .sportkiel-logo-text {
+    font-size: 0.94rem;
+  }
+
+  .workout-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .workout-row-top {
     flex-direction: column;
   }
@@ -242,8 +433,30 @@ a.workout-row:focus-visible {
   color: var(--vp-c-text-2);
 }
 
+.dark .sportkiel-logo {
+  color: #f8fafc;
+}
+
+.dark .sportkiel-logo-wave,
+.dark .sportkiel-logo-wave {
+  stroke: #60a5fa;
+}
+
 .dark .workout-page-wikipedia {
-  color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-border);
+  color: var(--vp-c-text-2);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.dark .workout-page-wikipedia:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-text-1);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dark .workout-page-wikipedia-icon,
+.dark .workout-page-wikipedia-wordmark {
+  filter: invert(1) brightness(1.15) contrast(0.95);
 }
 
 .dark .workout-row {

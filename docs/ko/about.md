@@ -1,6 +1,7 @@
 ---
 layout: doc
 title: 소개
+search: false
 ---
 
 # 소개

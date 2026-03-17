@@ -1,6 +1,7 @@
 ---
 layout: doc
 title: Über uns
+search: false
 ---
 
 # Über uns

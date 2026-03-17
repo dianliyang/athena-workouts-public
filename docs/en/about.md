@@ -1,6 +1,7 @@
 ---
 layout: doc
 title: About
+search: false
 ---
 
 # About

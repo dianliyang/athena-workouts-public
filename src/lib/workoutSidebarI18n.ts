@@ -27,6 +27,121 @@ export function getCategoryLabel(
   return getLocalizedLabel(workoutCategoryMap, locale, category);
 }
 
+const sidebarGroupLabelMap: Record<
+  string,
+  Partial<Record<SidebarLocale, string>>
+> = {
+  "Ball Sports": {
+    en: "Ball Sports",
+    de: "Ballsport",
+    ja: "球技",
+    ko: "구기 종목",
+    "zh-CN": "球类运动",
+  },
+  "Board Sports": {
+    en: "Board Sports",
+    de: "Boardsport",
+    ja: "ボードスポーツ",
+    ko: "보드 스포츠",
+    "zh-CN": "板类运动",
+  },
+  "Combat Sports": {
+    en: "Combat Sports",
+    de: "Kampfsport",
+    ja: "格闘技",
+    ko: "격투 스포츠",
+    "zh-CN": "武术搏击",
+  },
+  Dance: {
+    en: "Dance",
+    de: "Tanz",
+    ja: "ダンス",
+    ko: "댄스",
+    "zh-CN": "舞蹈",
+  },
+  Fitness: {
+    en: "Fitness",
+    de: "Fitness",
+    ja: "フィットネス",
+    ko: "피트니스",
+    "zh-CN": "健身",
+  },
+  Jollensegeln: {
+    en: "Dinghy Sailing",
+    de: "Jollensegeln",
+    ja: "ディンギーセーリング",
+    ko: "딩기 세일링",
+    "zh-CN": "小艇帆船",
+  },
+  "Kanu Sports": {
+    en: "Canoe Sports",
+    de: "Kanusport",
+    ja: "カヌースポーツ",
+    ko: "카누 스포츠",
+    "zh-CN": "皮划艇运动",
+  },
+  Klettern: {
+    en: "Climbing",
+    de: "Klettern",
+    ja: "クライミング",
+    ko: "클라이밍",
+    "zh-CN": "攀岩",
+  },
+  "Mind & Body": {
+    en: "Mind & Body",
+    de: "Körper & Geist",
+    ja: "心身",
+    ko: "마음과 몸",
+    "zh-CN": "身心平衡",
+  },
+  Schwimmen: {
+    en: "Swimming",
+    de: "Schwimmen",
+    ja: "水泳",
+    ko: "수영",
+    "zh-CN": "游泳",
+  },
+  Services: {
+    en: "Services",
+    de: "Service",
+    ja: "サービス",
+    ko: "서비스",
+    "zh-CN": "服务",
+  },
+  "Weitere Sportarten": {
+    en: "Other Sports",
+    de: "Weitere Sportarten",
+    ja: "その他のスポーツ",
+    ko: "기타 스포츠",
+    "zh-CN": "其他运动",
+  },
+  Windsurfen: {
+    en: "Windsurfing",
+    de: "Windsurfen",
+    ja: "ウィンドサーフィン",
+    ko: "윈드서핑",
+    "zh-CN": "帆板",
+  },
+  Yacht: {
+    en: "Yacht",
+    de: "Yacht",
+    ja: "ヨット",
+    ko: "요트",
+    "zh-CN": "游艇",
+  },
+  Yoga: {
+    en: "Yoga",
+    de: "Yoga",
+    ja: "ヨガ",
+    ko: "요가",
+    "zh-CN": "瑜伽",
+  },
+};
+
+function getSidebarGroupLabel(locale: SidebarLocale, family: string): string {
+  return getLocalizedLabel(sidebarGroupLabelMap, locale, family);
+}
+
 export function localizeKnownCategoryFragments(
   locale: SidebarLocale,
   value: string,
@@ -103,6 +218,7 @@ const familyCategoryAliases: Array<{
   { category: "Basketball", family: "Ball Sports" },
   { category: "CAU Alumni Cup", family: "Weitere Sportarten" },
   { category: "Beachvolleyball", family: "Ball Sports" },
+  { category: "Bouldering", family: "Klettern" },
   { category: "Calisthenics", family: "Fitness" },
   { category: "Boxen", family: "Combat Sports" },
   { category: "Breaking", family: "Dance" },
@@ -143,6 +259,11 @@ const familyCategoryAliases: Array<{
     category: "Jollen Regattatraining",
     family: "Jollensegeln",
     label: "Regattatraining",
+  },
+  {
+    category: "Jollen Regatta CAU",
+    family: "Jollensegeln",
+    label: "Jollen Regatta CAU",
   },
   { category: "K-Pop Dance", family: "Dance" },
   { category: "Karate-Do", family: "Combat Sports" },
@@ -219,15 +340,9 @@ function getSidebarFamily(
     (entry) => entry.category === normalizedCategory,
   );
   if (aliasMatch) {
-    const parts = normalizedCategory
-      .split(",")
-      .map((part) => part.trim())
-      .filter(Boolean);
     return {
       family: aliasMatch.family,
-      label:
-        aliasMatch.label ??
-        (parts.length > 1 ? parts.slice(1).join(", ") : normalizedCategory),
+      label: normalizedCategory,
     };
   }
 
@@ -238,7 +353,7 @@ function getSidebarFamily(
   if (parts.length > 1) {
     return {
       family: parts[0],
-      label: parts.slice(1).join(", "),
+      label: normalizedCategory,
     };
   }
 
@@ -253,7 +368,7 @@ function getSidebarFamily(
     if (normalizedCategory.startsWith(`${prefix} `)) {
       return {
         family,
-        label: normalizedCategory.slice(prefix.length).trim(),
+        label: normalizedCategory,
       };
     }
   }
@@ -292,7 +407,7 @@ export function localizeSidebarItems(
     .sort(([left], [right]) => left.localeCompare(right))
     .map(([family, familyItems]) => ({
       collapsed: false,
-      text: trimLocalizedLabel(getCategoryLabel(locale, family)),
+      text: trimLocalizedLabel(getSidebarGroupLabel(locale, family)),
       items: familyItems.sort((left, right) =>
         left.text.localeCompare(right.text),
       ),

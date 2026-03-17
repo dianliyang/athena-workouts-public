@@ -1,6 +1,7 @@
 ---
 layout: doc
 title: 关于
+search: false
 ---
 
 # 关于

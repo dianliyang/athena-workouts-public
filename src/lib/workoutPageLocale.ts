@@ -20,6 +20,9 @@ export type PageLocaleCopy = {
     staff: string;
     external: string;
     externalReduced: string;
+    adults: string;
+    children: string;
+    discount: string;
   };
   statusLabels: Record<string, string>;
   dateLocale: string;
@@ -46,6 +49,9 @@ export const pageLocaleCopy: Record<SidebarLocale, PageLocaleCopy> = {
       staff: "Mitarbeitende",
       external: "Extern",
       externalReduced: "Extern ermäßigt",
+      adults: "Erwachsene",
+      children: "Kinder",
+      discount: "Ermäßigt",
     },
     statusLabels: {
       available: "Verfügbar",
@@ -79,6 +85,9 @@ export const pageLocaleCopy: Record<SidebarLocale, PageLocaleCopy> = {
       staff: "Staff",
       external: "External",
       externalReduced: "Ext. Reduced",
+      adults: "Adults",
+      children: "Children",
+      discount: "Discount",
     },
     statusLabels: {
       available: "Available",
@@ -112,6 +121,9 @@ export const pageLocaleCopy: Record<SidebarLocale, PageLocaleCopy> = {
       staff: "スタッフ",
       external: "学外",
       externalReduced: "学外割引",
+      adults: "大人",
+      children: "子ども",
+      discount: "割引",
     },
     statusLabels: {
       available: "受付中",
@@ -145,6 +157,9 @@ export const pageLocaleCopy: Record<SidebarLocale, PageLocaleCopy> = {
       staff: "직원",
       external: "외부",
       externalReduced: "외부 할인",
+      adults: "성인",
+      children: "어린이",
+      discount: "할인",
     },
     statusLabels: {
       available: "예약 가능",
@@ -178,6 +193,9 @@ export const pageLocaleCopy: Record<SidebarLocale, PageLocaleCopy> = {
       staff: "员工",
       external: "校外",
       externalReduced: "校外优惠",
+      adults: "成人",
+      children: "儿童",
+      discount: "优惠",
     },
     statusLabels: {
       available: "可报名",
