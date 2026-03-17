@@ -1,4 +1,5 @@
 import type { SidebarLocale } from "./workoutSidebarI18n";
+import { normalizeTranslationKey } from "./workoutI18nUtils";
 export type PageLocaleCopy = {
   categoryTitle: string;
   variantSingular: string;
@@ -50,8 +51,8 @@ export const pageLocaleCopy: Record<SidebarLocale, PageLocaleCopy> = {
       available: "Verfügbar",
       scheduled: "Geplant",
       waitlist: "Warteliste",
-      restricted: "Eingeschränkt",
-      "restricted waitlist": "Warteliste (eingeschränkt)",
+      restricted: "Voraussetzungen erforderlich",
+      "restricted waitlist": "Warteliste (Voraussetzungen erforderlich)",
       closed: "Geschlossen",
       canceled: "Abgesagt",
       see_text: "Siehe Text",
@@ -83,8 +84,8 @@ export const pageLocaleCopy: Record<SidebarLocale, PageLocaleCopy> = {
       available: "Available",
       scheduled: "Scheduled",
       waitlist: "Waitlist",
-      restricted: "Restricted",
-      "restricted waitlist": "Waitlist (restricted)",
+      restricted: "Eligibility required",
+      "restricted waitlist": "Waitlist (eligibility required)",
       closed: "Closed",
       canceled: "Canceled",
       see_text: "See text",
@@ -116,8 +117,8 @@ export const pageLocaleCopy: Record<SidebarLocale, PageLocaleCopy> = {
       available: "受付中",
       scheduled: "予定",
       waitlist: "キャンセル待ち",
-      restricted: "制限あり",
-      "restricted waitlist": "キャンセル待ち（制限あり）",
+      restricted: "参加条件あり",
+      "restricted waitlist": "キャンセル待ち（参加条件あり）",
       closed: "受付終了",
       canceled: "中止",
       see_text: "本文参照",
@@ -149,8 +150,8 @@ export const pageLocaleCopy: Record<SidebarLocale, PageLocaleCopy> = {
       available: "예약 가능",
       scheduled: "예정",
       waitlist: "대기자 명단",
-      restricted: "제한됨",
-      "restricted waitlist": "대기자 명단 (제한됨)",
+      restricted: "참가 조건 있음",
+      "restricted waitlist": "대기자 명단 (참가 조건 있음)",
       closed: "마감",
       canceled: "취소",
       see_text: "본문 참조",
@@ -182,8 +183,8 @@ export const pageLocaleCopy: Record<SidebarLocale, PageLocaleCopy> = {
       available: "可报名",
       scheduled: "即将开放",
       waitlist: "候补",
-      restricted: "受限",
-      "restricted waitlist": "候补（受限）",
+      restricted: "需满足条件",
+      "restricted waitlist": "候补（需满足条件）",
       closed: "已关闭",
       canceled: "已取消",
       see_text: "见说明",
@@ -306,7 +307,7 @@ export function getCopy(locale: SidebarLocale): PageLocaleCopy {
 }
 
 export function localizeWeekday(value: string, locale: SidebarLocale): string {
-  const trimmed = value.trim();
+  const trimmed = normalizeTranslationKey(value);
   const direct = weekdayLabels[locale][trimmed];
   if (direct) return direct;
 
@@ -315,9 +316,14 @@ export function localizeWeekday(value: string, locale: SidebarLocale): string {
     const parts = trimmed.split("-");
     return parts
       .map((p) => localizeWeekday(p, locale))
-      .join(locale === "ja" || locale === "ko" || locale === "zh-CN" ? "〜" : "-");
+      .join(
+        locale === "zh-CN"
+          ? "至"
+          : locale === "ja" || locale === "ko"
+            ? "〜"
+            : "-",
+      );
   }
 
   return trimmed;
 }
-

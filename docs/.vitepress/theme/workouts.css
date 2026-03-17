@@ -4,6 +4,16 @@
   margin: -0.35rem 0 1rem;
 }
 
+.workout-page-header-meta {
+  margin: -0.35rem 0 1rem;
+}
+
+.workout-page-wikipedia {
+  color: var(--vp-c-brand-1);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
 .workout-table {
   display: flex;
   flex-direction: column;
@@ -23,8 +33,18 @@
   transition: box-shadow 0.2s ease;
 }
 
+a.workout-row {
+  color: inherit;
+  text-decoration: none;
+}
+
 .workout-row:hover {
   box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+}
+
+a.workout-row:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 3px;
 }
 
 .workout-row-main {
@@ -41,20 +61,37 @@
 }
 
 .workout-row-schedule {
-  font-size: 1.1rem;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.workout-schedule-cards {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.workout-schedule-card {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.8rem;
+}
+
+.workout-schedule-card-time {
+  font-size: 1rem;
   font-weight: 600;
   color: #111827;
 }
 
-.workout-status {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  color: #047857;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.workout-schedule-card-location {
+  color: #6b7280;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.workout-schedule-card.is-empty {
+  border-style: dashed;
 }
 
 .workout-status-block {
@@ -65,36 +102,14 @@
   text-align: right;
 }
 
+.workout-status-block :is(.vp-badge, .badge) {
+  margin: 0;
+}
+
 .workout-opens-at {
   color: #6b7280;
   font-size: 0.78rem;
   line-height: 1.3;
-}
-
-.workout-status-dot {
-  width: 0.55rem;
-  height: 0.55rem;
-  border-radius: 999px;
-  background: #10b981;
-  flex: 0 0 auto;
-}
-
-.workout-status.is-canceled,
-.workout-status.is-closed {
-  color: #b91c1c;
-}
-
-.workout-status.is-canceled .workout-status-dot,
-.workout-status.is-closed .workout-status-dot {
-  background: #ef4444;
-}
-
-.workout-status.is-waitlist {
-  color: #b45309;
-}
-
-.workout-status.is-waitlist .workout-status-dot {
-  background: #f59e0b;
 }
 
 .workout-row-details {
@@ -227,6 +242,10 @@
   color: var(--vp-c-text-2);
 }
 
+.dark .workout-page-wikipedia {
+  color: var(--vp-c-brand-1);
+}
+
 .dark .workout-row {
   border-color: var(--vp-c-border);
   background: transparent;
@@ -241,30 +260,16 @@
   color: var(--vp-c-text-1);
 }
 
-.dark .workout-status {
-  color: var(--vp-c-brand-1);
+.dark .workout-schedule-card {
+  border-color: var(--vp-c-divider);
 }
 
-.dark .workout-status-dot {
-  background: var(--vp-c-brand-1);
+.dark .workout-schedule-card-time {
+  color: var(--vp-c-text-1);
 }
 
-.dark .workout-status.is-canceled,
-.dark .workout-status.is-closed {
-  color: #fca5a5;
-}
-
-.dark .workout-status.is-canceled .workout-status-dot,
-.dark .workout-status.is-closed .workout-status-dot {
-  background: #f87171;
-}
-
-.dark .workout-status.is-waitlist {
-  color: #fbbf24;
-}
-
-.dark .workout-status.is-waitlist .workout-status-dot {
-  background: #fbbf24;
+.dark .workout-schedule-card-location {
+  color: var(--vp-c-text-2);
 }
 
 .dark .workout-detail-icon {

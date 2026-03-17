@@ -5,38 +5,8 @@ import {
   CATEGORY_INDEX_PATH,
 } from "../lib/workoutsCatalog";
 import { getCategoryLabel, localizeSidebarItems } from "../lib/workoutSidebarI18n";
-
-type WorkoutDetailRecord = {
-  id: string;
-  slug: string;
-  title: string;
-  provider: string;
-  category: string | null;
-  description: string | null;
-  schedule: Array<{
-    day: string;
-    time: string;
-    location: string;
-  }>;
-  location: string | null;
-  bookingUrl: string | null;
-  url: string | null;
-  instructor?: string;
-  startDate?: string;
-  endDate?: string;
-  priceStudent?: number | null;
-  priceStaff?: number | null;
-  priceExternal?: number | null;
-  priceExternalReduced?: number | null;
-  bookingStatus?: string;
-  semester?: string;
-  isEntgeltfrei?: boolean;
-  bookingLabel?: string;
-  bookingOpensOn?: string;
-  bookingOpensAt?: string;
-  plannedDates?: string[];
-  durationUrl?: string;
-};
+import { localizeWeekday } from "../lib/workoutPageLocale";
+import type { WorkoutDetailResponse as WorkoutDetailRecord } from "../lib/workoutsApi";
 
 const detailRecords: Record<string, WorkoutDetailRecord> = {
   yogaA: {
@@ -47,8 +17,7 @@ const detailRecords: Record<string, WorkoutDetailRecord> = {
     category: "Yoga",
     description: null,
     schedule: [{ day: "Mon", time: "08:00-09:00", location: "Studio A" }],
-    location: "Studio A",
-    bookingUrl: "https://example.com/a",
+    location: ["Studio A"],
     url: "https://example.com/course-a",
     instructor: "Alex",
     startDate: "2026-04-01",
@@ -67,8 +36,7 @@ const detailRecords: Record<string, WorkoutDetailRecord> = {
     category: "Yoga",
     description: null,
     schedule: [{ day: "Wed", time: "08:00-09:00", location: "Studio B" }],
-    location: "Studio B",
-    bookingUrl: "",
+    location: ["Studio B"],
     url: "https://example.com/course-b",
     instructor: "Taylor",
     startDate: "2026-04-02",
@@ -87,8 +55,7 @@ const detailRecords: Record<string, WorkoutDetailRecord> = {
     category: "Dance",
     description: null,
     schedule: [{ day: "Tue", time: "18:00-19:00", location: "Hall 1" }],
-    location: "Hall 1",
-    bookingUrl: null,
+    location: ["Hall 1"],
     url: "https://example.com/dance",
     instructor: "Jordan",
     startDate: "2026-04-03",
@@ -121,6 +88,24 @@ describe("workouts detail catalog transformations", () => {
         items: [expect.objectContaining({ slug: "dance-fit" })],
       },
     ]);
+  });
+
+  test("normalizes top-level locations to trimmed arrays", () => {
+    const catalog = buildWorkoutDetailCatalog({
+      one: {
+        ...detailRecords.yogaA,
+        slug: "trimmed-locations",
+        location: [" Studio A ", "", "  ", " Hall B"],
+      },
+      two: {
+        ...detailRecords.dance,
+        slug: "empty-locations",
+        location: [],
+      },
+    });
+
+    expect(catalog.groups.Yoga.items[0]?.location).toEqual(["Studio A", "Hall B"]);
+    expect(catalog.groups.Dance.items[0]?.location).toEqual([]);
   });
 
   test("groups Zumba with day and time suffixes correctly", () => {
@@ -458,6 +443,20 @@ describe("workouts detail catalog transformations", () => {
     expect(getCategoryLabel("ja", "Nonexistent Category")).toBe("Nonexistent Category");
     expect(getCategoryLabel("ko", "Nonexistent Category")).toBe("Nonexistent Category");
     expect(getCategoryLabel("zh-CN", "Nonexistent Category")).toBe("Nonexistent Category");
+  });
+
+  test("normalizes sidebar labels before map lookup", () => {
+    expect(getCategoryLabel("en", " Aqua-Jogging : ")).toBe("Aqua Jogging");
+    expect(getCategoryLabel("ja", "Aqua-Jogging：")).toBe("アクアジョギング");
+    expect(getCategoryLabel("zh-CN", "Ballett,   American Technique")).toBe(
+      "芭蕾，美式技巧",
+    );
+  });
+
+  test("localizes weekday aliases and ranges consistently", () => {
+    expect(localizeWeekday(" Mo-Fr ", "en")).toBe("Mon-Fri");
+    expect(localizeWeekday("Sat-Sun", "ja")).toBe("土〜日");
+    expect(localizeWeekday("Di-Do", "zh-CN")).toBe("周二至周四");
   });
 
   test("builds VitePress sidebar groups for category families", () => {

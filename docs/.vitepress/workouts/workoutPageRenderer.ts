@@ -21,23 +21,121 @@ export function escapeHtml(value: string): string {
     .replace(/"/g, "&quot;");
 }
 
+function buildWikipediaUrl(
+  locale: SidebarLocale,
+  title: string,
+): string {
+  const domainByLocale: Record<SidebarLocale, string> = {
+    de: "de.wikipedia.org",
+    en: "en.wikipedia.org",
+    ja: "ja.wikipedia.org",
+    ko: "ko.wikipedia.org",
+    "zh-CN": "zh.wikipedia.org",
+  };
+
+  return `https://${domainByLocale[locale]}/wiki/Special:Search?search=${encodeURIComponent(title)}`;
+}
+
 function formatStatus(
   value: string | undefined,
   locale: SidebarLocale,
 ): string {
   const copy = getCopy(locale);
-  if (!value) return copy.statusTbd;
-  return copy.statusLabels[value.toLowerCase()] ?? value.replace(/_/g, " ");
+  const normalized = (value ?? "")
+    .trim()
+    .toLowerCase()
+    .replace(/[_-]+/g, " ")
+    .replace(/\s+/g, " ");
+  const normalizedUnderscore = normalized.replace(/\s+/g, "_");
+  if (!normalized || normalized === "tbd" || normalized === "status_tbd") {
+    return copy.statusTbd;
+  }
+  return (
+    copy.statusLabels[normalized] ??
+    copy.statusLabels[normalizedUnderscore] ??
+    value!.replace(/_/g, " ")
+  );
 }
 
-function statusClass(value: string | undefined): string {
+function statusBadgeType(
+  value: string | undefined,
+): "info" | "tip" | "warning" | "danger" {
   const normalized = (value ?? "").toLowerCase();
-  if (normalized.includes("cancel") || normalized.includes("closed"))
-    return "is-canceled";
-  if (normalized.includes("wait")) return "is-waitlist";
-  if (normalized.includes("available") || normalized.includes("scheduled"))
-    return "is-scheduled";
-  return "";
+  if (normalized.includes("cancel") || normalized.includes("closed")) {
+    return "danger";
+  }
+  if (normalized.includes("wait") || normalized.includes("restricted")) {
+    return "warning";
+  }
+  if (normalized.includes("available") || normalized.includes("scheduled")) {
+    return "tip";
+  }
+  return "info";
+}
+
+function localizeScheduleTime(
+  value: string,
+  locale: SidebarLocale,
+): string {
+  const trimmed = value.trim();
+  if (!trimmed) return "";
+
+  const replacements: Record<SidebarLocale, Array<[RegExp, string]>> = {
+    de: [],
+    en: [
+      [/\bnur am\s+(\d+[:.]\d+\.?)/giu, "only at $1"],
+      [/\bab\s+(\d+[:.]\d+\.?)/giu, "from $1"],
+    ],
+    ja: [
+      [/\bnur am\s+(\d+[:.]\d+\.?)/giu, "$1のみ"],
+      [/\bab\s+(\d+[:.]\d+\.?)/giu, "$1から"],
+    ],
+    ko: [
+      [/\bnur am\s+(\d+[:.]\d+\.?)/giu, "$1에만"],
+      [/\bab\s+(\d+[:.]\d+\.?)/giu, "$1부터"],
+    ],
+    "zh-CN": [
+      [/\bnur am\s+(\d+[:.]\d+\.?)/giu, "仅限 $1"],
+      [/\bab\s+(\d+[:.]\d+\.?)/giu, "$1起"],
+    ],
+  };
+
+  let result = trimmed;
+  for (const [pattern, replacement] of replacements[locale]) {
+    result = result.replace(pattern, replacement);
+  }
+  return result;
+}
+
+function renderScheduleCards(
+  item: WorkoutDetailItem,
+  locale: SidebarLocale,
+): string {
+  const { scheduleLocations } = resolveScheduleLocations(item);
+
+  if (item.schedule.length === 0) {
+    return `<div class="workout-schedule-cards">` +
+      `<div class="workout-schedule-card is-empty">` +
+      `<div class="workout-schedule-card-time">${escapeHtml(getCopy(locale).scheduleTbd)}</div>` +
+      `</div></div>`;
+  }
+
+  const cards = groupScheduleEntries(item, scheduleLocations, locale).map(
+    (group) => {
+      const scheduleLabel = [group.dayLabel, localizeScheduleTime(group.time, locale)]
+        .filter(Boolean)
+        .join(" ");
+
+      return `<div class="workout-schedule-card">` +
+        `<div class="workout-schedule-card-time">${escapeHtml(scheduleLabel)}</div>` +
+        (group.location
+          ? `<div class="workout-schedule-card-location">${escapeHtml(group.location)}</div>`
+          : "") +
+        `</div>`;
+    },
+  );
+
+  return `<div class="workout-schedule-cards">${cards.join("")}</div>`;
 }
 
 const WEEKDAY_ORDER: Record<string, number> = {
@@ -57,47 +155,132 @@ const WEEKDAY_ORDER: Record<string, number> = {
   Sun: 7,
 };
 
-function formatSchedule(
-  item: WorkoutDetailItem,
-  locale: SidebarLocale,
-): string[] {
-  const entries = item.schedule;
-  if (!entries.length) return [];
+function formatGroupedDays(days: string[], locale: SidebarLocale): string {
+  const localizedDays = days.map((day) => localizeWeekday(day, locale));
+  if (days.length === 0) return "";
+  if (days.length === 1) return localizedDays[0];
 
-  const results: string[] = [];
-  let i = 0;
+  const dayNumbers = days.map((day) => WEEKDAY_ORDER[day] ?? -1);
+  const isContinuous = dayNumbers.every((day, index) =>
+    index === 0 ? true : day === dayNumbers[index - 1] + 1,
+  );
 
-  while (i < entries.length) {
-    const startEntry = entries[i];
-    let j = i + 1;
-
-    while (
-      j < entries.length &&
-      entries[j].time === startEntry.time &&
-      entries[j].location === startEntry.location &&
-      WEEKDAY_ORDER[entries[j].day] === WEEKDAY_ORDER[entries[j - 1].day] + 1
-    ) {
-      j++;
-    }
-
-    const groupSize = j - i;
-    if (groupSize >= 2) {
-      const startDay = localizeWeekday(startEntry.day, locale);
-      const endDay = localizeWeekday(entries[j - 1].day, locale);
-      const separator =
-        locale === "ja" || locale === "ko" || locale === "zh-CN" ? "〜" : " - ";
-      results.push(`${startDay}${separator}${endDay} ${startEntry.time}`);
-    } else {
-      results.push(
-        [localizeWeekday(startEntry.day, locale), startEntry.time]
-          .filter(Boolean)
-          .join(" "),
-      );
-    }
-    i = j;
+  if (isContinuous) {
+    const separator = locale === "zh-CN" ? "至" : locale === "ja" || locale === "ko" ? "〜" : "-";
+    return `${localizedDays[0]}${separator}${localizedDays[localizedDays.length - 1]}`;
   }
 
-  return results;
+  return localizedDays.join(locale === "zh-CN" || locale === "ja" ? "、" : ", ");
+}
+
+function groupScheduleEntries(
+  item: WorkoutDetailItem,
+  scheduleLocations: string[],
+  locale: SidebarLocale,
+): Array<{ dayLabel: string; time: string; location: string }> {
+  const groups = new Map<
+    string,
+    { days: string[]; time: string; location: string }
+  >();
+  const order: string[] = [];
+
+  item.schedule.forEach((entry, index) => {
+    const location = scheduleLocations[index] ?? "";
+    const key = `${entry.time}__${location}`;
+    const existing = groups.get(key);
+    if (existing) {
+      existing.days.push(entry.day);
+      return;
+    }
+
+    groups.set(key, {
+      days: [entry.day],
+      time: entry.time,
+      location,
+    });
+    order.push(key);
+  });
+
+  return order.map((key) => {
+    const group = groups.get(key)!;
+    return {
+      dayLabel: formatGroupedDays(group.days, locale),
+      time: group.time,
+      location: group.location,
+    };
+  });
+}
+
+function normalizeLocationValue(value: string): string {
+  return cleanLocationText(value).toLowerCase();
+}
+
+function cleanLocationText(value: string): string {
+  return value
+    .split(",")
+    .map((part) => part.trim())
+    .filter(Boolean)
+    .join(", ");
+}
+
+function expandTopLevelLocations(values: string[]): string[] {
+  return values
+    .flatMap((value) => value.split(/\s*;\s*/g))
+    .map((value) => cleanLocationText(value))
+    .filter(Boolean);
+}
+
+function resolveScheduleLocations(item: WorkoutDetailItem): {
+  scheduleLocations: string[];
+  unmatchedTopLevelLocations: string[];
+} {
+  const topLevelLocations = expandTopLevelLocations(
+    item.location.map((value) => value?.trim()).filter(Boolean) as string[],
+  );
+
+  if (topLevelLocations.length === 1) {
+    return {
+      scheduleLocations: item.schedule.map(() => topLevelLocations[0]),
+      unmatchedTopLevelLocations: [],
+    };
+  }
+
+  if (item.schedule.length === 1) {
+    return {
+      scheduleLocations: [
+        topLevelLocations.join("; ") || cleanLocationText(item.schedule[0]?.location ?? "") || "",
+      ],
+      unmatchedTopLevelLocations: [],
+    };
+  }
+
+  const matchedTopLevelIndexes = new Set<number>();
+
+  const scheduleLocations = item.schedule.map((entry) => {
+    const shortLocation = cleanLocationText(entry.location ?? "");
+    if (!shortLocation) return "";
+
+    const normalizedShortLocation = normalizeLocationValue(shortLocation);
+    const matches = topLevelLocations
+      .map((value, index) => ({ value, index }))
+      .filter(({ value }) =>
+        normalizeLocationValue(value).startsWith(normalizedShortLocation),
+      );
+
+    if (matches.length === 1) {
+      matchedTopLevelIndexes.add(matches[0].index);
+      return matches[0].value;
+    }
+
+    return shortLocation;
+  });
+
+  return {
+    scheduleLocations,
+    unmatchedTopLevelLocations: topLevelLocations.filter(
+      (_, index) => !matchedTopLevelIndexes.has(index),
+    ),
+  };
 }
 
 function formatDuration(
@@ -160,11 +343,14 @@ function splitLocation(item: WorkoutDetailItem): {
   title: string;
   detail: string;
 } {
+  const topLevelLocations = (Array.isArray(item.location) ? item.location : [])
+    .map((value) => value?.trim())
+    .filter(Boolean) as string[];
   const uniqueLocations = [
     ...new Set(item.schedule.map((s) => s.location?.trim()).filter(Boolean)),
   ];
   const title = uniqueLocations.length > 0 ? uniqueLocations.join("; ") : "Location";
-  const location = item.location?.trim() || "";
+  const location = topLevelLocations.join("; ");
 
   if (!location) return { title, detail: "" };
 
@@ -217,7 +403,12 @@ export function renderRow(
   locale: SidebarLocale,
 ): string {
   const copy = getCopy(locale);
-  const locationParts = splitLocation(item);
+  const { unmatchedTopLevelLocations } = resolveScheduleLocations(item);
+  const locationParts = splitLocation({
+    ...item,
+    location: unmatchedTopLevelLocations,
+  });
+  const hasParentLocationDetails = unmatchedTopLevelLocations.length > 0;
   const localizedLocationTitle = localizeKnownCategoryFragments(
     locale,
     locationParts.title,
@@ -227,7 +418,7 @@ export function renderRow(
     : "";
 
   const details = [
-    item.location
+    hasParentLocationDetails
       ? `<div class="workout-detail is-location">` +
         `<div class="workout-detail-icon">📍</div>` +
         `<div class="workout-detail-copy">` +
@@ -252,31 +443,22 @@ export function renderRow(
         `</div></div>`
       : "",
   ].filter(Boolean);
-
-  const booking = item.bookingUrl
-    ? `<p class="workout-booking"><a href="${escapeHtml(item.bookingUrl)}">${escapeHtml(copy.openBookingLabel)}</a></p>`
-    : "";
   const status = formatStatus(item.bookingStatus, locale);
-  const statusClasses = statusClass(item.bookingStatus);
+  const badgeType = statusBadgeType(item.bookingStatus);
   const opensAt = formatOpeningDateTime(item, locale);
-  const schedules = formatSchedule(item, locale);
-  const scheduleHtml =
-    schedules.length > 0
-      ? schedules
-          .map(
-            (s) =>
-              `<div class="workout-row-schedule-item">${escapeHtml(s)}</div>`,
-          )
-          .join("")
-      : `<div class="workout-row-schedule-item">${escapeHtml(copy.scheduleTbd)}</div>`;
+  const scheduleCards = renderScheduleCards(item, locale);
+  const wrapperTag = item.url ? "a" : "div";
+  const wrapperAttributes = item.url
+    ? ` class="workout-row" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer"`
+    : ` class="workout-row"`;
 
   return [
-    '<div class="workout-row">',
+    ` <${wrapperTag}${wrapperAttributes}>`.trimStart(),
     '  <div class="workout-row-main">',
     '    <div class="workout-row-top">',
-    `      <div class="workout-row-schedule">${scheduleHtml}</div>`,
+    `      <div class="workout-row-schedule">${scheduleCards}</div>`,
     '      <div class="workout-status-block">',
-    `        <div class="workout-status ${statusClasses}"><span class="workout-status-dot"></span><span>${escapeHtml(status)}</span></div>`,
+    `        <Badge type="${badgeType}" text="${escapeHtml(status)}" />`,
     opensAt
       ? `        <div class="workout-opens-at">${escapeHtml(copy.opensLabel)} ${escapeHtml(opensAt)}</div>`
       : "",
@@ -285,8 +467,7 @@ export function renderRow(
     `    <div class="workout-row-details">${details.join("")}</div>`,
     `    <div class="workout-price-panel">${formatPriceRange(item, locale)}</div>`,
     "  </div>",
-    booking ? `  <div>${booking}</div>` : "",
-    "</div>",
+    `</${wrapperTag}>`,
   ]
     .filter(Boolean)
     .join("\n");
@@ -333,6 +514,7 @@ export function renderCategoryPage(
 ): string {
   const copy = getCopy(locale);
   const pageTitle = getCategoryLabel(locale, category);
+  const wikipediaUrl = buildWikipediaUrl(locale, pageTitle);
   const variantCount = titleGroups.length;
   const variantText =
     locale === "ja" || locale === "ko" || locale === "zh-CN"
@@ -346,6 +528,8 @@ export function renderCategoryPage(
     "---",
     "",
     `# ${pageTitle}`,
+    "",
+    `<p class="workout-page-header-meta"><a class="workout-page-wikipedia" href="${escapeHtml(wikipediaUrl)}" target="_blank" rel="noopener noreferrer">Wikipedia</a></p>`,
     "",
     variantText,
     "",

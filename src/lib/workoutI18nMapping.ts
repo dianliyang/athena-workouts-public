@@ -1,4 +1,5 @@
 import type { SidebarLocale } from "./workoutSidebarI18n";
+import type { LocalizedLabelMap } from "./workoutI18nUtils";
 import {
   getAllCategoryLabelMappings,
   titlePhraseMaps,
@@ -11,7 +12,7 @@ type TitlePhraseMapping = {
 };
 
 export type WorkoutI18nMapping = {
-  categories: Record<string, Partial<Record<SidebarLocale, string>>>;
+  categories: LocalizedLabelMap<SidebarLocale>;
   titlePhrases: Record<SidebarLocale, TitlePhraseMapping[]>;
 };
 
@@ -33,4 +34,3 @@ export const workoutI18nMapping: WorkoutI18nMapping = {
     ]),
   ) as Record<SidebarLocale, TitlePhraseMapping[]>,
 };
-

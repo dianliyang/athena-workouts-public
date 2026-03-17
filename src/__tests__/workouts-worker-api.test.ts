@@ -23,7 +23,6 @@ const browse = [
     weekday: "Monday",
     timeLabel: "18:00-19:00",
     location: "Studio A",
-    bookingUrl: "https://example.com/book/spin",
     excerpt: "High-intensity bike intervals.",
     searchText: "spin intervals unisport cycling monday studio a",
   },
@@ -36,7 +35,6 @@ const browse = [
     weekday: "Wednesday",
     timeLabel: "12:00-13:00",
     location: "Hall B",
-    bookingUrl: "https://example.com/book/yoga",
     excerpt: "Midday mobility and balance.",
     searchText: "yoga flow campus active yoga wednesday hall b",
   },
@@ -49,7 +47,6 @@ const browse = [
     weekday: "Friday",
     timeLabel: "19:00-20:00",
     location: "Gym C",
-    bookingUrl: "https://example.com/book/boxing",
     excerpt: "Introductory boxing drills.",
     searchText: "boxing basics unisport combat friday gym c",
   },
@@ -64,8 +61,7 @@ const detail = {
     category: "Cycling",
     description: "High-intensity interval training on stationary bikes.",
     schedule: ["Monday 18:00-19:00"],
-    location: "Studio A",
-    bookingUrl: "https://example.com/book/spin",
+    location: ["Studio A"],
     url: "https://example.com/workouts/spin",
   },
 };
@@ -129,6 +125,8 @@ describe("workouts worker api", () => {
     expect(response.status).toBe(200);
     expect(body.slug).toBe("spin-intervals-monday-evening");
     expect(body.schedule).toEqual(["Monday 18:00-19:00"]);
+    expect(body.location).toEqual(["Studio A"]);
+    expect("bookingUrl" in body).toBe(false);
   });
 
   test("returns the full detail catalog for build consumers", async () => {

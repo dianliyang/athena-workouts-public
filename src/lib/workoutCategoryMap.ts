@@ -1,9 +1,7 @@
 import type { SidebarLocale } from "./workoutSidebarI18n";
+import type { LocalizedLabelMap } from "./workoutI18nUtils";
 
-export const workoutCategoryMap: Record<
-  string,
-  Partial<Record<SidebarLocale, string>>
-> = {
+export const workoutCategoryMap: LocalizedLabelMap<SidebarLocale> = {
   "Aerial Hoop": {
     en: "Aerial Hoop",
     de: "Aerial Hoop",
@@ -2017,5 +2015,11 @@ export const workoutCategoryMap: Record<
     "zh-CN": "SKS 考试",
     ja: "SKS試験",
     ko: "SKS 시험",
+  },
+  "CAU Team beim Business Run Kiel": {
+    en: "CAU Team at the Business Run Kiel",
+    ja: "CAUチーム ビジネスランKiel参加",
+    ko: "CAU 팀 비즈니스 런 Kiel 참가",
+    "zh-CN": "CAU团队参加基尔商业跑",
   },
 };

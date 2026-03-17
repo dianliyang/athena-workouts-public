@@ -79,11 +79,28 @@ function normalizeTitleGroupKey(title: string): string {
     .trim();
 }
 
+function normalizeLocations(location: string[] | string | null | undefined): string[] {
+  const rawValues = Array.isArray(location) ? location : [location];
+  return rawValues
+    .filter((value): value is string => typeof value === "string")
+    .map((value) => value.trim())
+    .filter(Boolean);
+}
+
 function normalizeDetail(record: WorkoutDetailRecord): WorkoutDetailItem {
+  const {
+    bookingUrl: _legacyBookingUrl,
+    location,
+    ...rest
+  } = record as WorkoutDetailRecord & {
+    bookingUrl?: string | null;
+    location?: string[] | string | null;
+  };
+
   return {
-    ...record,
+    ...rest,
     category: normalizeCategory(record.category),
-    bookingUrl: record.bookingUrl?.trim() ? record.bookingUrl : null,
+    location: normalizeLocations(location),
   };
 }
 

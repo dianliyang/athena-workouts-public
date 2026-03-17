@@ -27,8 +27,7 @@ export type WorkoutDetailResponse = {
     time: string;
     location: string;
   }>;
-  location: string | null;
-  bookingUrl: string | null;
+  location: string[];
   url: string | null;
   instructor?: string;
   startDate?: string;

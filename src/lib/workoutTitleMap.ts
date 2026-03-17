@@ -2,11 +2,9 @@
 // Re-run: node src/scripts/generateTitleMap.mjs
 
 import type { SidebarLocale } from "./workoutSidebarI18n";
+import type { LocalizedLabelMap } from "./workoutI18nUtils";
 
-export const workoutTitleMap: Record<
-  string,
-  Partial<Record<SidebarLocale, string>>
-> = {
+export const workoutTitleMap: LocalizedLabelMap<SidebarLocale> = {
   "Aerial Hoop Anfänger*innen": {
     en: "Aerial Hoop Beginners",
     ja: "エアリアルフープ 初心者",
@@ -525,52 +523,52 @@ export const workoutTitleMap: Record<
     "zh-CN": "小艇帆船初学者课程：第8期（强化班）",
   },
   "Jollensegeln für Fortgeschrittene: Kurs 0: Mi plus 2 Woe": {
-    en: "Advanced Dinghy Sailing: Course 0 (Wednesday plus 2 weekends)",
+    en: "Advanced Dinghy Sailing: Course 0 (Wed + 2 weekends)",
     ja: "中上級ディンギーセーリング：コース0（水曜＋週末2回）",
     ko: "중급 딩기 세일링: 코스 0 (수요일 + 주말 2회)",
     "zh-CN": "小艇帆船进阶课程：第0期（周三 + 2个周末）",
   },
   "Jollensegeln für Fortgeschrittene: Kurs 1: Di plus 2 Woe": {
-    en: "Advanced Dinghy Sailing: Course 1 (Tuesday plus 2 weekends)",
+    en: "Advanced Dinghy Sailing: Course 1 (Tue + 2 weekends)",
     ja: "中上級ディンギーセーリング：コース1（火曜＋週末2回）",
     ko: "중급 딩기 세일링: 코스 1 (화요일 + 주말 2회)",
     "zh-CN": "小艇帆船进阶课程：第1期（周二 + 2个周末）",
   },
   "Jollensegeln für Fortgeschrittene: Kurs 1: Kompaktkurs Mo-Fr": {
-    en: "Advanced Dinghy Sailing: Course 1 (Intensive Course Mo-Fr)",
+    en: "Advanced Dinghy Sailing: Course 1 (Intensive Course, Mon-Fri)",
     ja: "中上級ディンギーセーリング：コース1（集中コース 月〜金）",
     ko: "중급 딩기 세일링: 코스 1 (집중 과정 월-금)",
     "zh-CN": "小艇帆船进阶课程：第1期（强化班 周一至周五）",
   },
   "Jollensegeln für Fortgeschrittene: Kurs 2: Do plus 2 Woe": {
-    en: "Advanced Dinghy Sailing: Course 2 (Thursday plus 2 weekends)",
+    en: "Advanced Dinghy Sailing: Course 2 (Thu + 2 weekends)",
     ja: "中上級ディンギーセーリング：コース2（木曜＋週末2回）",
     ko: "중급 딩기 세일링: 코스 2 (목요일 + 주말 2회)",
     "zh-CN": "小艇帆船进阶课程：第2期（周四 + 2个周末）",
   },
   "Jollensegeln für Fortgeschrittene: Kurs 2: Kompaktkurs Sa-So/unbesetzt": {
-    en: "Advanced Dinghy Sailing: Course 2 (Intensive Course Sa-So / Vacant)",
-    ja: "中上級ディンギーセーリング：コース2（集中コース 土〜日／空きあり）",
-    ko: "중급 딩기 세일링: 코스 2 (집중 과정 토-일 / 공석)",
-    "zh-CN": "小艇帆船进阶课程：第2期（强化班 周六至周日／空缺）",
+    en: "Advanced Dinghy Sailing: Course 2 (Intensive Course, Sat-Sun; guidance vacancy)",
+    ja: "中上級ディンギーセーリング：コース2（集中コース 土〜日／指導枠空きあり）",
+    ko: "중급 딩기 세일링: 코스 2 (집중 과정 토-일 / 지도 공석)",
+    "zh-CN": "小艇帆船进阶课程：第2期（强化班 周六至周日／指导空缺）",
   },
   "Jollensegeln für Fortgeschrittene: Kurs 3: Kompaktkurs Sa-So": {
-    en: "Advanced Dinghy Sailing: Course 3 (Intensive Course Sa-So)",
+    en: "Advanced Dinghy Sailing: Course 3 (Intensive Course, Sat-Sun)",
     ja: "中上級ディンギーセーリング：コース3（集中コース 土〜日）",
     ko: "중급 딩기 세일링: 코스 3 (집중 과정 토-일)",
     "zh-CN": "小艇帆船进阶课程：第3期（强化班 周六至周日）",
   },
   "Jollensegeln für Fortgeschrittene: Kurs 4: Kompaktkurs Mo-Fr/unbesetzt": {
-    en: "Advanced Dinghy Sailing: Course 4 (Intensive Course Mo-Fr / Vacant)",
-    ja: "中上級ディンギーセーリング：コース4（集中コース 月〜金／空きあり）",
-    ko: "중급 딩기 세일링: 코스 4 (집중 과정 월-금 / 공석)",
-    "zh-CN": "小艇帆船进阶课程：第4期（强化班 周一至周五／空缺）",
+    en: "Advanced Dinghy Sailing: Course 4 (Intensive Course, Mon-Fri; guidance vacancy)",
+    ja: "中上級ディンギーセーリング：コース4（集中コース 月〜金／指導枠空きあり）",
+    ko: "중급 딩기 세일링: 코스 4 (집중 과정 월-금 / 지도 공석)",
+    "zh-CN": "小艇帆船进阶课程：第4期（强化班 周一至周五／指导空缺）",
   },
   "Jollensegeln für Fortgeschrittene: Kurs 5: Kompaktkurs Sa-So/unbesetzt": {
-    en: "Advanced Dinghy Sailing: Course 5 (Intensive Course Sa-So / Vacant)",
-    ja: "中上級ディンギーセーリング：コース5（集中コース 土〜日／空きあり）",
-    ko: "중급 딩기 세일링: 코스 5 (집중 과정 토-일 / 공석)",
-    "zh-CN": "小艇帆船进阶课程：第5期（强化班 周六至周日／空缺）",
+    en: "Advanced Dinghy Sailing: Course 5 (Intensive Course, Sat-Sun; guidance vacancy)",
+    ja: "中上級ディンギーセーリング：コース5（集中コース 土〜日／指導枠空きあり）",
+    ko: "중급 딩기 세일링: 코스 5 (집중 과정 토-일 / 지도 공석)",
+    "zh-CN": "小艇帆船进阶课程：第5期（强化班 周六至周日／指导空缺）",
   },
   "Jollensegeln mit Spinnaker Trapez Anfänger*innen: Kurs 2 kompakt über Himmelfahrt":
     {
@@ -1501,10 +1499,10 @@ export const workoutTitleMap: Record<
   },
   "Versicherungspaket für Übungsleiter:innen jeweils 1.4. d.J. bis 31.3. des Folgejahres":
     {
-      en: "Insurance Package for Instructors jeweils 1.4. d.J. bis 31.3. des Folgejahres",
-      ja: "指導者向け保険パッケージ jeweils 1.4. d.J. bis 31.3. des Folgejahres",
-      ko: "강사용 보험 패키지 jeweils 1.4. d.J. bis 31.3. des Folgejahres",
-      "zh-CN": "教练保险套餐 jeweils 1.4. d.J. bis 31.3. des Folgejahres",
+      en: "Insurance Package for Instructors (Apr 1 of the current year to Mar 31 of the following year)",
+      ja: "指導者向け保険パッケージ（毎年4月1日から翌年3月31日まで）",
+      ko: "강사용 보험 패키지 (매년 4월 1일부터 다음 해 3월 31일까지)",
+      "zh-CN": "教练保险套餐（每年4月1日至次年3月31日）",
     },
   "Vertikaltuch Anfänger*innen": {
     en: "Aerial Silks Beginners",
@@ -1817,10 +1815,10 @@ export const workoutTitleMap: Record<
     "zh-CN": "游艇进阶课程 2：第3期（2个周末）",
   },
   "Yacht International Center: International Sailing Course/ unbesetzt": {
-    en: "Yacht International Center: International Sailing Course / Vacant",
-    ja: "ヨット国際センター：国際セーリングコース／空きあり",
-    ko: "요트 국제센터: 국제 세일링 코스 / 공석",
-    "zh-CN": "游艇国际中心：国际帆船课程／空缺",
+    en: "Yacht International Center: International Sailing Course / guidance vacancy",
+    ja: "ヨット国際センター：国際セーリングコース／指導枠空きあり",
+    ko: "요트 국제센터: 국제 세일링 코스 / 지도 공석",
+    "zh-CN": "游艇国际中心：国际帆船课程／指导空缺",
   },
   "Yacht Regattatraining: auf der Iuventa": {
     en: "Yacht Regatta Training: on the Iuventa",
@@ -1957,6 +1955,12 @@ export const workoutTitleMap: Record<
     ko: "요가, 에어리얼 요가",
     "zh-CN": "瑜伽, 空中瑜伽",
   },
+  "Yoga, Hatha Yoga (Präventionssport)": {
+    en: "Yoga – Hatha Yoga (Certified Health Programme)",
+    ja: "ヨガ - ハタヨガ（健康予防プログラム）",
+    ko: "요가 - 하타 요가 (공인 건강 예방 프로그램)",
+    "zh-CN": "瑜伽 - 哈他瑜伽（认证健康课程）",
+  },
   "Yoga, Hatha Yoga (Präventionssport) Hatha Yoga Präv.": {
     en: "Yoga – Hatha Yoga (Certified Health Programme)",
     ja: "ヨガ - ハタヨガ（健康予防プログラム）",
@@ -1995,5 +1999,11 @@ export const workoutTitleMap: Record<
     ja: "ズンバ",
     ko: "줌바",
     "zh-CN": "尊巴",
+  },
+  "CAU Team beim Business Run Kiel": {
+    en: "CAU Team at the Business Run Kiel",
+    ja: "CAUチーム ビジネスランKiel参加",
+    ko: "CAU 팀 비즈니스 런 Kiel 참가",
+    "zh-CN": "CAU团队参加基尔商业跑",
   },
 };
