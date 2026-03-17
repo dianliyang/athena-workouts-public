@@ -7,15 +7,15 @@ layout: doc
 
 2개 강좌
 
-## 뤤라트 / 시어 휠 고급 참가자 / Showgruppe
+## 론라트 / 시어 휠 고급 및 공연 그룹
 
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Rhoenrad_Cyr.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">일 11:00-13:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">일 11:00-13:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>본문 참조</span></div>
       </div>
@@ -26,15 +26,15 @@ layout: doc
 </div>
 </div>
 
-## 뤤라트 / 시어 휠 누구나 참여 가능
+## 론라트 / 시어 휠 누구나 참여 가능
 
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Rhoenrad_Cyr.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">화 17:00-19:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">화 16:00-19:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>본문 참조</span></div>
       </div>

@@ -5,17 +5,65 @@ layout: doc
 
 # Dinghy Sailing for Beginners
 
-14 variants.
+10 variants.
 
-## Dinghy Sailing for Beginners Course 1: Fr
+## Dinghy Sailing for Beginners Course
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Fri 16:15-21:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Mon 14:15-18:30</div></div>
+      <div class="workout-status-block">
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
+      </div>
+    </div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Sören Friedrichs</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 27 - Jul 6, 2026</strong><span>9 sessions</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€170</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€278</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€470</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€278</span></div></div>
+  </div>
+</div>
+<div class="workout-row">
+  <div class="workout-row-main">
+    <div class="workout-row-top">
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Tue 16:45-21:00</div></div>
+      <div class="workout-status-block">
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
+      </div>
+    </div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Ulrike Kirchner</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 28 - Jun 30, 2026</strong><span>9 sessions</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€170</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€278</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€470</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€278</span></div></div>
+  </div>
+</div>
+<div class="workout-row">
+  <div class="workout-row-main">
+    <div class="workout-row-top">
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Wed 16:45-21:00</div></div>
+      <div class="workout-status-block">
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
+      </div>
+    </div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Leonie Hamer, Moritz Kriese</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 29 - Jul 8, 2026</strong><span>9 sessions</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€170</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€278</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€470</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€278</span></div></div>
+  </div>
+</div>
+<div class="workout-row">
+  <div class="workout-row-main">
+    <div class="workout-row-top">
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Thu 16:45-21:00</div></div>
+      <div class="workout-status-block">
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
+      </div>
+    </div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Felix Schindler, Anne-Sophie Jahncke</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 30 - Jul 9, 2026</strong><span>9 sessions</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€170</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€278</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€470</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€278</span></div></div>
+  </div>
+</div>
+<div class="workout-row">
+  <div class="workout-row-main">
+    <div class="workout-row-top">
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Fri 16:15-21:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
@@ -26,17 +74,17 @@ layout: doc
 </div>
 </div>
 
-## Dinghy Sailing for Beginners Course 1: Compact Course
+## Dinghy Sailing for Beginners: Course 1 (Intensive Course)
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon-Fri 09:00-17:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Mon-Fri 09:00-17:00</div></div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
+        <div class="workout-status is-waitlist"><span class="workout-status-dot"></span><span>Waitlist</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Alfred Böttger, Anne-Sophie Jahncke</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Jul 27 - 31, 2026</strong><span>5 sessions</span></div></div></div>
@@ -45,15 +93,15 @@ layout: doc
 </div>
 </div>
 
-## Dinghy Sailing for Beginners Course 2: Compact Course
+## Dinghy Sailing for Beginners: Course 2 (Intensive Course)
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon-Fri 09:00-17:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Mon-Fri 09:00-17:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Jun 1, 2026 at 10:00</div>
@@ -65,53 +113,15 @@ layout: doc
 </div>
 </div>
 
-## Dinghy Sailing for Beginners Course 2: Mo
+## Dinghy Sailing for Beginners: Course 3 (Intensive Course)
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
-<div class="workout-row">
-  <div class="workout-row-main">
-    <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon 14:15-18:30</div>
-      <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
-      </div>
-    </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Sören Friedrichs</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 27 - Jul 6, 2026</strong><span>9 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€170</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€278</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€470</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€278</span></div></div>
-  </div>
-</div>
-</div>
-
-## Dinghy Sailing for Beginners Course 3: Di
-
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Tue 16:45-21:00</div>
-      <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
-      </div>
-    </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Ulrike Kirchner</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 28 - Jun 30, 2026</strong><span>9 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€170</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€278</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€470</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€278</span></div></div>
-  </div>
-</div>
-</div>
-
-## Dinghy Sailing for Beginners Course 3: Compact Course
-
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
-<div class="workout-row">
-  <div class="workout-row-main">
-    <div class="workout-row-top">
-      <div class="workout-row-schedule">Daily 09:00-17:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Daily 09:00-17:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Jun 1, 2026 at 10:00</div>
@@ -123,15 +133,15 @@ layout: doc
 </div>
 </div>
 
-## Dinghy Sailing for Beginners Course 4: Compact Course
+## Dinghy Sailing for Beginners: Course 4 (Intensive Course)
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon-Fri 09:00-17:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Mon-Fri 09:00-17:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Jun 1, 2026 at 10:00</div>
@@ -143,53 +153,15 @@ layout: doc
 </div>
 </div>
 
-## Dinghy Sailing for Beginners Course 4: Mi
+## Dinghy Sailing for Beginners: Course 6 (Intensive Course over Ascension)
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
-<div class="workout-row">
-  <div class="workout-row-main">
-    <div class="workout-row-top">
-      <div class="workout-row-schedule">Wed 16:45-21:00</div>
-      <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
-      </div>
-    </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Leonie Hamer, Moritz Kriese</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 29 - Jul 8, 2026</strong><span>9 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€170</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€278</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€470</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€278</span></div></div>
-  </div>
-</div>
-</div>
-
-## Dinghy Sailing for Beginners Course 5: Do
-
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Thu 16:45-21:00</div>
-      <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
-      </div>
-    </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Felix Schindler, Anne-Sophie Jahncke</strong><span>Instructor</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>Apr 30 - Jul 9, 2026</strong><span>9 sessions</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">Student</span><span class="workout-price-value">€170</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Staff</span><span class="workout-price-value">€278</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">External</span><span class="workout-price-value">€470</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">Ext. Reduced</span><span class="workout-price-value">€278</span></div></div>
-  </div>
-</div>
-</div>
-
-## Dinghy Sailing for Beginners Course 6: Compact Course over Ascension Day
-
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
-<div class="workout-row">
-  <div class="workout-row-main">
-    <div class="workout-row-top">
-      <div class="workout-row-schedule">Thu 09:00-18:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Thu - Sun 09:00-18:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
@@ -200,15 +172,15 @@ layout: doc
 </div>
 </div>
 
-## Dinghy Sailing for Beginners Course 6: Compact Course/vacant
+## Dinghy Sailing for Beginners: Course 6 (Intensive Course / Vacant)
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon-Fri 09:00-17:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Mon-Fri 09:00-17:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Jun 1, 2026 at 10:00</div>
@@ -220,15 +192,15 @@ layout: doc
 </div>
 </div>
 
-## Dinghy Sailing for Beginners Course 7: Compact Course over Ascension Day
+## Dinghy Sailing for Beginners: Course 7 (Intensive Course over Ascension)
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Thu 09:00-18:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Thu - Sun 09:00-18:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
@@ -239,15 +211,15 @@ layout: doc
 </div>
 </div>
 
-## Dinghy Sailing for Beginners Course 7: Compact Course/vacant
+## Dinghy Sailing for Beginners: Course 7 (Intensive Course / Vacant)
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon-Fri 09:00-17:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Mon-Fri 09:00-17:00</div><div class="workout-row-schedule-item">09:00-17:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Jun 1, 2026 at 10:00</div>
@@ -259,15 +231,15 @@ layout: doc
 </div>
 </div>
 
-## Dinghy Sailing for Beginners Course 8: Compact Course
+## Dinghy Sailing for Beginners: Course 8 (Intensive Course)
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon-Fri 09:00-17:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Mon-Fri 09:00-17:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Jun 1, 2026 at 10:00</div>

@@ -9,13 +9,13 @@ layout: doc
 
 ## 린디 홉 초보자
 
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Lindy_Hop.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">월 18:05-19:05</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">월 18:05-19:05</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>예정</span></div>
         <div class="workout-opens-at">오픈 2026년 3월 29일 18:00</div>
@@ -27,15 +27,15 @@ layout: doc
 </div>
 </div>
 
-## 린디 홉 참가자용 사전 지식 있음
+## 린디 홉 (경험자용)
 
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Lindy_Hop.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">월 19:05-20:05</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">월 19:05-20:05</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>예정</span></div>
         <div class="workout-opens-at">오픈 2026년 3월 29일 18:00</div>

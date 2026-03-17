@@ -7,15 +7,15 @@ layout: doc
 
 4 个项目
 
-## 暑期青少年帆船 课程 0: 龙骨艇团体帆船 随 Fion 号
+## 青少年暑期帆船课程：第0期（与 Fion 一起进行龙骨帆船团体航行）
 
-<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Segeln_fuer_Jugendliche_in_den_Sommerferien.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">周一至周五 09:00-16:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">周一至周五 09:00-16:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>可报名</span></div>
       </div>
@@ -26,15 +26,15 @@ layout: doc
 </div>
 </div>
 
-## 暑期青少年帆船 课程 1: 小艇课程 适合初学者
+## 青少年暑期帆船课程：第1期（小艇初学者课程）
 
-<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Segeln_fuer_Jugendliche_in_den_Sommerferien.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">周一至周五 09:00-16:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">周一至周五 09:00-16:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>可报名</span></div>
       </div>
@@ -45,15 +45,15 @@ layout: doc
 </div>
 </div>
 
-## 暑期青少年帆船 课程 2: 小艇课程 适合进阶学员
+## 青少年暑期帆船课程：第2期（小艇进阶课程）
 
-<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Segeln_fuer_Jugendliche_in_den_Sommerferien.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">周一至周五 09:00-16:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">周一至周五 09:00-16:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>可报名</span></div>
       </div>
@@ -64,15 +64,15 @@ layout: doc
 </div>
 </div>
 
-## 暑期青少年帆船 课程 3: 龙骨艇团体帆船 随 Fion 号
+## 青少年暑期帆船课程：第3期（与 Fion 一起进行龙骨帆船团体航行）
 
-<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Segeln_fuer_Jugendliche_in_den_Sommerferien.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">周一至周五 09:00-16:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">周一至周五 09:00-16:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>可报名</span></div>
       </div>

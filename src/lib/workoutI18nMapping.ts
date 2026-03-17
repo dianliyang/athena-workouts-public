@@ -1,6 +1,8 @@
 import type { SidebarLocale } from "./workoutSidebarI18n";
-import { getAllCategoryLabelMappings } from "./workoutSidebarI18n";
-import { titlePhraseMaps } from "./workoutTitleI18n";
+import {
+  getAllCategoryLabelMappings,
+  titlePhraseMaps,
+} from "./workoutSidebarI18n";
 
 type TitlePhraseMapping = {
   pattern: string;
@@ -16,15 +18,19 @@ export type WorkoutI18nMapping = {
 export const workoutI18nMapping: WorkoutI18nMapping = {
   categories: getAllCategoryLabelMappings(),
   titlePhrases: Object.fromEntries(
-    (Object.entries(titlePhraseMaps) as [SidebarLocale, { pattern: RegExp; replacement: string }[]][])
-      .map(([locale, rules]) => [
-        locale,
-        rules.map((rule) => ({
-          pattern: rule.pattern.source,
-          flags: rule.pattern.flags,
-          replacement: rule.replacement,
-        })),
-      ]),
+    (
+      Object.entries(titlePhraseMaps) as [
+        SidebarLocale,
+        { pattern: RegExp; replacement: string | ((...args: any[]) => string) }[],
+      ][]
+    ).map(([locale, rules]) => [
+      locale,
+      rules.map((rule) => ({
+        pattern: rule.pattern.source,
+        flags: rule.pattern.flags,
+        replacement: String(rule.replacement),
+      })),
+    ]),
   ) as Record<SidebarLocale, TitlePhraseMapping[]>,
 };
 

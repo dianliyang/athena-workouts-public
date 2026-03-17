@@ -5,17 +5,65 @@ layout: doc
 
 # 初心者向けディンギーセーリング
 
-14件のコース
+10件のコース
 
-## 初心者向けディンギーセーリング コース 1: Fr
+## 初心者向けディンギーセーリング コース
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">金 16:15-21:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">月 14:15-18:30</div></div>
+      <div class="workout-status-block">
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
+      </div>
+    </div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Sören Friedrichs</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月27日 - 7月6日</strong><span>9回</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€170</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">スタッフ</span><span class="workout-price-value">€278</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外</span><span class="workout-price-value">€470</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外割引</span><span class="workout-price-value">€278</span></div></div>
+  </div>
+</div>
+<div class="workout-row">
+  <div class="workout-row-main">
+    <div class="workout-row-top">
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">火 16:45-21:00</div></div>
+      <div class="workout-status-block">
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
+      </div>
+    </div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Ulrike Kirchner</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月28日 - 6月30日</strong><span>9回</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€170</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">スタッフ</span><span class="workout-price-value">€278</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外</span><span class="workout-price-value">€470</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外割引</span><span class="workout-price-value">€278</span></div></div>
+  </div>
+</div>
+<div class="workout-row">
+  <div class="workout-row-main">
+    <div class="workout-row-top">
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">水 16:45-21:00</div></div>
+      <div class="workout-status-block">
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
+      </div>
+    </div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Leonie Hamer, Moritz Kriese</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月29日 - 7月8日</strong><span>9回</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€170</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">スタッフ</span><span class="workout-price-value">€278</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外</span><span class="workout-price-value">€470</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外割引</span><span class="workout-price-value">€278</span></div></div>
+  </div>
+</div>
+<div class="workout-row">
+  <div class="workout-row-main">
+    <div class="workout-row-top">
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">木 16:45-21:00</div></div>
+      <div class="workout-status-block">
+        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
+      </div>
+    </div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Felix Schindler, Anne-Sophie Jahncke</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月30日 - 7月9日</strong><span>9回</span></div></div></div>
+    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€170</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">スタッフ</span><span class="workout-price-value">€278</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外</span><span class="workout-price-value">€470</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外割引</span><span class="workout-price-value">€278</span></div></div>
+  </div>
+</div>
+<div class="workout-row">
+  <div class="workout-row-main">
+    <div class="workout-row-top">
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">金 16:15-21:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
       </div>
@@ -26,17 +74,17 @@ layout: doc
 </div>
 </div>
 
-## 初心者向けディンギーセーリング コース 1: 集中コース
+## 初心者向けディンギーセーリング：コース1（集中コース）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">月-金 09:00-17:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">月-金 09:00-17:00</div></div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
+        <div class="workout-status is-waitlist"><span class="workout-status-dot"></span><span>キャンセル待ち</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Alfred Böttger, Anne-Sophie Jahncke</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年7月27日 - 31日</strong><span>5回</span></div></div></div>
@@ -45,15 +93,15 @@ layout: doc
 </div>
 </div>
 
-## 初心者向けディンギーセーリング コース 2: 集中コース
+## 初心者向けディンギーセーリング：コース2（集中コース）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">月-金 09:00-17:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">月-金 09:00-17:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
         <div class="workout-opens-at">受付開始 2026年6月1日 10:00</div>
@@ -65,53 +113,15 @@ layout: doc
 </div>
 </div>
 
-## 初心者向けディンギーセーリング コース 2: Mo
+## 初心者向けディンギーセーリング：コース3（集中コース）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
-<div class="workout-row">
-  <div class="workout-row-main">
-    <div class="workout-row-top">
-      <div class="workout-row-schedule">月 14:15-18:30</div>
-      <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
-      </div>
-    </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Sören Friedrichs</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月27日 - 7月6日</strong><span>9回</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€170</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">スタッフ</span><span class="workout-price-value">€278</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外</span><span class="workout-price-value">€470</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外割引</span><span class="workout-price-value">€278</span></div></div>
-  </div>
-</div>
-</div>
-
-## 初心者向けディンギーセーリング コース 3: Di
-
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">火 16:45-21:00</div>
-      <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
-      </div>
-    </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Ulrike Kirchner</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月28日 - 6月30日</strong><span>9回</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€170</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">スタッフ</span><span class="workout-price-value">€278</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外</span><span class="workout-price-value">€470</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外割引</span><span class="workout-price-value">€278</span></div></div>
-  </div>
-</div>
-</div>
-
-## 初心者向けディンギーセーリング コース 3: 集中コース
-
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
-<div class="workout-row">
-  <div class="workout-row-main">
-    <div class="workout-row-top">
-      <div class="workout-row-schedule">毎日 09:00-17:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">毎日 09:00-17:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
         <div class="workout-opens-at">受付開始 2026年6月1日 10:00</div>
@@ -123,15 +133,15 @@ layout: doc
 </div>
 </div>
 
-## 初心者向けディンギーセーリング コース 4: 集中コース
+## 初心者向けディンギーセーリング：コース4（集中コース）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">月-金 09:00-17:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">月-金 09:00-17:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
         <div class="workout-opens-at">受付開始 2026年6月1日 10:00</div>
@@ -143,53 +153,15 @@ layout: doc
 </div>
 </div>
 
-## 初心者向けディンギーセーリング コース 4: Mi
+## 初心者向けディンギーセーリング：コース6（昇天祭連休集中コース）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
-<div class="workout-row">
-  <div class="workout-row-main">
-    <div class="workout-row-top">
-      <div class="workout-row-schedule">水 16:45-21:00</div>
-      <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
-      </div>
-    </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Leonie Hamer, Moritz Kriese</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月29日 - 7月8日</strong><span>9回</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€170</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">スタッフ</span><span class="workout-price-value">€278</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外</span><span class="workout-price-value">€470</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外割引</span><span class="workout-price-value">€278</span></div></div>
-  </div>
-</div>
-</div>
-
-## 初心者向けディンギーセーリング コース 5: Do
-
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">木 16:45-21:00</div>
-      <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
-      </div>
-    </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Felix Schindler, Anne-Sophie Jahncke</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月30日 - 7月9日</strong><span>9回</span></div></div></div>
-    <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€170</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">スタッフ</span><span class="workout-price-value">€278</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外</span><span class="workout-price-value">€470</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外割引</span><span class="workout-price-value">€278</span></div></div>
-  </div>
-</div>
-</div>
-
-## 初心者向けディンギーセーリング コース 6: 集中コース キリスト昇天祭期間中
-
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
-<div class="workout-row">
-  <div class="workout-row-main">
-    <div class="workout-row-top">
-      <div class="workout-row-schedule">木 09:00-18:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">木〜日 09:00-18:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
       </div>
@@ -200,15 +172,15 @@ layout: doc
 </div>
 </div>
 
-## 初心者向けディンギーセーリング コース 6: 集中コース/空席
+## 初心者向けディンギーセーリング：コース6（集中コース／空きあり）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">月-金 09:00-17:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">月-金 09:00-17:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
         <div class="workout-opens-at">受付開始 2026年6月1日 10:00</div>
@@ -220,15 +192,15 @@ layout: doc
 </div>
 </div>
 
-## 初心者向けディンギーセーリング コース 7: 集中コース キリスト昇天祭期間中
+## 初心者向けディンギーセーリング：コース7（昇天祭連休集中コース）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">木 09:00-18:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">木〜日 09:00-18:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
       </div>
@@ -239,15 +211,15 @@ layout: doc
 </div>
 </div>
 
-## 初心者向けディンギーセーリング コース 7: 集中コース/空席
+## 初心者向けディンギーセーリング：コース7（集中コース／空きあり）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">月-金 09:00-17:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">月-金 09:00-17:00</div><div class="workout-row-schedule-item">09:00-17:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
         <div class="workout-opens-at">受付開始 2026年6月1日 10:00</div>
@@ -259,15 +231,15 @@ layout: doc
 </div>
 </div>
 
-## 初心者向けディンギーセーリング コース 8: 集中コース
+## 初心者向けディンギーセーリング：コース8（集中コース）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_fuer_Anfaenger_innen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">月-金 09:00-17:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">月-金 09:00-17:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
         <div class="workout-opens-at">受付開始 2026年6月1日 10:00</div>

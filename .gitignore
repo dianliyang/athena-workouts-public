@@ -1,6 +1,13 @@
 node_modules/
 dist/
 docs/.vitepress/cache/
+docs/.vitepress/dist/
+docs/de/workouts/*
+docs/en/workouts/*
+docs/ja/workouts/*
+docs/ko/workouts/*
+docs/zh-cn/workouts/*
+docs/workouts/
 .env
 .env.*
 .wrangler/

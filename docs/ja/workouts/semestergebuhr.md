@@ -9,13 +9,13 @@ layout: doc
 
 ## フェンシング 学期料金
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Fechten_Semestergebuehr.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">月 20:00-22:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">月 20:00-22:00</div><div class="workout-row-schedule-item">水 19:00-22:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
         <div class="workout-opens-at">受付開始 2026年3月29日 18:00</div>
@@ -29,13 +29,13 @@ layout: doc
 
 ## 社交ダンス 学期料金
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Gesellschaftstanz_Semestergebuehr.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">月-金 18:00-22:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">月-金 18:00-22:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
         <div class="workout-opens-at">受付開始 2026年3月29日 18:00</div>
@@ -47,15 +47,15 @@ layout: doc
 </div>
 </div>
 
-## 社交ダンス 学期料金 nur Tanzabend
+## 社交ダンス 学期料金（ダンスナイトのみ）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Gesellschaftstanz_Semestergebuehr.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">金 20:00-22:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">金 20:00-22:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
         <div class="workout-opens-at">受付開始 2026年3月29日 18:00</div>
@@ -67,15 +67,15 @@ layout: doc
 </div>
 </div>
 
-## Kampfsport 学期料金
+## 格闘技 学期料金
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Kampfsport_Semestergebuehr.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">日程未定</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">日程未定</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
         <div class="workout-opens-at">受付開始 2026年3月29日 18:00</div>
@@ -87,41 +87,41 @@ layout: doc
 </div>
 </div>
 
-## カヌー-/Rudersport 学期料金
+## カヌー・ローイング 学期料金
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Kanu-_Rudersport_Semestergebuehr.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">日程未定</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item"></div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
         <div class="workout-opens-at">受付開始 2026年3月29日 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Location</strong><span>Ruder- und Kanuzentrum, Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Philipp, Swantje</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年5月2日 - 9月30日</strong><span>2回</span></div></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Philipp, Swantje</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年5月2日 - 9月30日</strong><span>2回</span></div></div></div>
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€25</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">スタッフ</span><span class="workout-price-value">€45</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外</span><span class="workout-price-value">€70</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外割引</span><span class="workout-price-value">€45</span></div></div>
   </div>
 </div>
 </div>
 
-## カヌー-/Rudersport 学期料金 50% Ermäßigung wegen Kursbuchung
+## カヌー・ローイング 学期料金（コース登録による50%割引）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Kanu-_Rudersport_Semestergebuehr.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">日程未定</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item"></div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
         <div class="workout-opens-at">受付開始 2026年3月29日 18:00</div>
       </div>
     </div>
-    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Location</strong><span>Ruder- und Kanuzentrum, Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Gero, Swantje</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年7月1日 - 9月30日</strong><span>2回</span></div></div></div>
+    <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>Ruder- und Kanuzentrum</strong><span>Kiellinie 7, 24105 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Gero, Swantje</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年7月1日 - 9月30日</strong><span>2回</span></div></div></div>
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">学生</span><span class="workout-price-value">€12.5</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">スタッフ</span><span class="workout-price-value">€22.5</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外</span><span class="workout-price-value">€35</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">学外割引</span><span class="workout-price-value">€22.5</span></div></div>
   </div>
 </div>
@@ -129,13 +129,13 @@ layout: doc
 
 ## スポーツクライミング 学期料金
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Klettersport_Semestergebuehr.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">日程未定</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">日程未定</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
         <div class="workout-opens-at">受付開始 2026年3月29日 18:00</div>
@@ -147,15 +147,15 @@ layout: doc
 </div>
 </div>
 
-## 学期料金 freier Spielbetrieb
+## 学期料金（自由プレー）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Semestergebuehr_freier_Spielbetrieb.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">日程未定</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">日程未定</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
         <div class="workout-opens-at">受付開始 2026年3月29日 18:00</div>
@@ -167,15 +167,15 @@ layout: doc
 </div>
 </div>
 
-## 学期料金 weitere Sportarten
+## 学期料金（その他スポーツ）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Semestergebuehr_weitere_Sportarten.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">日程未定</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">日程未定</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
         <div class="workout-opens-at">受付開始 2026年3月29日 18:00</div>
@@ -189,13 +189,13 @@ layout: doc
 
 ## テニス 学期料金
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Tennis_Semestergebuehr.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">日程未定</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">日程未定</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>予定</span></div>
         <div class="workout-opens-at">受付開始 2026年3月29日 18:00</div>

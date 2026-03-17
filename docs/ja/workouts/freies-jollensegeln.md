@@ -7,15 +7,15 @@ layout: doc
 
 1件のコース
 
-## 自由ディンギーセーリング 土曜日 5時間
+## ディンギー自由帆走：土曜（5時間）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_freies_Jollensegeln.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">土 13:00-18:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">土 13:00-18:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>

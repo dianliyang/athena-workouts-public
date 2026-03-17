@@ -7,15 +7,15 @@ layout: doc
 
 4 variants.
 
-## Sailing for Teenagers during Summer Holidays Course 0: Group Sailing in a Keelboat with Fion
+## Summer Holiday Sailing for Teenagers: Course 0 (Group Sailing on a Keelboat with Fion)
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Segeln_fuer_Jugendliche_in_den_Sommerferien.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon-Fri 09:00-16:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Mon-Fri 09:00-16:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
@@ -26,15 +26,15 @@ layout: doc
 </div>
 </div>
 
-## Sailing for Teenagers during Summer Holidays Course 1: Dinghy Course for beginners
+## Summer Holiday Sailing for Teenagers: Course 1 (Beginner Dinghy Course)
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Segeln_fuer_Jugendliche_in_den_Sommerferien.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon-Fri 09:00-16:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Mon-Fri 09:00-16:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
@@ -45,15 +45,15 @@ layout: doc
 </div>
 </div>
 
-## Sailing for Teenagers during Summer Holidays Course 2: Dinghy Course For Advanced Participants
+## Summer Holiday Sailing for Teenagers: Course 2 (Advanced Dinghy Course)
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Segeln_fuer_Jugendliche_in_den_Sommerferien.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon-Fri 09:00-16:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Mon-Fri 09:00-16:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>
@@ -64,15 +64,15 @@ layout: doc
 </div>
 </div>
 
-## Sailing for Teenagers during Summer Holidays Course 3: Group Sailing in a Keelboat with Fion
+## Summer Holiday Sailing for Teenagers: Course 3 (Group Sailing on a Keelboat with Fion)
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Segeln_fuer_Jugendliche_in_den_Sommerferien.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon-Fri 09:00-16:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Mon-Fri 09:00-16:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Available</span></div>
       </div>

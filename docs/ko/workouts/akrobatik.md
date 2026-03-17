@@ -9,13 +9,13 @@ layout: doc
 
 ## 아크로바틱 초급
 
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Akrobatik.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">월 20:00-22:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">월 20:00-22:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>본문 참조</span></div>
       </div>
@@ -28,13 +28,13 @@ layout: doc
 
 ## 아크로바틱 고급 참가자
 
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Akrobatik.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">목 19:00-20:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">목 19:00-20:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>본문 참조</span></div>
       </div>
@@ -47,13 +47,13 @@ layout: doc
 
 ## 아크로바틱 자유 훈련
 
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Akrobatik.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">목 20:00-22:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">목 20:00-22:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>본문 참조</span></div>
       </div>
@@ -64,15 +64,15 @@ layout: doc
 </div>
 </div>
 
-## 아크로바틱 Showgruppe
+## 아크로바틱 공연 그룹
 
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Akrobatik.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">화 20:00-22:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">화 20:00-22:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>본문 참조</span></div>
       </div>

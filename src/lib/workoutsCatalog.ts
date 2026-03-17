@@ -1,34 +1,4 @@
-type WorkoutDetailRecord = {
-  id: string;
-  slug: string;
-  title: string;
-  provider: string;
-  category: string | null;
-  description: string | null;
-  schedule: Array<{
-    day: string;
-    time: string;
-    location: string;
-  }>;
-  location: string | null;
-  bookingUrl: string | null;
-  url: string | null;
-  instructor?: string;
-  startDate?: string;
-  endDate?: string;
-  priceStudent?: number | null;
-  priceStaff?: number | null;
-  priceExternal?: number | null;
-  priceExternalReduced?: number | null;
-  bookingStatus?: string;
-  semester?: string;
-  isEntgeltfrei?: boolean;
-  bookingLabel?: string;
-  bookingOpensOn?: string;
-  bookingOpensAt?: string;
-  plannedDates?: string[];
-  durationUrl?: string;
-};
+import type { WorkoutDetailResponse as WorkoutDetailRecord } from "./workoutsApi";
 
 export type WorkoutDetailItem = WorkoutDetailRecord & {
   category: string;
@@ -62,7 +32,11 @@ export const UNCATEGORIZED_LABEL = "Uncategorized";
 export const CATEGORY_INDEX_PATH = "docs/workouts";
 
 function normalizeCategory(category: string | null): string {
-  return category?.trim() || UNCATEGORIZED_LABEL;
+  const trimmed = category?.trim() || UNCATEGORIZED_LABEL;
+  if (trimmed.startsWith("Ballett")) {
+    return "Ballett";
+  }
+  return trimmed;
 }
 
 function slugifyCategory(category: string): string {
@@ -77,7 +51,31 @@ function slugifyCategory(category: string): string {
 
 function normalizeTitleGroupKey(title: string): string {
   return title
-    .replace(/\s+\d{1,2}[:.]\d{2}\s*-\s*\d{1,2}[:.]\d{2}\s*$/u, "")
+    // Remove only the number and optional day from Kurs/Wochenende/Course suffixes: "Course 1: Mo" -> "Course"
+    .replace(
+      /(\s*(?:Kurs|Wochenende|Course))\s+\d+(?:\s*[:]\s*(?:Mo|Di|Mi|Do|Fr|Sa|So|Mon|Tue|Wed|Thu|Fri|Sat|Sun))?$/iu,
+      "$1",
+    )
+    // Remove group/day suffixes like "Gruppe Di", "Gruppe Sa/So", or "Gruppe Mi unbesetzt"
+    .replace(
+      /\s+Gruppe\s+(?:Mo|Di|Mi|Do|Fr|Sa|So|Mon|Tue|Wed|Thu|Fri|Sat|Sun)(?:\/|\\)?(?:Mo|Di|Mi|Do|Fr|Sa|So|Mon|Tue|Wed|Thu|Fri|Sat|Sun)?(?:\s+unbesetzt)?$/iu,
+      "",
+    )
+    // Remove time ranges: "Di 19.10 - 20.10 Uhr" or "10:00-11:00"
+    .replace(
+      /\s+(?:Mo|Di|Mi|Do|Fr|Sa|So|Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\s*\d{1,2}[:.]\d{2}\s*-\s*\d{1,2}[:.]\d{2}\s*(?:Uhr)?$/iu,
+      "",
+    )
+    // Remove simple day + number suffixes: ": Mi 12", " Di 13"
+    .replace(
+      /[:\s]+(?:Mo|Di|Mi|Do|Fr|Sa|So|Mon|Tue|Wed|Thu|Fri|Sat|Sun)?\s*\d{1,2}$/iu,
+      "",
+    )
+    // Remove full German weekday suffixes: "montags", "dienstags", etc.
+    .replace(
+      /\s+(?:montags|dienstags|mittwochs|donnerstags|freitags|samstags|sonntags)$/iu,
+      "",
+    )
     .trim();
 }
 
@@ -89,18 +87,54 @@ function normalizeDetail(record: WorkoutDetailRecord): WorkoutDetailItem {
   };
 }
 
+const WEEKDAY_ORDER: Record<string, number> = {
+  Mo: 1,
+  Mon: 1,
+  Di: 2,
+  Tue: 2,
+  Mi: 3,
+  Wed: 3,
+  Do: 4,
+  Thu: 4,
+  Fr: 5,
+  Fri: 5,
+  Sa: 6,
+  Sat: 6,
+  So: 7,
+  Sun: 7,
+};
+
 function buildTitleGroups(items: WorkoutDetailItem[]): WorkoutTitleGroup[] {
-  const grouped = Object.groupBy(items, (item) => normalizeTitleGroupKey(item.title)) as Record<
-    string,
-    WorkoutDetailItem[]
-  >;
+  const grouped = Object.groupBy(items, (item) =>
+    normalizeTitleGroupKey(item.title),
+  ) as Record<string, WorkoutDetailItem[]>;
 
   return Object.keys(grouped)
     .sort((left, right) => left.localeCompare(right))
-    .map((title) => ({
-      title,
-      items: grouped[title] ?? [],
-    }));
+    .map((title) => {
+      const groupItems = grouped[title] ?? [];
+
+      // Sort items by schedule (first day, then time)
+      groupItems.sort((a, b) => {
+        const schedA = a.schedule[0];
+        const schedB = b.schedule[0];
+
+        if (!schedA && !schedB) return 0;
+        if (!schedA) return 1;
+        if (!schedB) return -1;
+
+        const dayA = WEEKDAY_ORDER[schedA.day] ?? 99;
+        const dayB = WEEKDAY_ORDER[schedB.day] ?? 99;
+
+        if (dayA !== dayB) return dayA - dayB;
+        return schedA.time.localeCompare(schedB.time);
+      });
+
+      return {
+        title,
+        items: groupItems,
+      };
+    });
 }
 
 export function buildWorkoutDetailCatalog(

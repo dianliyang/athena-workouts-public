@@ -7,15 +7,15 @@ layout: doc
 
 2 个项目
 
-## 大环 / Cyr 轮 进阶学员 / Showgruppe
+## 德式大轮 / Cyr轮 进阶及表演组
 
-<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Rhoenrad_Cyr.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">周日 11:00-13:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">周日 11:00-13:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>见说明</span></div>
       </div>
@@ -26,15 +26,15 @@ layout: doc
 </div>
 </div>
 
-## 大环 / Cyr 轮 所有人均可参加
+## 德式大轮 / Cyr轮 全员开放
 
-<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Rhoenrad_Cyr.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">周二 17:00-19:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">周二 16:00-19:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>见说明</span></div>
       </div>

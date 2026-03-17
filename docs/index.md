@@ -1,8 +1,18 @@
 ---
-layout: doc
-title: Workouts
+editLink: false
 ---
+<script setup>
+import { onMounted } from 'vue'
+import { useRouter } from 'vitepress'
 
-# Sports in Kiel
+const router = useRouter()
 
-Use the sidebar to browse workout categories.
+onMounted(() => {
+  // Redirect root to /de/
+  router.go('/de/')
+})
+</script>
+
+# Redirecting to Deutsch...
+
+<meta http-equiv="refresh" content="0; url=/de/">

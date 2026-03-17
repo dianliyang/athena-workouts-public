@@ -7,15 +7,15 @@ layout: doc
 
 1 variant.
 
-## Parent-Child Gymnastics Children bis 4 years
+## Parent-Child Gymnastics Children up to 4 Years
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Eltern-Kind-Turnen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon 16:00-18:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Mon 16:00-18:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>See text</span></div>
       </div>

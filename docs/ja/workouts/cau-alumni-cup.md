@@ -9,13 +9,13 @@ layout: doc
 
 ## CAU同窓会カップ: Kiel-Eckernförde
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_CAU_Alumni_Cup_.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">毎日 09:00-18:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">毎日 09:00-18:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>

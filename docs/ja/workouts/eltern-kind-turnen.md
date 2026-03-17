@@ -7,15 +7,15 @@ layout: doc
 
 1件のコース
 
-## 親子体操 子ども bis 4 歳
+## 親子体操 子ども 4歳まで
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Eltern-Kind-Turnen.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">月 16:00-18:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">月 16:00-18:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>本文参照</span></div>
       </div>

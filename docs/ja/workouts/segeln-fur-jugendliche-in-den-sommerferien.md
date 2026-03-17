@@ -7,15 +7,15 @@ layout: doc
 
 4件のコース
 
-## 夏休みの青少年向けセーリング コース 0: キールボートでのグループセーリング Fion号で
+## 夏休み青少年セーリング：コース0（Fionでのキールボート・グループセーリング）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Segeln_fuer_Jugendliche_in_den_Sommerferien.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">月-金 09:00-16:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">月-金 09:00-16:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
       </div>
@@ -26,15 +26,15 @@ layout: doc
 </div>
 </div>
 
-## 夏休みの青少年向けセーリング コース 1: ディンギーコース 初心者向け
+## 夏休み青少年セーリング：コース1（初心者向けディンギーコース）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Segeln_fuer_Jugendliche_in_den_Sommerferien.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">月-金 09:00-16:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">月-金 09:00-16:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
       </div>
@@ -45,15 +45,15 @@ layout: doc
 </div>
 </div>
 
-## 夏休みの青少年向けセーリング コース 2: ディンギーコース 上級者向け
+## 夏休み青少年セーリング：コース2（中上級ディンギーコース）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Segeln_fuer_Jugendliche_in_den_Sommerferien.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">月-金 09:00-16:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">月-金 09:00-16:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
       </div>
@@ -64,15 +64,15 @@ layout: doc
 </div>
 </div>
 
-## 夏休みの青少年向けセーリング コース 3: キールボートでのグループセーリング Fion号で
+## 夏休み青少年セーリング：コース3（Fionでのキールボート・グループセーリング）
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Segeln_fuer_Jugendliche_in_den_Sommerferien.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">月-金 09:00-16:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">月-金 09:00-16:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
       </div>

@@ -9,13 +9,13 @@ layout: doc
 
 ## Futsal DHM Competition Team
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Futsal.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Wed 18:00-20:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Wed 18:00-20:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>See text</span></div>
       </div>
@@ -28,13 +28,13 @@ layout: doc
 
 ## Futsal Advanced Participants
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Futsal.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Fri 17:30-19:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Fri 17:30-19:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>
@@ -48,13 +48,13 @@ layout: doc
 
 ## Futsal Open Play
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Futsal.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sat 12:00-14:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Sat 12:00-14:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>See text</span></div>
       </div>

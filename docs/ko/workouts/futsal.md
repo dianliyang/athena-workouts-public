@@ -9,13 +9,13 @@ layout: doc
 
 ## 풋살 DHM 경기 팀
 
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Futsal.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">수 18:00-20:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">수 18:00-20:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>본문 참조</span></div>
       </div>
@@ -28,13 +28,13 @@ layout: doc
 
 ## 풋살 고급 참가자
 
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Futsal.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">금 17:30-19:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">금 17:30-19:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>예정</span></div>
         <div class="workout-opens-at">오픈 2026년 3월 29일 18:00</div>
@@ -48,13 +48,13 @@ layout: doc
 
 ## 풋살 자유 플레이
 
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Futsal.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토 12:00-14:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토 12:00-14:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>본문 참조</span></div>
       </div>

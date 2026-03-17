@@ -7,17 +7,17 @@ layout: doc
 
 2件のコース
 
-## ディンギーセーリング ウォームアップ（初心者＋上級者）: ウォームアップ 初心者向け
+## ディンギーセーリング・ウォームアップ（初級＋中上級）：初心者向けウォームアップ
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_Warming_up__A_F__.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">土-日 09:00-17:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">土〜日 09:00-17:00</div></div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
+        <div class="workout-status "><span class="workout-status-dot"></span><span>制限あり</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Alfred Böttger</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月18日 - 19日</strong><span>2回</span></div></div></div>
@@ -26,17 +26,17 @@ layout: doc
 </div>
 </div>
 
-## ディンギーセーリング ウォームアップ（初心者＋上級者）: ウォームアップ 上級者向け
+## ディンギーセーリング・ウォームアップ（初級＋中上級）：中上級者向けウォームアップ
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Jollensegeln_Warming_up__A_F__.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">土-日 09:00-17:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">土〜日 09:00-17:00</div></div>
       <div class="workout-status-block">
-        <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>受付中</span></div>
+        <div class="workout-status "><span class="workout-status-dot"></span><span>制限あり</span></div>
       </div>
     </div>
     <div class="workout-row-details"><div class="workout-detail is-location"><div class="workout-detail-icon">📍</div><div class="workout-detail-copy"><strong>SZ Schilks</strong><span>Segelzentrum Schilksee, Soling 34, 24159 Schilksee , Soling 34, 24159 Kiel</span></div></div><div class="workout-detail is-instructor"><div class="workout-detail-icon">👤</div><div class="workout-detail-copy"><strong>Merle Ritzer</strong><span>担当</span></div></div><div class="workout-detail is-duration"><div class="workout-detail-icon">🗓</div><div class="workout-detail-copy"><strong>2026年4月18日 - 19日</strong><span>2回</span></div></div></div>

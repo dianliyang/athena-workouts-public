@@ -9,13 +9,13 @@ layout: doc
 
 ## インラインホッケー 初心者
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Inline-Hockey.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">金 19:00-20:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">金 19:00-20:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>本文参照</span></div>
       </div>
@@ -28,13 +28,13 @@ layout: doc
 
 ## インラインホッケー 上級者
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Inline-Hockey.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">日 09:00-11:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">日 09:00-11:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>本文参照</span></div>
       </div>

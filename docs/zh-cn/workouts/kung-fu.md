@@ -9,13 +9,13 @@ layout: doc
 
 ## 功夫 初学者/所有级别
 
-<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Kung_Fu.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">周二 19:30-21:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">周二 19:30-21:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>见说明</span></div>
       </div>

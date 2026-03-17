@@ -9,13 +9,13 @@ layout: doc
 
 ## 东方舞 女性专属 初级及高级
 
-<p class="workout-group-provider">提供方: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供方: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Orientalischer_Tanz.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">周四 20:15-21:45</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">周四 20:15-21:45</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>即将开放</span></div>
         <div class="workout-opens-at">开放时间 2026年3月29日 18:00</div>

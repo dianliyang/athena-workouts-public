@@ -9,13 +9,13 @@ layout: doc
 
 ## カリステニクス
 
-<p class="workout-group-provider">提供元: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">提供元: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Calisthenics.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">月-金 08:00-22:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">月-金 08:00-22:00</div><div class="workout-row-schedule-item">土〜日 09:00-20:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>本文参照</span></div>
       </div>

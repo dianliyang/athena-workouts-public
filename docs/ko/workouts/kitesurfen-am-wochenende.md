@@ -5,17 +5,17 @@ layout: doc
 
 # 주말 카이트서핑
 
-31개 강좌
+1개 강좌
 
-## 주말 카이트서핑 초보자 코스 1
+## 주말 카이트서핑 초보자 코스
 
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Kitesurfen_am_Wochenende.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -24,17 +24,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 10
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -43,17 +36,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 11
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -62,17 +48,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 12
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -81,17 +60,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 13
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -100,17 +72,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 14
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -119,17 +84,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 15
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -138,17 +96,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 16
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -157,17 +108,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 17
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -176,17 +120,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 18
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -195,17 +132,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 19
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -214,17 +144,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 2
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -233,17 +156,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 20
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -252,17 +168,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 21
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -271,17 +180,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 22
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -290,17 +192,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 23
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -309,17 +204,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 24
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -328,17 +216,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 25
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -347,17 +228,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 26
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -366,17 +240,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 27
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -385,17 +252,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 28
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -404,17 +264,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 29
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -423,17 +276,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 3
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -442,17 +288,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 30
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -461,17 +300,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 31
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -480,17 +312,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 4
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -499,17 +324,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 5
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -518,17 +336,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 6
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -537,17 +348,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 7
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -556,17 +360,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 8
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>
@@ -575,17 +372,10 @@ layout: doc
     <div class="workout-price-panel"><div class="workout-price-item"><span class="workout-price-label">학생</span><span class="workout-price-value">€195</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">직원</span><span class="workout-price-value">€215</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부</span><span class="workout-price-value">€230</span></div><div class="workout-price-separator"></div><div class="workout-price-item"><span class="workout-price-label">외부 할인</span><span class="workout-price-value">€215</span></div></div>
   </div>
 </div>
-</div>
-
-## 주말 카이트서핑 초보자 코스 9
-
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
-
-<div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">토-일 10:00-14:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">토〜일 10:00-14:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>

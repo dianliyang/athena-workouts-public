@@ -7,15 +7,15 @@ layout: doc
 
 1 variant.
 
-## Open Dinghy Sailing Saturdays 5h
+## Open Dinghy Sailing: Saturdays (5 hours)
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_freies_Jollensegeln.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sat 13:00-18:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Sat 13:00-18:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>tbd</span></div>
       </div>

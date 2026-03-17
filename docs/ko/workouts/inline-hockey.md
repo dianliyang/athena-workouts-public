@@ -9,13 +9,13 @@ layout: doc
 
 ## 인라인 하키 초급
 
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Inline-Hockey.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">금 19:00-20:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">금 19:00-20:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>본문 참조</span></div>
       </div>
@@ -28,13 +28,13 @@ layout: doc
 
 ## 인라인 하키 고급 참가자
 
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Inline-Hockey.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">일 09:00-11:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">일 09:00-11:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>본문 참조</span></div>
       </div>

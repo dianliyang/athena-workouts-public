@@ -9,13 +9,13 @@ layout: doc
 
 ## Table Football Beg. + Adv.
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Tischfussball.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Mon 18:30-20:30</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Mon 18:30-20:30</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>Scheduled</span></div>
         <div class="workout-opens-at">Opens Mar 29, 2026 at 18:00</div>

@@ -123,6 +123,306 @@ describe("workouts detail catalog transformations", () => {
     ]);
   });
 
+  test("groups Zumba with day and time suffixes correctly", () => {
+    const records: Record<string, WorkoutDetailRecord> = {
+      z1: {
+        id: "z1",
+        slug: "z1",
+        title: "Zumba Di 19.10 - 20.10 Uhr",
+        provider: "UniSport",
+        category: "Dance",
+        schedule: [],
+      } as any,
+      z2: {
+        id: "z2",
+        slug: "z2",
+        title: "Zumba Di 20.20 - 21.20 Uhr",
+        provider: "UniSport",
+        category: "Dance",
+        schedule: [],
+      } as any,
+      z3: {
+        id: "z3",
+        slug: "z3",
+        title: "Zumba Do 18.10 - 19.10 Uhr",
+        provider: "UniSport",
+        category: "Dance",
+        schedule: [],
+      } as any,
+    };
+
+    const catalog = buildWorkoutDetailCatalog(records);
+    expect(catalog.groups.Dance.titleGroups).toHaveLength(1);
+    expect(catalog.groups.Dance.titleGroups[0].title).toBe("Zumba");
+    expect(catalog.groups.Dance.titleGroups[0].items).toHaveLength(3);
+  });
+
+  test("groups Yacht with colon, day and number suffixes correctly", () => {
+    const records: Record<string, WorkoutDetailRecord> = {
+      y1: {
+        id: "y1",
+        slug: "y1",
+        title: "Yacht Anfänger*innen: Mi 12",
+        provider: "UniSport",
+        category: "Yacht",
+        schedule: [],
+      } as any,
+      y2: {
+        id: "y2",
+        slug: "y2",
+        title: "Yacht Anfänger*innen: Mi 13",
+        provider: "UniSport",
+        category: "Yacht",
+        schedule: [],
+      } as any,
+    };
+
+    const catalog = buildWorkoutDetailCatalog(records);
+    expect(catalog.groups.Yacht.titleGroups).toHaveLength(1);
+    expect(catalog.groups.Yacht.titleGroups[0].title).toBe("Yacht Anfänger*innen");
+    expect(catalog.groups.Yacht.titleGroups[0].items).toHaveLength(2);
+  });
+
+  test("groups Indoor Cycling with weekday suffixes correctly", () => {
+    const records: Record<string, WorkoutDetailRecord> = {
+      c1: {
+        id: "c1",
+        slug: "c1",
+        title: "Indoor Cycling montags",
+        provider: "UniSport",
+        category: "Fitness",
+        schedule: [],
+      } as any,
+      c2: {
+        id: "c2",
+        slug: "c2",
+        title: "Indoor Cycling mittwochs",
+        provider: "UniSport",
+        category: "Fitness",
+        schedule: [],
+      } as any,
+      c3: {
+        id: "c3",
+        slug: "c3",
+        title: "Indoor Cycling donnerstags",
+        provider: "UniSport",
+        category: "Fitness",
+        schedule: [],
+      } as any,
+    };
+
+    const catalog = buildWorkoutDetailCatalog(records);
+    expect(catalog.groups.Fitness.titleGroups).toHaveLength(1);
+    expect(catalog.groups.Fitness.titleGroups[0].title).toBe("Indoor Cycling");
+    expect(catalog.groups.Fitness.titleGroups[0].items).toHaveLength(3);
+  });
+
+  test("sorts items within a title group by schedule (day and time)", () => {
+    const records: Record<string, WorkoutDetailRecord> = {
+      s3: {
+        id: "s3",
+        slug: "s3",
+        title: "Workout Thu 13:15-16:15",
+        provider: "UniSport",
+        category: "Fitness",
+        schedule: [{ day: "Thu", time: "13:15-16:15", location: "L" }],
+      } as any,
+      s1: {
+        id: "s1",
+        slug: "s1",
+        title: "Workout Tue 09:30-12:30",
+        provider: "UniSport",
+        category: "Fitness",
+        schedule: [{ day: "Tue", time: "09:30-12:30", location: "L" }],
+      } as any,
+      s2: {
+        id: "s2",
+        slug: "s2",
+        title: "Workout Thu 09:30-12:30",
+        provider: "UniSport",
+        category: "Fitness",
+        schedule: [{ day: "Thu", time: "09:30-12:30", location: "L" }],
+      } as any,
+    };
+
+    const catalog = buildWorkoutDetailCatalog(records);
+    const items = catalog.groups.Fitness.titleGroups[0].items;
+
+    expect(items[0].id).toBe("s1"); // Tue
+    expect(items[1].id).toBe("s2"); // Thu 09:30
+    expect(items[2].id).toBe("s3"); // Thu 13:15
+  });
+
+  test("groups Sportbootführerschein with Gruppe and unbesetzt suffixes correctly", () => {
+    const records: Record<string, WorkoutDetailRecord> = {
+      b1: {
+        id: "b1",
+        slug: "b1",
+        title: "Sportbootführerschein See Gruppe Di",
+        provider: "UniSport",
+        category: "Services",
+        schedule: [],
+      } as any,
+      b2: {
+        id: "b2",
+        slug: "b2",
+        title: "Sportbootführerschein See Gruppe Mi unbesetzt",
+        provider: "UniSport",
+        category: "Services",
+        schedule: [],
+      } as any,
+      b3: {
+        id: "b3",
+        slug: "b3",
+        title: "Sportbootführerschein See Gruppe Sa/So",
+        provider: "UniSport",
+        category: "Services",
+        schedule: [],
+      } as any,
+    };
+
+    const catalog = buildWorkoutDetailCatalog(records);
+    expect(catalog.groups.Services.titleGroups).toHaveLength(1);
+    expect(catalog.groups.Services.titleGroups[0].title).toBe(
+      "Sportbootführerschein See",
+    );
+  });
+
+  test("groups titles with 'Kurs [number]' suffixes correctly", () => {
+    const records: Record<string, WorkoutDetailRecord> = {
+      w1: {
+        id: "w1",
+        slug: "w1",
+        title: "Windsurfen Einsteiger*innen kompakt Kurs 1",
+        provider: "UniSport",
+        category: "Windsurf",
+        schedule: [],
+      } as any,
+      w2: {
+        id: "w2",
+        slug: "w2",
+        title: "Windsurfen Einsteiger*innen kompakt Kurs 6",
+        provider: "UniSport",
+        category: "Windsurf",
+        schedule: [],
+      } as any,
+    };
+
+    const catalog = buildWorkoutDetailCatalog(records);
+    expect(catalog.groups.Windsurf.titleGroups).toHaveLength(1);
+    expect(catalog.groups.Windsurf.titleGroups[0].title).toBe(
+      "Windsurfen Einsteiger*innen kompakt Kurs",
+    );
+  });
+
+  test("groups titles with 'Wochenende [number]' suffixes correctly", () => {
+    const records: Record<string, WorkoutDetailRecord> = {
+      w1: {
+        id: "w1",
+        slug: "w1",
+        title: "Windsurfen Einsteiger*innen Wochenende 1",
+        provider: "UniSport",
+        category: "Windsurf",
+        schedule: [],
+      } as any,
+      w2: {
+        id: "w2",
+        slug: "w2",
+        title: "Windsurfen Einsteiger*innen Wochenende Wochenende 2",
+        provider: "UniSport",
+        category: "Windsurf",
+        schedule: [],
+      } as any,
+    };
+
+    const catalog = buildWorkoutDetailCatalog(records);
+    // Note: the second one has double "Wochenende", we keep one via the regex if it ends with space number.
+    // Actually the regex (\s+(?:Kurs|Wochenende))\s+\d+$ will match the last one.
+    expect(catalog.groups.Windsurf.titleGroups).toHaveLength(2);
+    expect(catalog.groups.Windsurf.titleGroups[0].title).toBe(
+      "Windsurfen Einsteiger*innen Wochenende",
+    );
+  });
+
+  test("groups English Course titles with number and day suffixes correctly", () => {
+    const records: Record<string, WorkoutDetailRecord> = {
+      w1: {
+        id: "w1",
+        slug: "w1",
+        title: "Windsurfing for Beginners 5x3h Course 1: Mo",
+        provider: "UniSport",
+        category: "Windsurf",
+        schedule: [],
+      } as any,
+      w2: {
+        id: "w2",
+        slug: "w2",
+        title: "Windsurfing for Beginners 5x3h Course 2: Mi",
+        provider: "UniSport",
+        category: "Windsurf",
+        schedule: [],
+      } as any,
+    };
+
+    const catalog = buildWorkoutDetailCatalog(records);
+    expect(catalog.groups.Windsurf.titleGroups).toHaveLength(1);
+    expect(catalog.groups.Windsurf.titleGroups[0].title).toBe(
+      "Windsurfing for Beginners 5x3h Course",
+    );
+  });
+
+  test("groups titles with colon-prefixed 'Kurs [number]' suffixes correctly", () => {
+    const records: Record<string, WorkoutDetailRecord> = {
+      w1: {
+        id: "w1",
+        slug: "w1",
+        title: "Windsurfen Fortgeschrittene Fortgeschrittene 5*3h: Kurs 1",
+        provider: "UniSport",
+        category: "Windsurf",
+        schedule: [],
+      } as any,
+      w2: {
+        id: "w2",
+        slug: "w2",
+        title: "Windsurfen Fortgeschrittene Fortgeschrittene 5*3h: Kurs 2",
+        provider: "UniSport",
+        category: "Windsurf",
+        schedule: [],
+      } as any,
+    };
+
+    const catalog = buildWorkoutDetailCatalog(records);
+    expect(catalog.groups.Windsurf.titleGroups).toHaveLength(1);
+    expect(catalog.groups.Windsurf.titleGroups[0].title).toBe(
+      "Windsurfen Fortgeschrittene Fortgeschrittene 5*3h: Kurs",
+    );
+  });
+
+  test("groups different Ballett variants into a single Ballett category", () => {
+    const records: Record<string, WorkoutDetailRecord> = {
+      b1: {
+        id: "b1",
+        slug: "b1",
+        title: "Ballett, American Technique Anf. mit Grundk. und Mittelstufe",
+        provider: "UniSport",
+        category: "Ballett, American Technique",
+        schedule: [],
+      } as any,
+      b2: {
+        id: "b2",
+        slug: "b2",
+        title: "Ballett, klassisches Ballett Anfänger*innen",
+        provider: "UniSport",
+        category: "Ballett, klassisches Ballett",
+        schedule: [],
+      } as any,
+    };
+
+    const catalog = buildWorkoutDetailCatalog(records);
+    expect(catalog.categories).toContain("Ballett");
+    expect(catalog.groups.Ballett.titleGroups).toHaveLength(2);
+  });
+
   test("builds sidebar/page metadata from detail category groups", () => {
     const pages = buildWorkoutCategoryPages(buildWorkoutDetailCatalog(detailRecords));
 

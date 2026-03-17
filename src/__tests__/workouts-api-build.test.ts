@@ -1,5 +1,5 @@
 import { describe, expect, test, vi } from "vitest";
-import { loadWorkoutDetailCatalogFromApi } from "../lib/workoutsApiBuild";
+import { loadWorkoutDetailCatalogFromApi } from "../lib/workoutsApi";
 
 describe("loadWorkoutDetailCatalogFromApi", () => {
   test("prefers the bulk build endpoint when available", async () => {

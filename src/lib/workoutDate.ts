@@ -90,46 +90,18 @@ function formatLocalizedRange(
   endDisplay: FormattedWorkoutDate,
   locale: string,
 ): string {
+  const sameYear = startDisplay.year === endDisplay.year;
+  const sameMonth =
+    sameYear && startDisplay.monthShort === endDisplay.monthShort;
+
   if (locale === "en-US") {
-    if (startDisplay.year === endDisplay.year && startDisplay.monthShort === endDisplay.monthShort) {
+    if (sameMonth) {
       return `${startDisplay.monthShort} ${startDisplay.day} - ${endDisplay.day}, ${startDisplay.year}`;
     }
-
-    if (startDisplay.year === endDisplay.year) {
+    if (sameYear) {
       return `${startDisplay.monthShort} ${startDisplay.day} - ${endDisplay.monthShort} ${endDisplay.day}, ${startDisplay.year}`;
     }
-
-    return `${startDisplay.monthShort} ${startDisplay.day}, ${startDisplay.year} - ${endDisplay.monthShort} ${endDisplay.day}, ${endDisplay.year}`;
-  }
-
-  const sameYear = startDisplay.year === endDisplay.year;
-  const sameMonth = sameYear && startDisplay.monthShort === endDisplay.monthShort;
-
-  if (locale === "zh-CN") {
-    if (sameMonth) {
-      return `${startDisplay.year}年${startDisplay.date.getUTCMonth() + 1}月${startDisplay.day}日 - ${endDisplay.day}日`;
-    }
-    if (sameYear) {
-      return `${startDisplay.year}年${startDisplay.date.getUTCMonth() + 1}月${startDisplay.day}日 - ${endDisplay.date.getUTCMonth() + 1}月${endDisplay.day}日`;
-    }
-  }
-
-  if (locale === "ja-JP") {
-    if (sameMonth) {
-      return `${startDisplay.year}年${startDisplay.date.getUTCMonth() + 1}月${startDisplay.day}日 - ${endDisplay.day}日`;
-    }
-    if (sameYear) {
-      return `${startDisplay.year}年${startDisplay.date.getUTCMonth() + 1}月${startDisplay.day}日 - ${endDisplay.date.getUTCMonth() + 1}月${endDisplay.day}日`;
-    }
-  }
-
-  if (locale === "ko-KR") {
-    if (sameMonth) {
-      return `${startDisplay.year}년 ${startDisplay.date.getUTCMonth() + 1}월 ${startDisplay.day}일 - ${endDisplay.day}일`;
-    }
-    if (sameYear) {
-      return `${startDisplay.year}년 ${startDisplay.date.getUTCMonth() + 1}월 ${startDisplay.day}일 - ${endDisplay.date.getUTCMonth() + 1}월 ${endDisplay.day}일`;
-    }
+    return `${formatLocalizedSingle(startDisplay, locale)} - ${formatLocalizedSingle(endDisplay, locale)}`;
   }
 
   if (locale === "de-DE") {
@@ -138,6 +110,25 @@ function formatLocalizedRange(
     }
     if (sameYear) {
       return `${startDisplay.day}. ${startDisplay.monthShort} - ${endDisplay.day}. ${endDisplay.monthShort} ${startDisplay.year}`;
+    }
+    return `${formatLocalizedSingle(startDisplay, locale)} - ${formatLocalizedSingle(endDisplay, locale)}`;
+  }
+
+  // CJK locales (zh-CN, ja-JP, ko-KR)
+  const isCJK = ["zh-CN", "ja-JP", "ko-KR"].includes(locale);
+  if (isCJK) {
+    const yearSuffix = locale === "ko-KR" ? "년 " : "年";
+    const monthSuffix = locale === "ko-KR" ? "월 " : "月";
+    const daySuffix = locale === "ko-KR" ? "일" : "日";
+
+    const startMonth = startDisplay.date.getUTCMonth() + 1;
+    const endMonth = endDisplay.date.getUTCMonth() + 1;
+
+    if (sameMonth) {
+      return `${startDisplay.year}${yearSuffix}${startMonth}${monthSuffix}${startDisplay.day}${daySuffix} - ${endDisplay.day}${daySuffix}`;
+    }
+    if (sameYear) {
+      return `${startDisplay.year}${yearSuffix}${startMonth}${monthSuffix}${startDisplay.day}${daySuffix} - ${endMonth}${monthSuffix}${endDisplay.day}${daySuffix}`;
     }
   }
 

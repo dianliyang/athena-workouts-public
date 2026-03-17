@@ -7,15 +7,15 @@ layout: doc
 
 2 variants.
 
-## Rhönrad / Cyr Wheel Advanced Participants / Showgruppe
+## German Wheel / Cyr Wheel – Advanced & Performance Group
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Rhoenrad_Cyr.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Sun 11:00-13:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Sun 11:00-13:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>See text</span></div>
       </div>
@@ -26,15 +26,15 @@ layout: doc
 </div>
 </div>
 
-## Rhönrad / Cyr Wheel Open to All
+## German Wheel / Cyr Wheel – Open to All
 
-<p class="workout-group-provider">Provider: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">Provider: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Rhoenrad_Cyr.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">Tue 17:00-19:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">Tue 16:00-19:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status "><span class="workout-status-dot"></span><span>See text</span></div>
       </div>

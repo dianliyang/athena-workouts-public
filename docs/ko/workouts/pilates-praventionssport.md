@@ -9,13 +9,13 @@ layout: doc
 
 ## 필라테스 (예방 스포츠)
 
-<p class="workout-group-provider">제공처: CAU Kiel Sportzentrum</p>
+<p class="workout-group-provider">제공처: <a href="https://server.sportzentrum.uni-kiel.de/angebote/aktueller_zeitraum/_Pilates__Praeventionssport_.html" target="_blank" rel="noopener noreferrer">CAU Kiel Sportzentrum</a></p>
 
 <div class="workout-table">
 <div class="workout-row">
   <div class="workout-row-main">
     <div class="workout-row-top">
-      <div class="workout-row-schedule">금 10:00-11:00</div>
+      <div class="workout-row-schedule"><div class="workout-row-schedule-item">금 10:00-11:00</div></div>
       <div class="workout-status-block">
         <div class="workout-status is-scheduled"><span class="workout-status-dot"></span><span>예정</span></div>
         <div class="workout-opens-at">오픈 2026년 3월 29일 18:00</div>

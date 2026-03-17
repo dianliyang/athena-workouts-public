@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { localizeWorkoutTitle } from "../lib/workoutTitleI18n";
+import { localizeWorkoutTitle } from "../lib/workoutSidebarI18n";
 
 type Locale = "de" | "en" | "zh-CN" | "ja" | "ko";
 
@@ -19,17 +19,51 @@ describe("Workout title localization (BDD)", () => {
 
       expect(results.de).toBe(source);
       expect(results.en).toBe(
-        "Ballet, American Technique Beg. with basic skills and Intermediate",
+        "Ballet, American Technique Adv. Beginners and Intermediate",
       );
-      expect(results.ja).toContain("バレエ、アメリカンテクニック");
-      expect(results.ja).toContain("初級");
-      expect(results.ja).toContain("中級");
-      expect(results.ko).toContain("발레, 아메리칸 테크닉");
-      expect(results.ko).toContain("초급");
-      expect(results.ko).toContain("중급");
-      expect(results["zh-CN"]).toContain("芭蕾，美式技巧");
-      expect(results["zh-CN"]).toContain("初级");
-      expect(results["zh-CN"]).toContain("中级");
+      expect(results.ja).toBe("バレエ（アメリカン・テクニック）初級経験者・中級");
+      expect(results.ko).toBe("발레 (아메리칸 테크닉) 초급경험자·중급");
+      expect(localizeWorkoutTitle(source, "zh-CN")).toBe(
+        "芭蕾（美式技巧）有基础初级与中级",
+      );
+    });
+  });
+
+  describe("Given a title with time and day markers like 'tägl. Sa ab 14 Uhr'", () => {
+    const source = "freies Jollensegeln tägl. Sa ab 14 Uhr";
+
+    test("then it is correctly localized into English", () => {
+      expect(localizeWorkoutTitle(source, "en")).toBe(
+        "Open Dinghy Sailing Daily Sat from 14",
+      );
+    });
+
+    test("then it is correctly localized into Japanese", () => {
+      // Note: 'freies Jollensegeln' might not be in workoutCategoryMap yet for fragments
+      // but let's see what we get.
+      const localized = localizeWorkoutTitle(source, "ja");
+      expect(localized).toContain("毎日");
+      expect(localized).toContain("土");
+      expect(localized).toContain("から");
+      expect(localized).toContain("14");
+      expect(localized).toContain("時");
+    });
+  });
+
+  describe("Given a title with 'ab' followed by a time range like 'Mo ab 14:30-18:30'", () => {
+    const source = "freies Jollensegeln Mo ab 14:30-18:30";
+
+    test("then it is correctly localized into English", () => {
+      expect(localizeWorkoutTitle(source, "en")).toBe(
+        "Open Dinghy Sailing Mon from 14:30-18:30",
+      );
+    });
+
+    test("then it is correctly localized into Japanese", () => {
+      const localized = localizeWorkoutTitle(source, "ja");
+      expect(localized).toContain("月");
+      expect(localized).toContain("14:30-18:30");
+      expect(localized).toContain("から");
     });
   });
 
@@ -39,87 +73,87 @@ describe("Workout title localization (BDD)", () => {
       locale: Locale;
       expected: string;
     }> = [
-      {
-        title: "Mittelstufe bis Fortgeschrittene",
-        locale: "en",
-        expected: "Intermediate to Advanced",
-      },
-      {
-        title: "Mittelstufe bis Fortgeschrittene",
-        locale: "ja",
-        expected: "中級から上級",
-      },
-      {
-        title: "Mittelstufe bis Fortgeschrittene",
-        locale: "ko",
-        expected: "중급에서 고급",
-      },
-      {
-        title: "Mittelstufe bis Fortgeschrittene",
-        locale: "zh-CN",
-        expected: "中级至高级",
-      },
-      {
-        title: "Anf. und Fortg.",
-        locale: "en",
-        expected: "Beg. and Adv.",
-      },
-      {
-        title: "Anf. und Fortg.",
-        locale: "ja",
-        expected: "初級と上級",
-      },
-      {
-        title: "Anf. und Fortg.",
-        locale: "ko",
-        expected: "초급 및 고급",
-      },
-      {
-        title: "Anf. und Fortg.",
-        locale: "zh-CN",
-        expected: "初级及高级",
-      },
-      {
-        title: "Anf. + Fortg.",
-        locale: "en",
-        expected: "Beg. + Adv.",
-      },
-      {
-        title: "Anf. + Fortg.",
-        locale: "ja",
-        expected: "初級 + 上級",
-      },
-      {
-        title: "Anf. + Fortg.",
-        locale: "ko",
-        expected: "초급 + 고급",
-      },
-      {
-        title: "Anf. + Fortg.",
-        locale: "zh-CN",
-        expected: "初级 + 高级",
-      },
-      {
-        title: "Yoga für fortg. Anfänger",
-        locale: "en",
-        expected: "Yoga für Advanced Beginners",
-      },
-      {
-        title: "Yoga für fortg. Anfänger",
-        locale: "ja",
-        expected: "ヨガ für 初中級",
-      },
-      {
-        title: "Yoga für fortg. Anfänger",
-        locale: "ko",
-        expected: "요가 für 초중급",
-      },
-      {
-        title: "Yoga für fortg. Anfänger",
-        locale: "zh-CN",
-        expected: "瑜伽 für 初中级",
-      },
-    ];
+        {
+          title: "Mittelstufe bis Fortgeschrittene",
+          locale: "en",
+          expected: "Intermediate to Advanced",
+        },
+        {
+          title: "Mittelstufe bis Fortgeschrittene",
+          locale: "ja",
+          expected: "中級から上級",
+        },
+        {
+          title: "Mittelstufe bis Fortgeschrittene",
+          locale: "ko",
+          expected: "중급에서 고급",
+        },
+        {
+          title: "Mittelstufe bis Fortgeschrittene",
+          locale: "zh-CN",
+          expected: "中级至高级",
+        },
+        {
+          title: "Anf. und Fortg.",
+          locale: "en",
+          expected: "Beg. and Adv.",
+        },
+        {
+          title: "Anf. und Fortg.",
+          locale: "ja",
+          expected: "初級と上級",
+        },
+        {
+          title: "Anf. und Fortg.",
+          locale: "ko",
+          expected: "초급 및 고급",
+        },
+        {
+          title: "Anf. und Fortg.",
+          locale: "zh-CN",
+          expected: "初级及高级",
+        },
+        {
+          title: "Anf. + Fortg.",
+          locale: "en",
+          expected: "Beginners + Advanced",
+        },
+        {
+          title: "Anf. + Fortg.",
+          locale: "ja",
+          expected: "初心者 + 上級",
+        },
+        {
+          title: "Anf. + Fortg.",
+          locale: "ko",
+          expected: "초보자 + 고급",
+        },
+        {
+          title: "Anf. + Fortg.",
+          locale: "zh-CN",
+          expected: "初学者 + 进阶",
+        },
+        {
+          title: "Yoga für fortg. Anfänger",
+          locale: "en",
+          expected: "Yoga für Advanced Beginners",
+        },
+        {
+          title: "Yoga für fortg. Anfänger",
+          locale: "ja",
+          expected: "ヨガ für 初中級",
+        },
+        {
+          title: "Yoga für fortg. Anfänger",
+          locale: "ko",
+          expected: "요가 für 초중급",
+        },
+        {
+          title: "Yoga für fortg. Anfänger",
+          locale: "zh-CN",
+          expected: "瑜伽 für 初中级",
+        },
+      ];
 
     test("then specific patterns are applied before generic beginner/advanced fragments", () => {
       for (const { title, locale, expected } of cases) {
@@ -149,4 +183,3 @@ describe("Workout title localization (BDD)", () => {
     });
   });
 });
-

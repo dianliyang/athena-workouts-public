@@ -1,4 +1,4 @@
-import type { WorkoutBrowseItem as WorkoutBrowseRecord } from "../lib/workoutsApiUrls";
+import type { WorkoutBrowseItem as WorkoutBrowseRecord } from "../lib/workoutsApi";
 
 type FilterParams = {
   q: string;
