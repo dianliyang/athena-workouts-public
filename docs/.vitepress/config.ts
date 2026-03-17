@@ -7,7 +7,7 @@ export default defineConfig({
   title: "Sports in Kiel",
   lang: "en-US",
   description:
-    "Static workouts catalog rendered from the R2-backed workouts API.",
+    "Static workouts catalog rendered from published workout snapshots.",
   lastUpdated: true,
 
   locales: {

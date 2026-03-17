@@ -10,7 +10,7 @@ import {
   localizeSidebarItems,
   type SidebarLocale,
 } from "../../../src/lib/workoutSidebarI18n";
-import { loadWorkoutDetailCatalogFromApi } from "../../../src/lib/workoutsApi";
+import { loadWorkoutDetailCatalogFromSnapshot } from "../../../src/lib/workoutsApi";
 import { renderCategoryPage, renderIndexPage } from "./workoutPageRenderer";
 
 // ── Path constants ────────────────────────────────────────────────────────────
@@ -119,12 +119,12 @@ export type WorkoutSidebar = Record<
 >;
 
 export async function ensureWorkoutPages(): Promise<WorkoutSidebar> {
-  const apiBaseUrl =
-    process.env.WORKOUTS_API_BASE_URL ??
-    process.env.VITEPRESS_WORKOUTS_API_BASE_URL ??
-    "https://sport.oili.dev";
+  const snapshotBaseUrl =
+    process.env.WORKOUTS_SNAPSHOT_BASE_URL ??
+    process.env.VITEPRESS_WORKOUTS_SNAPSHOT_BASE_URL ??
+    "https://athena-public-snapshots.oili.workers.dev";
 
-  const rawRecords = await loadWorkoutDetailCatalogFromApi(apiBaseUrl);
+  const rawRecords = await loadWorkoutDetailCatalogFromSnapshot(snapshotBaseUrl);
   const catalog = buildWorkoutDetailCatalog(rawRecords as never);
 
   const sidebars = {} as WorkoutSidebar;

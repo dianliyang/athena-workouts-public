@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted } from "vue";
-import { withBase } from "vitepress";
+import { useRouter, withBase } from "vitepress";
 import { usePrevNext } from "vitepress/dist/client/theme-default/composables/prev-next.js";
 import { getDocNavDirection } from "./keyboardNavigation";
 
 const control = usePrevNext();
+const router = useRouter();
 
 function navigate(direction: "prev" | "next"): void {
   const link = control.value[direction]?.link;
   if (!link) return;
-  window.location.assign(withBase(link));
+  void router.go(withBase(link));
 }
 
 function onKeydown(event: KeyboardEvent): void {

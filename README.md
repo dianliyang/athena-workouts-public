@@ -1,12 +1,16 @@
 # athena-workouts-public
 
-Static VitePress site for Sports in Kiel, rendered from the workouts API backed by R2 data. The default VitePress sidebar is generated from workout categories, and each category gets its own page under `docs/workouts/`.
+Static VitePress site for Sports in Kiel. The site builds from published workout snapshot JSON and generates one page per workout category under `docs/workouts/`.
 
 ## Build Input
 
-The docs build fetches from `https://sport.oili.dev` by default. Set `WORKOUTS_API_BASE_URL` or `VITEPRESS_WORKOUTS_API_BASE_URL` to override that base URL for local or preview builds.
+The docs build fetches published snapshot files from `https://athena-public-snapshots.oili.workers.dev` by default. Set `WORKOUTS_SNAPSHOT_BASE_URL` or `VITEPRESS_WORKOUTS_SNAPSHOT_BASE_URL` to override that base URL for local or preview builds.
 
 ## Commands
 
 - `npm test -- --run`
 - `npm run build`
+
+## Deployment
+
+Deploy this repo on Cloudflare Pages. Snapshot generation and publishing stay in the separate `athena-public-snapshots` Worker project.

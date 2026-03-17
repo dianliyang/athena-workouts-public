@@ -8,12 +8,12 @@ const __dirname = path.dirname(__filename);
 const repoRoot = path.resolve(__dirname, "../..");
 
 describe("athena-workouts-public repository structure", () => {
-  test("contains the expected foundation files and runtime areas", () => {
+  test("contains the expected foundation files and pages build areas", () => {
     expect(existsSync(path.join(repoRoot, "package.json"))).toBe(true);
     expect(existsSync(path.join(repoRoot, "README.md"))).toBe(true);
-    expect(existsSync(path.join(repoRoot, "wrangler.jsonc"))).toBe(true);
+    expect(existsSync(path.join(repoRoot, "docs"))).toBe(true);
     expect(existsSync(path.join(repoRoot, "src"))).toBe(true);
     expect(existsSync(path.join(repoRoot, "src", "lib"))).toBe(true);
-    expect(existsSync(path.join(repoRoot, "src", "worker"))).toBe(true);
+    expect(existsSync(path.join(repoRoot, "docs", ".vitepress"))).toBe(true);
   });
 });

@@ -1,9 +1,9 @@
-# Workouts Runtime Smoke Check
+# Pages Runtime Smoke Check
 
 ## Verification Steps
-1. Deploy worker: `npx wrangler deploy`
-2. Test browse API: `curl https://athena-workouts-public.<your-subdomain>.workers.dev/api/workouts`
-   - Should return JSON with `items` array.
-3. Test search: `curl "https://athena-workouts-public.<your-subdomain>.workers.dev/api/workouts?q=yoga"`
-4. Test detail: `curl https://athena-workouts-public.<your-subdomain>.workers.dev/api/workouts/<slug>`
-5. Verify Frontend: Open the deployed URL in browser.
+1. Confirm snapshot input is reachable:
+   - `curl https://athena-public-snapshots.oili.workers.dev/workouts/manifest.json`
+2. Trigger a Cloudflare Pages build or push a new commit.
+3. Open the deployed site and confirm category pages render.
+4. Use local search and verify category names are discoverable.
+5. Open several workout cards and verify they still link to the original provider pages.
