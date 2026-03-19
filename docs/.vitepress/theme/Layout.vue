@@ -31,6 +31,9 @@ const snapshotLastModified = computed(() => {
       <SportKielLogo />
     </template>
     <template #doc-footer-before>
+      <PrevNextKeyboardHints />
+    </template>
+    <template #doc-after>
       <div
         v-if="snapshotLastModified"
         class="snapshot-last-modified"
@@ -38,7 +41,6 @@ const snapshotLastModified = computed(() => {
         <span class="snapshot-last-modified-label">{{ snapshotLastModified.label }}:</span>
         <time :datetime="snapshotLastModified.datetime">{{ snapshotLastModified.text }}</time>
       </div>
-      <PrevNextKeyboardHints />
     </template>
   </Layout>
 </template>
