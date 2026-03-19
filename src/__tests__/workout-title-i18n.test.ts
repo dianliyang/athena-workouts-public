@@ -1,15 +1,17 @@
 import { beforeAll, describe, expect, test } from "vitest";
 import { localizeWorkoutTitle } from "../lib/workoutSidebarI18n";
 import { setWorkoutLocaleMaps } from "../lib/workoutLocaleMaps";
-import { workoutTitleMap } from "../lib/workoutTitleMap";
-import { workoutCategoryMap } from "../lib/workoutCategoryMap";
+import {
+  workoutCategoryFixtureMap,
+  workoutTitleFixtureMap,
+} from "./fixtures/workoutLocaleFixtures";
 
 type Locale = "de" | "en" | "zh-CN" | "ja" | "ko";
 
 beforeAll(() => {
   setWorkoutLocaleMaps({
-    titleMap: workoutTitleMap,
-    categoryMap: workoutCategoryMap,
+    titleMap: workoutTitleFixtureMap,
+    categoryMap: workoutCategoryFixtureMap,
   });
 });
 
@@ -44,8 +46,6 @@ describe("Workout title localization (BDD)", () => {
     });
 
     test("then it is correctly localized into Japanese", () => {
-      // Note: 'freies Jollensegeln' might not be in workoutCategoryMap yet for fragments
-      // but let's see what we get.
       const localized = localizeWorkoutTitle(source, "ja");
       expect(localized).toContain("毎日");
       expect(localized).toContain("土");

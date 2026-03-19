@@ -1,6 +1,9 @@
 import { describe, expect, test, vi } from "vitest";
 import { getWorkoutCategoryMap, getWorkoutTitleMap, resetWorkoutLocaleMaps } from "../lib/workoutLocaleMaps";
-import { loadWorkoutDetailCatalogFromSnapshot } from "../lib/workoutsApi";
+import {
+  loadWorkoutDetailCatalogFromSnapshot,
+  localizeWorkoutCatalogDescriptions,
+} from "../lib/workoutsApi";
 
 describe("loadWorkoutDetailCatalogFromSnapshot", () => {
   test("loads the detail catalog through the published manifest", async () => {
@@ -10,9 +13,11 @@ describe("loadWorkoutDetailCatalogFromSnapshot", () => {
       if (url.endsWith("/workouts/manifest.json")) {
         return new Response(
           JSON.stringify({
+            generatedAt: "2026-03-17T10:00:00Z",
             detailKey: "workouts/detail/2026-03-17T10-00-00Z.json",
             titleLocaleKey: "workouts/locales/title/2026-03-17T10-00-00Z.json",
             categoryLocaleKey: "workouts/locales/category/2026-03-17T10-00-00Z.json",
+            metadataLocaleKey: "workouts/locales/metadata/2026-03-17T10-00-00Z.json",
           }),
         );
       }
@@ -38,16 +43,42 @@ describe("loadWorkoutDetailCatalogFromSnapshot", () => {
         }));
       }
 
+      if (url.endsWith("/workouts/locales/metadata/2026-03-17T10-00-00Z.json")) {
+        return new Response(JSON.stringify({
+          "yoga-flow": {
+            description: {
+              general: {
+                original: "Original general text",
+                ja: "ローカライズされた説明",
+              },
+            },
+          },
+        }));
+      }
+
       return new Response("not found", { status: 404 });
     });
 
     resetWorkoutLocaleMaps();
-    const catalog = await loadWorkoutDetailCatalogFromSnapshot("https://example.com", fetchMock as typeof fetch);
+    const snapshot = await loadWorkoutDetailCatalogFromSnapshot("https://example.com", fetchMock as typeof fetch);
 
-    expect(fetchMock).toHaveBeenCalledTimes(4);
-    expect(catalog).toEqual({
-      "yoga-flow": { slug: "yoga-flow", title: "Yoga Flow" },
-      "boxing-basics": { slug: "boxing-basics", title: "Boxing Basics" },
+    expect(fetchMock).toHaveBeenCalledTimes(5);
+    expect(snapshot).toEqual({
+      updatedAt: "2026-03-17T10:00:00Z",
+      catalog: {
+        "yoga-flow": { slug: "yoga-flow", title: "Yoga Flow" },
+        "boxing-basics": { slug: "boxing-basics", title: "Boxing Basics" },
+      },
+      descriptionMetadata: {
+        "yoga-flow": {
+          description: {
+            general: {
+              original: "Original general text",
+              ja: "ローカライズされた説明",
+            },
+          },
+        },
+      },
     });
     expect(getWorkoutTitleMap()["Yoga Flow"]?.ja).toBe("ヨガフロー");
     expect(getWorkoutCategoryMap().Yoga?.ko).toBe("요가");
@@ -59,6 +90,7 @@ describe("loadWorkoutDetailCatalogFromSnapshot", () => {
 
       if (url.endsWith("/workouts/manifest.json")) {
         return new Response(JSON.stringify({
+          generatedAt: "2026-03-17T10:00:00Z",
           detailKey: "workouts/detail/2026-03-17T10-00-00Z.json",
           titleLocaleKey: "workouts/locales/title/2026-03-17T10-00-00Z.json",
           categoryLocaleKey: "workouts/locales/category/2026-03-17T10-00-00Z.json",
@@ -96,5 +128,76 @@ describe("loadWorkoutDetailCatalogFromSnapshot", () => {
     await expect(
       loadWorkoutDetailCatalogFromSnapshot("https://example.com", fetchMock as typeof fetch),
     ).rejects.toThrow("Snapshot request failed: 404");
+  });
+
+  test("prefers locale metadata, then original metadata, then existing snapshot description", () => {
+    const localized = localizeWorkoutCatalogDescriptions({
+      one: {
+        id: "one",
+        slug: "one",
+        title: "One",
+        provider: "Provider",
+        category: "Yoga",
+        description: {
+          general: "Existing general",
+          price: "Existing price",
+        },
+        schedule: [],
+        location: [],
+        url: null,
+      },
+      two: {
+        id: "two",
+        slug: "two",
+        title: "Two",
+        provider: "Provider",
+        category: "Yoga",
+        description: {
+          general: "Existing fallback",
+        },
+        schedule: [],
+        location: [],
+        url: null,
+      },
+      three: {
+        id: "three",
+        slug: "three",
+        title: "Three",
+        provider: "Provider",
+        category: "Yoga",
+        description: {
+          general: "Keep existing",
+        },
+        schedule: [],
+        location: [],
+        url: null,
+      },
+    }, {
+      one: {
+        description: {
+          general: {
+            original: "Original one",
+            ja: "日本語の説明",
+          },
+        },
+      },
+      two: {
+        description: {
+          general: {
+            original: "Original two",
+          },
+        },
+      },
+      three: {
+        description: {
+          general: {},
+        },
+      },
+    }, "ja");
+
+    expect(localized.one.description?.general).toBe("日本語の説明");
+    expect(localized.two.description?.general).toBe("Original two");
+    expect(localized.three.description?.general).toBe("Keep existing");
+    expect(localized.one.description?.price).toBe("Existing price");
   });
 });

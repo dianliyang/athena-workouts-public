@@ -9,8 +9,6 @@ import {
   localizeWorkoutTitle,
   type SidebarLocale,
 } from "../../../src/lib/workoutSidebarI18n";
-import { workoutTitleSpreadsheetMap } from "../../../src/lib/workoutTitleSpreadsheetMap";
-import { getLocalizedValue } from "../../../src/lib/workoutI18nUtils";
 import { getCopy, localizeWeekday } from "../../../src/lib/workoutPageLocale";
 import { getCategoryWikipediaUrl } from "../../../src/lib/workoutCategoryWikipediaMap";
 
@@ -155,10 +153,7 @@ function localizeGroupHeaderTitle(
   value: string,
   locale: SidebarLocale,
 ): string {
-  return (
-    getLocalizedValue(workoutTitleSpreadsheetMap, locale, value) ??
-    localizeWorkoutTitle(value, locale)
-  );
+  return localizeWorkoutTitle(value, locale);
 }
 
 function renderScheduleCards(
@@ -644,6 +639,7 @@ export function renderCategoryPage(
   locale: SidebarLocale,
   category: string,
   titleGroups: WorkoutTitleGroup[],
+  snapshotUpdatedAt?: string,
 ): string {
   const copy = getCopy(locale);
   const pageTitle = getCategoryLabel(locale, category);
@@ -658,6 +654,9 @@ export function renderCategoryPage(
     "---",
     `title: ${JSON.stringify(pageTitle)}`,
     "layout: doc",
+    ...(snapshotUpdatedAt
+      ? [`snapshotUpdatedAt: ${JSON.stringify(snapshotUpdatedAt)}`]
+      : []),
     "---",
     "",
     `<div class="workout-page-header">`,
@@ -686,6 +685,7 @@ export function renderCategoryPage(
 export function renderIndexPage(
   locale: SidebarLocale,
   sidebar: Array<{ text: string; link: string }>,
+  snapshotUpdatedAt?: string,
 ): string {
   const contentByLocale: Record<
     SidebarLocale,
@@ -806,6 +806,9 @@ export function renderIndexPage(
     "---",
     `title: ${JSON.stringify(content.title)}`,
     "layout: doc",
+    ...(snapshotUpdatedAt
+      ? [`snapshotUpdatedAt: ${JSON.stringify(snapshotUpdatedAt)}`]
+      : []),
     "---",
     "",
     `# ${content.title}`,

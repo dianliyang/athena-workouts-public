@@ -1,9 +1,21 @@
-import { describe, expect, test } from "vitest";
+import { beforeAll, describe, expect, test } from "vitest";
 import {
   renderCategoryPage,
   renderRow,
 } from "../../docs/.vitepress/workouts/workoutPageRenderer";
 import type { WorkoutDetailItem } from "../lib/workoutsCatalog";
+import { setWorkoutLocaleMaps } from "../lib/workoutLocaleMaps";
+import {
+  workoutCategoryFixtureMap,
+  workoutTitleFixtureMap,
+} from "./fixtures/workoutLocaleFixtures";
+
+beforeAll(() => {
+  setWorkoutLocaleMaps({
+    titleMap: workoutTitleFixtureMap,
+    categoryMap: workoutCategoryFixtureMap,
+  });
+});
 
 const baseItem: WorkoutDetailItem = {
   id: "spin-1",
@@ -22,7 +34,7 @@ const baseItem: WorkoutDetailItem = {
 
 describe("workout page renderer", () => {
   test("renders a locale-aware Wikipedia link in the category page header", () => {
-    const markdown = renderCategoryPage("ja", "Beachvolleyball", []);
+    const markdown = renderCategoryPage("ja", "Beachvolleyball", [], "2026-03-17T10:00:00Z");
 
     expect(markdown).toContain('class="workout-page-header"');
     expect(markdown).toContain('<h1 class="workout-page-title">');
@@ -33,6 +45,7 @@ describe("workout page renderer", () => {
     expect(markdown).toContain('src="/wikipiedia-text.svg"');
     expect(markdown).toContain("https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%BC%E3%83%81%E3%83%90%E3%83%AC%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%AB");
     expect(markdown).toContain('alt="Wikipedia"');
+    expect(markdown).toContain('snapshotUpdatedAt: "2026-03-17T10:00:00Z"');
   });
 
   test("falls back to the English wikipedia mapping when a locale-specific URL is missing", () => {
@@ -549,6 +562,31 @@ describe("workout page renderer", () => {
     expect(html.match(/class="workout-schedule-card"/g)).toHaveLength(1);
     expect(html).toContain("周一、周三、周五 09:00-18:00");
     expect(html).toContain("SZ Schilks, Soling 34, 24159 Kiel");
+  });
+
+  test("renders normalized closed and opening-hour schedule entries from German source rows", () => {
+    const html = renderRow(
+      {
+        ...baseItem,
+        schedule: [
+          { day: "Mon", time: "Closed", location: "Holtenauer Straße 279, Kiel, Germany" },
+          { day: "Sun", time: "Closed", location: "Holtenauer Straße 279, Kiel, Germany" },
+          { day: "Tue", time: "17:00 - 22:00", location: "Holtenauer Straße 279, Kiel, Germany" },
+          { day: "Wed", time: "17:00 - 23:00", location: "Holtenauer Straße 279, Kiel, Germany" },
+          { day: "Thu", time: "17:00 - 23:00", location: "Holtenauer Straße 279, Kiel, Germany" },
+          { day: "Fri", time: "17:00 - 00:00", location: "Holtenauer Straße 279, Kiel, Germany" },
+          { day: "Sat", time: "14:00 - 00:00", location: "Holtenauer Straße 279, Kiel, Germany" },
+        ],
+        location: ["Holtenauer Straße 279, Kiel, Germany"],
+      },
+      "en",
+    );
+
+    expect(html).toContain("Mon, Sun Closed");
+    expect(html).toContain("Tue 17:00 - 22:00");
+    expect(html).toContain("Wed-Thu 17:00 - 23:00");
+    expect(html).toContain("Fri 17:00 - 00:00");
+    expect(html).toContain("Sat 14:00 - 00:00");
   });
 
   test("uses the single top-level location for all mini-cards when only one exists", () => {

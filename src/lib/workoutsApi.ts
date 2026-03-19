@@ -47,9 +47,33 @@ export type WorkoutDetailResponse = {
 };
 
 export type SnapshotManifest = {
+  generatedAt?: string;
+  updatedAt?: string;
   detailKey: string;
   titleLocaleKey: string;
   categoryLocaleKey: string;
+  metadataLocaleKey?: string;
+  metadataKey?: string;
+};
+
+export type WorkoutLocale = "de" | "en" | "zh-CN" | "ja" | "ko";
+
+export type WorkoutDescriptionMetadata = {
+  description?: {
+    general?: Partial<Record<WorkoutLocale | "original", string>>;
+    price?: Partial<Record<WorkoutLocale | "original", string>>;
+  };
+};
+
+export type WorkoutDescriptionMetadataMap = Record<
+  string,
+  WorkoutDescriptionMetadata
+>;
+
+export type WorkoutSnapshotCatalog = {
+  updatedAt?: string;
+  catalog: Record<string, WorkoutDetailResponse>;
+  descriptionMetadata: WorkoutDescriptionMetadataMap;
 };
 
 import { loadWorkoutLocaleMaps } from "./workoutLocaleMaps";
@@ -74,15 +98,59 @@ async function readJson<T>(response: Response): Promise<T> {
   return (await response.json()) as T;
 }
 
+function resolveDescriptionText(
+  localized:
+    | Partial<Record<WorkoutLocale | "original", string>>
+    | undefined,
+  locale: WorkoutLocale,
+  fallback: string | null | undefined,
+): string | null | undefined {
+  return localized?.[locale] ?? localized?.original ?? fallback;
+}
+
+export function localizeWorkoutCatalogDescriptions(
+  catalog: Record<string, WorkoutDetailResponse>,
+  descriptionMetadata: WorkoutDescriptionMetadataMap,
+  locale: WorkoutLocale,
+): Record<string, WorkoutDetailResponse> {
+  return Object.fromEntries(
+    Object.entries(catalog).map(([id, record]) => {
+      const metadata = descriptionMetadata[id];
+      if (!metadata?.description) {
+        return [id, record];
+      }
+
+      return [id, {
+        ...record,
+        description: {
+          ...record.description,
+          general: resolveDescriptionText(
+            metadata.description.general,
+            locale,
+            record.description?.general,
+          ),
+          price: resolveDescriptionText(
+            metadata.description.price,
+            locale,
+            record.description?.price,
+          ),
+        },
+      }];
+    }),
+  );
+}
+
 export async function loadWorkoutDetailCatalogFromSnapshot(
   baseUrl: string,
   fetchImpl: ApiFetch = fetch,
-): Promise<Record<string, WorkoutDetailResponse>> {
+): Promise<WorkoutSnapshotCatalog> {
   const manifest = await readJson<SnapshotManifest>(
     await fetchImpl(buildWorkoutsManifestUrl(baseUrl)),
   );
 
-  const [detailCatalog] = await Promise.all([
+  const metadataKey = manifest.metadataLocaleKey ?? manifest.metadataKey;
+
+  const [detailCatalog, _localeMaps, descriptionMetadata] = await Promise.all([
     readJson<Record<string, WorkoutDetailResponse>>(
       await fetchImpl(buildSnapshotAssetUrl(baseUrl, manifest.detailKey)),
     ),
@@ -90,7 +158,16 @@ export async function loadWorkoutDetailCatalogFromSnapshot(
       titleLocaleKey: manifest.titleLocaleKey,
       categoryLocaleKey: manifest.categoryLocaleKey,
     }, fetchImpl),
+    metadataKey
+      ? readJson<WorkoutDescriptionMetadataMap>(
+        await fetchImpl(buildSnapshotAssetUrl(baseUrl, metadataKey)),
+      )
+      : Promise.resolve({}),
   ]);
 
-  return detailCatalog;
+  return {
+    updatedAt: manifest.generatedAt ?? manifest.updatedAt,
+    catalog: detailCatalog,
+    descriptionMetadata,
+  };
 }

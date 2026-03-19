@@ -7,14 +7,16 @@ import {
 import { getCategoryLabel, localizeSidebarItems } from "../lib/workoutSidebarI18n";
 import { localizeWeekday } from "../lib/workoutPageLocale";
 import { setWorkoutLocaleMaps } from "../lib/workoutLocaleMaps";
-import { workoutTitleMap } from "../lib/workoutTitleMap";
-import { workoutCategoryMap } from "../lib/workoutCategoryMap";
 import type { WorkoutDetailResponse as WorkoutDetailRecord } from "../lib/workoutsApi";
+import {
+  workoutCategoryFixtureMap,
+  workoutTitleFixtureMap,
+} from "./fixtures/workoutLocaleFixtures";
 
 beforeAll(() => {
   setWorkoutLocaleMaps({
-    titleMap: workoutTitleMap,
-    categoryMap: workoutCategoryMap,
+    titleMap: workoutTitleFixtureMap,
+    categoryMap: workoutCategoryFixtureMap,
   });
 });
 
@@ -152,6 +154,52 @@ describe("workouts detail catalog transformations", () => {
       general: "No experience necessary",
       price: undefined,
     });
+  });
+
+  test("normalizes full German weekday names and splits combined schedule rows", () => {
+    const catalog = buildWorkoutDetailCatalog({
+      one: {
+        ...detailRecords.yogaA,
+        slug: "german-weekday-hours",
+        schedule: [
+          {
+            day: "Montag、Sonntag",
+            time: "Closed",
+            location: "Holtenauer Straße 279, Kiel, Germany",
+          },
+          {
+            day: "Dienstag",
+            time: "17:00 - 22:00",
+            location: "Holtenauer Straße 279, Kiel, Germany",
+          },
+          {
+            day: "Mittwoch、Donnerstag",
+            time: "17:00 - 23:00",
+            location: "Holtenauer Straße 279, Kiel, Germany",
+          },
+          {
+            day: "Freitag",
+            time: "17:00 - 00:00",
+            location: "Holtenauer Straße 279, Kiel, Germany",
+          },
+          {
+            day: "Samstag",
+            time: "14:00 - 00:00",
+            location: "Holtenauer Straße 279, Kiel, Germany",
+          },
+        ],
+      },
+    });
+
+    expect(catalog.groups.Yoga.items[0]?.schedule).toEqual([
+      { day: "Mon", time: "Closed", location: "Holtenauer Straße 279, Kiel, Germany" },
+      { day: "Sun", time: "Closed", location: "Holtenauer Straße 279, Kiel, Germany" },
+      { day: "Tue", time: "17:00 - 22:00", location: "Holtenauer Straße 279, Kiel, Germany" },
+      { day: "Wed", time: "17:00 - 23:00", location: "Holtenauer Straße 279, Kiel, Germany" },
+      { day: "Thu", time: "17:00 - 23:00", location: "Holtenauer Straße 279, Kiel, Germany" },
+      { day: "Fri", time: "17:00 - 00:00", location: "Holtenauer Straße 279, Kiel, Germany" },
+      { day: "Sat", time: "14:00 - 00:00", location: "Holtenauer Straße 279, Kiel, Germany" },
+    ]);
   });
 
   test("preserves titles that previously collapsed via generic grouping rules", () => {
@@ -678,8 +726,8 @@ describe("workouts detail catalog transformations", () => {
         collapsed: false,
         text: "Dinghy Sailing",
         items: [
-          { text: "Open Dinghy Sailing", link: "/en/workouts/freies-jollensegeln" },
           { text: "Dinghy Placement Sailing", link: "/en/workouts/jollen-einstufungssegeln" },
+          { text: "Open Dinghy Sailing", link: "/en/workouts/freies-jollensegeln" },
         ],
       },
       {
@@ -742,21 +790,21 @@ describe("workouts detail catalog transformations", () => {
         collapsed: false,
         text: "Yacht",
         items: [
-          { text: "Yacht Sailing for Women", link: "/en/workouts/yachtsegeln-fur-frauen" },
           { text: "Inclusive Yacht Sailing", link: "/en/workouts/yachtsegeln-inklusion" },
           { text: "Two-Handed Yacht Sailing", link: "/en/workouts/yachtsegeln-zweihand" },
+          { text: "Yacht Sailing for Women", link: "/en/workouts/yachtsegeln-fur-frauen" },
         ],
       },
       {
         collapsed: false,
         text: "Yoga",
         items: [
-          { text: "Yoga, Aerial Yoga", link: "/en/workouts/yoga-aerial-yoga" },
-          { text: "Yoga, Hatha Yoga", link: "/en/workouts/yoga-hatha-yoga" },
           {
             text: "Yoga – Hatha Yoga (Certified Health Programme)",
             link: "/en/workouts/yoga-hatha-yoga-praventionssport",
           },
+          { text: "Yoga, Aerial Yoga", link: "/en/workouts/yoga-aerial-yoga" },
+          { text: "Yoga, Hatha Yoga", link: "/en/workouts/yoga-hatha-yoga" },
           { text: "Yoga, Vinyasa", link: "/en/workouts/yoga-vinyasa" },
           { text: "Yoga, Wake Up Yoga", link: "/en/workouts/yoga-wake-up-yoga" },
         ],

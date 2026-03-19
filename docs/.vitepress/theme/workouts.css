@@ -145,6 +145,17 @@
   object-fit: contain;
 }
 
+.snapshot-last-modified {
+  margin: 0 0 1rem;
+  color: var(--vp-c-text-2);
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.snapshot-last-modified-label {
+  margin-right: 0.35rem;
+}
+
 .vp-doc kbd {
   display: inline-flex;
   align-items: center;

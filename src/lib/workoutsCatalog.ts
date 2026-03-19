@@ -81,6 +81,60 @@ function normalizeDetails(
   return { general, price };
 }
 
+const WEEKDAY_ALIASES: Record<string, string> = {
+  Montag: "Mon",
+  Mon: "Mon",
+  Mo: "Mon",
+  Dienstag: "Tue",
+  Tue: "Tue",
+  Di: "Tue",
+  Mittwoch: "Wed",
+  Wed: "Wed",
+  Mi: "Wed",
+  Donnerstag: "Thu",
+  Thu: "Thu",
+  Do: "Thu",
+  Freitag: "Fri",
+  Fri: "Fri",
+  Fr: "Fri",
+  Samstag: "Sat",
+  Sat: "Sat",
+  Sa: "Sat",
+  Sonntag: "Sun",
+  Sun: "Sun",
+  So: "Sun",
+};
+
+function normalizeSchedule(
+  schedule: WorkoutDetailRecord["schedule"] | null | undefined,
+): WorkoutDetailRecord["schedule"] {
+  if (!Array.isArray(schedule)) return [];
+
+  return schedule.flatMap((entry) => {
+    const normalizedTime = entry.time?.trim() ?? "";
+    const normalizedLocation = entry.location?.trim() ?? "";
+    const rawDay = entry.day?.trim() ?? "";
+    if (!rawDay) {
+      return [{
+        day: rawDay,
+        time: normalizedTime,
+        location: normalizedLocation,
+      }];
+    }
+
+    const dayParts = rawDay
+      .split(/\s*[、,/;]\s*/g)
+      .map((part) => part.trim())
+      .filter(Boolean);
+
+    return dayParts.map((day) => ({
+      day: WEEKDAY_ALIASES[day] ?? day,
+      time: normalizedTime,
+      location: normalizedLocation,
+    }));
+  });
+}
+
 function normalizePrice(
   price: WorkoutDetailRecord["price"] | null | undefined,
 ): WorkoutDetailRecord["price"] | undefined {
@@ -113,25 +167,19 @@ function normalizeDetail(record: WorkoutDetailRecord): WorkoutDetailItem {
     ...rest,
     category: normalizeCategory(record.category),
     description: normalizeDetails(legacyDescription),
+    schedule: normalizeSchedule(record.schedule),
     location: normalizeLocations(location),
     price: normalizePrice(record.price),
   };
 }
 
 const WEEKDAY_ORDER: Record<string, number> = {
-  Mo: 1,
   Mon: 1,
-  Di: 2,
   Tue: 2,
-  Mi: 3,
   Wed: 3,
-  Do: 4,
   Thu: 4,
-  Fr: 5,
   Fri: 5,
-  Sa: 6,
   Sat: 6,
-  So: 7,
   Sun: 7,
 };
 

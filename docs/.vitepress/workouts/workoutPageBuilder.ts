@@ -10,7 +10,10 @@ import {
   localizeSidebarItems,
   type SidebarLocale,
 } from "../../../src/lib/workoutSidebarI18n";
-import { loadWorkoutDetailCatalogFromSnapshot } from "../../../src/lib/workoutsApi";
+import {
+  loadWorkoutDetailCatalogFromSnapshot,
+  localizeWorkoutCatalogDescriptions,
+} from "../../../src/lib/workoutsApi";
 import { renderCategoryPage, renderIndexPage } from "./workoutPageRenderer";
 
 // ── Path constants ────────────────────────────────────────────────────────────
@@ -39,6 +42,7 @@ function writeGeneratedPages(
     group: { titleGroups: WorkoutTitleGroup[] };
   }>,
   sidebar: Array<{ text: string; link: string }>,
+  snapshotUpdatedAt?: string,
 ): void {
   fs.mkdirSync(root, { recursive: true });
 
@@ -52,14 +56,19 @@ function writeGeneratedPages(
   for (const page of pages) {
     fs.writeFileSync(
       page.path,
-      renderCategoryPage(locale, page.category, page.group.titleGroups),
+      renderCategoryPage(
+        locale,
+        page.category,
+        page.group.titleGroups,
+        snapshotUpdatedAt,
+      ),
       "utf8",
     );
   }
 
   fs.writeFileSync(
     path.join(root, "index.md"),
-    renderIndexPage(locale, sidebar),
+    renderIndexPage(locale, sidebar, snapshotUpdatedAt),
     "utf8",
   );
 }
@@ -124,13 +133,19 @@ export async function ensureWorkoutPages(): Promise<WorkoutSidebar> {
     process.env.VITEPRESS_WORKOUTS_SNAPSHOT_BASE_URL ??
     "https://athena-public-snapshots.oili.workers.dev";
 
-  const rawRecords = await loadWorkoutDetailCatalogFromSnapshot(snapshotBaseUrl);
-  const catalog = buildWorkoutDetailCatalog(rawRecords as never);
+  const snapshot = await loadWorkoutDetailCatalogFromSnapshot(snapshotBaseUrl);
 
   const sidebars = {} as WorkoutSidebar;
 
   for (const cfg of localeConfigs) {
-    const { pages, sidebar } = buildWorkoutCategoryPages(catalog, {
+    const localizedCatalog = buildWorkoutDetailCatalog(
+      localizeWorkoutCatalogDescriptions(
+        snapshot.catalog,
+        snapshot.descriptionMetadata,
+        cfg.locale,
+      ) as never,
+    );
+    const { pages, sidebar } = buildWorkoutCategoryPages(localizedCatalog, {
       docsBasePath: cfg.docsBasePath,
       routeBasePath: cfg.routeBasePath,
     });
@@ -139,7 +154,13 @@ export async function ensureWorkoutPages(): Promise<WorkoutSidebar> {
       fs.mkdirSync(cfg.parentRoot, { recursive: true });
     }
 
-    writeGeneratedPages(cfg.locale, cfg.docsRoot, pages, sidebar);
+    writeGeneratedPages(
+      cfg.locale,
+      cfg.docsRoot,
+      pages,
+      sidebar,
+      snapshot.updatedAt,
+    );
     sidebars[cfg.locale] = localizeSidebarItems(cfg.locale, sidebar);
   }
 
