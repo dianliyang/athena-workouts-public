@@ -22,6 +22,7 @@ This repo includes a GitHub Actions workflow at `.github/workflows/deploy-pages.
 - Pushes to `main` deploy the site to Cloudflare Pages.
 - A scheduled rebuild runs every day at `03:00 UTC`.
 - You can also trigger it manually with `workflow_dispatch`.
+- Automatic push/scheduled runs skip build and deploy when the snapshot `generatedAt` has not changed. Manual dispatch always forces deployment.
 
 Required repository secrets:
 

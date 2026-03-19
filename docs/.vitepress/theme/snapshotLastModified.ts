@@ -1,16 +1,12 @@
-import type { SidebarLocale } from "../../../src/lib/workoutSidebarI18n";
-
-const lastUpdatedLabels: Record<SidebarLocale, string> = {
-  de: "Zuletzt aktualisiert",
-  en: "Last updated",
-  ja: "最終更新",
-  ko: "마지막 업데이트",
-  "zh-CN": "最后更新",
+type LastUpdatedThemeConfig = {
+  text?: string;
+  formatOptions?: Intl.DateTimeFormatOptions & { forceLocale?: boolean };
 };
 
 export function resolveSnapshotLastModified(
-  locale: SidebarLocale,
+  locale: string,
   frontmatter: Record<string, unknown>,
+  config: LastUpdatedThemeConfig,
 ): { label: string; datetime: string; text: string } | null {
   const datetime =
     typeof frontmatter.snapshotUpdatedAt === "string"
@@ -22,17 +18,19 @@ export function resolveSnapshotLastModified(
   const date = new Date(datetime);
   if (Number.isNaN(date.getTime())) return null;
 
+  const formatOptions = config.formatOptions ?? {
+    dateStyle: "short",
+    timeStyle: "short",
+    forceLocale: true,
+  };
+  const { forceLocale: _forceLocale, ...intlOptions } = formatOptions;
+
   return {
-    label: lastUpdatedLabels[locale],
+    label: config.text ?? "Last updated",
     datetime,
-    text: date.toLocaleString(locale === "en" ? "en-US" : locale, {
+    text: new Intl.DateTimeFormat(locale, {
       timeZone: "UTC",
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: false,
-    }),
+      ...intlOptions,
+    }).format(date),
   };
 }

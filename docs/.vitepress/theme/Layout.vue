@@ -7,21 +7,14 @@ import SportKielLogo from "./SportKielLogo.vue";
 import { resolveSnapshotLastModified } from "./snapshotLastModified";
 
 const { Layout } = DefaultTheme;
-const { frontmatter, lang } = useData();
+const { frontmatter, lang, theme } = useData();
 
 const snapshotLastModified = computed(() => {
-  const locale =
-    lang.value === "de-DE"
-      ? "de"
-      : lang.value === "ja-JP"
-        ? "ja"
-        : lang.value === "ko-KR"
-          ? "ko"
-          : lang.value === "zh-CN"
-            ? "zh-CN"
-            : "en";
-
-  return resolveSnapshotLastModified(locale, frontmatter.value);
+  return resolveSnapshotLastModified(
+    lang.value || "en-US",
+    frontmatter.value,
+    theme.value.lastUpdated ?? {},
+  );
 });
 </script>
 

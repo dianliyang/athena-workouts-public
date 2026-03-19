@@ -2,6 +2,14 @@ import { defineConfig } from "vitepress";
 import { ensureWorkoutPages, repoRoot } from "./workouts/workoutPageBuilder";
 
 const sidebar = await ensureWorkoutPages();
+const localizedLastUpdated = (text: string) => ({
+  text,
+  formatOptions: {
+    dateStyle: "short",
+    timeStyle: "short",
+    forceLocale: true,
+  },
+});
 
 export default defineConfig({
   title: "Sports in Kiel",
@@ -9,6 +17,10 @@ export default defineConfig({
   description:
     "Static workouts catalog rendered from published workout snapshots.",
   lastUpdated: true,
+  head: [
+    ["link", { rel: "icon", type: "image/svg+xml", href: "/sportkiel-mark.svg" }],
+    ["link", { rel: "shortcut icon", href: "/sportkiel-mark.svg" }],
+  ],
 
   locales: {
     de: {
@@ -19,7 +31,7 @@ export default defineConfig({
         siteTitle: false,
         search: { provider: "local" },
         docFooter: { prev: "Vorherige Seite", next: "Nächste Seite" },
-        lastUpdated: { text: "Zuletzt aktualisiert" },
+        lastUpdated: localizedLastUpdated("Zuletzt aktualisiert"),
         outline: { label: "Auf dieser Seite" },
         socialLinks: [
           { icon: "github", link: "https://github.com/dianliyang/athena-workouts-public" },
@@ -40,7 +52,7 @@ export default defineConfig({
         siteTitle: false,
         search: { provider: "local" },
         docFooter: { prev: "Previous page", next: "Next page" },
-        lastUpdated: { text: "Last updated" },
+        lastUpdated: localizedLastUpdated("Last updated"),
         outline: { label: "On this page" },
         socialLinks: [
           { icon: "github", link: "https://github.com/dianliyang/athena-workouts-public" },
@@ -61,7 +73,7 @@ export default defineConfig({
         siteTitle: false,
         search: { provider: "local" },
         docFooter: { prev: "前のページ", next: "次のページ" },
-        lastUpdated: { text: "最終更新" },
+        lastUpdated: localizedLastUpdated("最終更新"),
         outline: { label: "このページ" },
         socialLinks: [
           { icon: "github", link: "https://github.com/dianliyang/athena-workouts-public" },
@@ -82,7 +94,7 @@ export default defineConfig({
         siteTitle: false,
         search: { provider: "local" },
         docFooter: { prev: "이전 페이지", next: "다음 페이지" },
-        lastUpdated: { text: "마지막 업데이트" },
+        lastUpdated: localizedLastUpdated("마지막 업데이트"),
         outline: { label: "이 페이지" },
         socialLinks: [
           { icon: "github", link: "https://github.com/dianliyang/athena-workouts-public" },
@@ -103,7 +115,7 @@ export default defineConfig({
         siteTitle: false,
         search: { provider: "local" },
         docFooter: { prev: "上一页", next: "下一页" },
-        lastUpdated: { text: "最后更新" },
+        lastUpdated: localizedLastUpdated("最后更新"),
         outline: { label: "本页内容" },
         socialLinks: [
           { icon: "github", link: "https://github.com/dianliyang/athena-workouts-public" },
@@ -123,7 +135,7 @@ export default defineConfig({
     siteTitle: false,
     search: { provider: "local" },
     docFooter: { prev: "Previous page", next: "Next page" },
-    lastUpdated: { text: "Last updated" },
+    lastUpdated: localizedLastUpdated("Last updated"),
     outline: { label: "On this page" },
     socialLinks: [
       { icon: "github", link: "https://github.com/dianliyang/athena-workouts-public" },
