@@ -239,19 +239,34 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin: 0;
+  border-radius: 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+.workout-table:hover {
+  background: color-mix(in srgb, var(--vp-c-brand-soft) 35%, #ffffff 65%);
+}
+
+.workout-table-card {
   margin: 1rem 0 1.5rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.9rem;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
 }
 
 .workout-row {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  padding: 1rem 1.15rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.9rem;
-  background: #fff;
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
-  transition: box-shadow 0.2s ease;
+  padding: 0 1.15rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  transition: none;
 }
 
 a.workout-row {
@@ -260,7 +275,7 @@ a.workout-row {
 }
 
 .workout-row:hover {
-  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+  box-shadow: none;
 }
 
 a.workout-row:focus-visible {
@@ -274,141 +289,252 @@ a.workout-row:focus-visible {
   gap: 1rem;
 }
 
-.workout-row-top {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
 .workout-row-schedule {
   flex: 1 1 auto;
   min-width: 0;
 }
 
-.workout-schedule-cards {
-  display: grid;
-  gap: 0.55rem;
-}
-
-.workout-schedule-card {
-  display: grid;
-  gap: 0.2rem;
-  padding: 0.75rem 0.85rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.8rem;
-}
-
-.workout-schedule-card-time {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #111827;
-}
-
-.workout-schedule-card-location {
-  color: #6b7280;
-  font-size: 0.82rem;
-  line-height: 1.35;
-}
-
-.workout-schedule-card.is-empty {
-  border-style: dashed;
-}
-
-.workout-status-block {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.25rem;
-  text-align: right;
-}
-
-.workout-status-block :is(.vp-badge, .badge) {
-  margin: 0;
-}
-
-.workout-opens-at {
-  color: #6b7280;
-  font-size: 0.78rem;
-  line-height: 1.3;
-}
-
-.workout-row-details {
+.workout-schedule-shell {
   display: grid;
   gap: 0.85rem;
 }
 
-.workout-detail {
-  display: flex;
-  gap: 0.7rem;
-  align-items: flex-start;
-}
-
-.workout-detail.is-location {
-  min-width: 0;
-}
-
-.workout-detail.is-instructor {
-  min-width: 0;
-}
-
-.workout-detail.is-duration {
-  min-width: 0;
-}
-
-.workout-detail-icon {
-  display: inline-flex;
+.VPNavBarScheduleView {
+  display: none;
   align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0.5rem;
-  background: #f9fafb;
-  color: #6b7280;
-  font-size: 0.9rem;
-  flex: 0 0 auto;
 }
 
-.workout-detail-copy {
+.VPNavBarScheduleView .items {
+  padding: 4px 0;
+}
+
+.VPNavBarScheduleView .title {
+  padding: 0 24px 0 12px;
+  line-height: 32px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+}
+
+.schedule-view-item {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0 24px 0 12px;
+  line-height: 32px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--vp-c-text-1);
+  white-space: nowrap;
+}
+
+.schedule-view-item:hover {
+  color: var(--vp-c-brand-1);
+}
+
+.schedule-view-item.is-active {
+  font-weight: 700;
+  color: var(--vp-c-brand-1);
+}
+
+.workout-schedule-timeline {
   min-width: 0;
+  display: grid;
+  gap: 0;
+  --schedule-time-col: 6.75rem;
+  --schedule-rail-col: 1rem;
+  --schedule-gap: 0.9rem;
+}
+
+.workout-schedule-timeline-item {
+  display: grid;
+  grid-template-columns: var(--schedule-time-col) var(--schedule-rail-col) minmax(0, 1fr);
+  column-gap: var(--schedule-gap);
+  align-items: start;
+  padding: 0;
+}
+
+.workout-schedule-timeline-left {
+  min-width: 0;
+  display: grid;
+  justify-items: end;
+  align-content: start;
+  gap: 0.32rem;
+  padding: 0.7rem 0 0.9rem;
+  text-align: right;
+}
+
+.workout-schedule-timeline-time {
+  color: #111827;
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.workout-schedule-timeline-day {
+  color: #6b7280;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.workout-schedule-timeline-day.is-empty {
+  min-height: 1lh;
+}
+
+.workout-schedule-timeline-rail {
+  min-height: 100%;
+  grid-column: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: var(--schedule-rail-col);
+  padding: 0.7rem 0 0.9rem;
+}
+
+.workout-schedule-timeline-rail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.3), rgba(59, 130, 246, 0.12));
+  transform: translateX(-50%);
+}
+
+.workout-schedule-timeline-item.is-first .workout-schedule-timeline-rail::before {
+  top: 0;
+}
+
+.workout-schedule-timeline-item.is-last .workout-schedule-timeline-rail::before {
+  bottom: 0;
+}
+
+.workout-schedule-entry-node {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-top: 0;
+  border: 2px solid var(--vp-c-brand-1);
+  border-radius: 999px;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.workout-schedule-timeline-details {
+  min-width: 0;
+  display: grid;
+  gap: 0.4rem;
+  align-content: start;
+  padding: 0.7rem 0 0.9rem;
+}
+
+.workout-schedule-timeline-locations {
+  display: grid;
+  gap: 0.28rem;
+}
+
+.workout-schedule-entry-location {
+  min-width: 0;
+  display: grid;
+  gap: 0.18rem;
+  align-content: start;
+}
+
+.workout-schedule-entry-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.workout-schedule-entry-status :is(.vp-badge, .badge) {
+  margin: 0;
+}
+
+.workout-schedule-entry-opens {
+  color: #6b7280;
+  font-size: 0.78rem;
   line-height: 1.3;
 }
 
-.workout-detail-copy strong {
+.workout-schedule-entry-meta {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+  align-items: start;
+}
+
+.workout-schedule-entry-detail {
+  min-width: 0;
+  display: grid;
+  gap: 0.18rem;
+  align-content: start;
+}
+
+.workout-schedule-entry-label {
   display: block;
+  color: #9ca3af;
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.workout-schedule-entry-detail strong {
   color: #1f2937;
   font-size: 0.88rem;
   font-weight: 600;
+  line-height: 1.35;
 }
 
-.workout-detail-copy span {
-  color: #6b7280;
-  font-size: 0.78rem;
+.workout-schedule-entry-location strong {
+  color: #4b5563;
+  font-size: 0.82rem;
+  font-weight: 600;
 }
 
-.workout-price-panel {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  gap: 1rem;
+.workout-schedule-entry-price {
+  grid-column: 1 / -1;
+  padding: 0.7rem 0.85rem;
+  border: 0;
+  border-radius: 0.75rem;
+  background: #f8fafc;
+}
+
+.workout-price-panel,
+.workout-schedule-entry-price {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
   padding: 0.9rem 1rem;
   border: 1px solid #f3f4f6;
   border-radius: 0.8rem;
   background: #f9fafb;
-  overflow-x: auto;
+}
+
+.workout-row-note {
+  color: #6b7280;
+  font-size: 0.8rem;
+  line-height: 1.4;
 }
 
 .workout-price-item {
   min-width: 0;
   display: flex;
   flex-direction: column;
+  padding-right: 0.25rem;
 }
 
 .workout-price-separator {
-  width: 1px;
-  height: 2rem;
-  background: #e5e7eb;
-  flex: 0 0 auto;
+  display: none;
 }
 
 .workout-price-label {
@@ -468,34 +594,83 @@ a.workout-row:focus-visible {
     justify-content: center;
   }
 
-  .workout-row-top {
-    flex-direction: column;
+  .workout-schedule-entry-meta {
+    grid-template-columns: 1fr;
   }
 
-  .workout-status-block {
-    align-items: flex-start;
-    text-align: left;
+  .workout-schedule-timeline {
+    --schedule-time-col: 5.75rem;
+    --schedule-rail-col: 1rem;
+    --schedule-gap: 0.7rem;
+  }
+
+  .workout-price-panel,
+  .workout-schedule-entry-price {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 960px) {
-  .workout-row-details {
-    display: flex;
-    gap: 1.5rem;
+  .VPNavBar .content-body > .search {
+    order: 1;
   }
 
-  .workout-detail {
-    flex: 1;
-    min-width: 0;
+  .VPNavBar .content-body > .menu {
+    order: 2;
   }
 
-  .workout-detail.is-duration {
-    flex: 1.3;
+  .VPNavBar .content-body > .translations {
+    order: 3;
+  }
+
+  .VPNavBar .content-body > .appearance {
+    order: 4;
+  }
+
+  .VPNavBar .content-body > .social-links {
+    order: 5;
+  }
+
+  .VPNavBar .content-body > .extra {
+    order: 6;
+  }
+
+  .VPNavBar .content-body > .hamburger {
+    order: 7;
+  }
+
+  .workout-schedule-timeline {
+    --schedule-time-col: 6.75rem;
+    --schedule-rail-col: 1.25rem;
+    --schedule-gap: 0.9rem;
+  }
+
+  .workout-schedule-entry-meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .workout-schedule-entry-meta .workout-schedule-entry-price {
+    grid-column: 1 / -1;
+  }
+
+  .workout-price-panel,
+  .workout-schedule-entry-price {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
 .dark .workout-group-provider {
   color: var(--vp-c-text-2);
+}
+
+.dark .workout-table-card {
+  border-color: var(--vp-c-border);
+  background: transparent;
+  box-shadow: none;
+}
+
+.dark .workout-table:hover {
+  background: color-mix(in srgb, var(--vp-c-brand-soft) 18%, transparent 82%);
 }
 
 .dark .workout-page-wikipedia {
@@ -516,47 +691,64 @@ a.workout-row:focus-visible {
 }
 
 .dark .workout-row {
-  border-color: var(--vp-c-border);
   background: transparent;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  box-shadow: none;
 }
 
 .dark .workout-row:hover {
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  box-shadow: none;
 }
 
 .dark .workout-row-schedule {
   color: var(--vp-c-text-1);
 }
 
-.dark .workout-schedule-card {
-  border-color: var(--vp-c-divider);
-}
-
-.dark .workout-schedule-card-time {
+.dark .schedule-view-item {
   color: var(--vp-c-text-1);
 }
 
-.dark .workout-schedule-card-location {
+.dark .schedule-view-item:hover,
+.dark .schedule-view-item.is-active {
+  color: var(--vp-c-brand-1);
+}
+
+.dark .workout-schedule-timeline-day {
   color: var(--vp-c-text-2);
 }
 
-.dark .workout-detail-icon {
+.dark .workout-schedule-entry-node {
+  background: var(--vp-c-bg);
+  border-color: var(--vp-c-brand-1);
+}
+
+.dark .workout-schedule-timeline-time {
+  color: var(--vp-c-text-1);
+}
+
+.dark .workout-schedule-timeline-rail::before {
+  background: linear-gradient(180deg, rgba(90, 142, 255, 0.45), rgba(90, 142, 255, 0.18));
+}
+
+.dark .workout-schedule-entry-opens,
+.dark .workout-row-note {
+  color: var(--vp-c-text-2);
+}
+
+.dark .workout-schedule-entry-label {
+  color: var(--vp-c-text-3);
+}
+
+.dark .workout-schedule-entry-detail strong {
+  color: var(--vp-c-text-1);
+}
+
+.dark .workout-schedule-entry-location strong {
+  color: var(--vp-c-text-2);
+}
+
+.dark .workout-schedule-entry-price {
+  border-color: transparent;
   background: var(--vp-c-bg-soft);
-  border: 1px solid var(--vp-c-divider);
-  color: var(--vp-c-text-1);
-}
-
-.dark .workout-detail-copy strong {
-  color: var(--vp-c-text-1);
-}
-
-.dark .workout-detail-copy span {
-  color: var(--vp-c-text-2);
-}
-
-.dark .workout-opens-at {
-  color: var(--vp-c-text-2);
 }
 
 .dark .workout-price-panel {

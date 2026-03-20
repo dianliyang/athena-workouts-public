@@ -126,31 +126,200 @@ function renderScheduleCards(
   item: WorkoutDetailItem,
   locale: SidebarLocale,
 ): string {
+  const copy = getWorkoutPageCopy(locale);
   const { scheduleLocations } = resolveScheduleLocations(item);
+  const status = formatStatus(item.bookingStatus, locale);
+  const badgeType = statusBadgeType(item.bookingStatus);
+  const opensAt = formatOpeningDateTime(item, locale);
+  const duration = formatDuration(item, locale);
 
-  if (item.schedule.length === 0) {
-    return `<div class="workout-schedule-cards">` +
-      `<div class="workout-schedule-card is-empty">` +
-      `<div class="workout-schedule-card-time">${escapeHtml(getWorkoutPageCopy(locale).scheduleTbd)}</div>` +
-      `</div></div>`;
+  const groups = item.schedule.length === 0
+    ? []
+    : groupScheduleEntries(item, scheduleLocations, locale);
+
+  if (groups.length === 0) {
+    return renderScheduleViews(copy.scheduleTbd, [
+      {
+        dayLabel: "",
+        time: "",
+        localizedTime: copy.scheduleTbd,
+        location: "",
+      },
+    ], item, {
+      status,
+      badgeType,
+      opensAt,
+      duration,
+    }, locale, true);
   }
 
-  const cards = groupScheduleEntries(item, scheduleLocations, locale).map(
-    (group) => {
-      const scheduleLabel = [group.dayLabel, localizeScheduleTime(group.time, locale)]
-        .filter(Boolean)
-        .join(" ");
+  return renderScheduleViews(null, groups.map((group) => ({
+    ...group,
+    localizedTime: localizeScheduleTime(group.time, locale),
+  })), item, {
+    status,
+    badgeType,
+    opensAt,
+    duration,
+  }, locale, false);
+}
 
-      return `<div class="workout-schedule-card">` +
-        `<div class="workout-schedule-card-time">${escapeHtml(scheduleLabel)}</div>` +
-        (group.location
-          ? `<div class="workout-schedule-card-location">${escapeHtml(group.location)}</div>`
-          : "") +
-        `</div>`;
-    },
-  );
+function renderScheduleViews(
+  emptyLabel: string | null,
+  groups: Array<{ dayLabel: string; time: string; localizedTime: string; location: string }>,
+  item: WorkoutDetailItem,
+  shared: {
+    status: string;
+    badgeType: "info" | "tip" | "warning" | "danger";
+    opensAt: string;
+    duration: string;
+  },
+  locale: SidebarLocale,
+  isEmpty: boolean,
+): string {
+  const groupedByTime = groupScheduleEntriesByTime(groups);
 
-  return `<div class="workout-schedule-cards">${cards.join("")}</div>`;
+  const timeline = groupedByTime.map((timeGroup, index) => {
+    const uniqueDayLabels = [...new Set(
+      timeGroup.entries
+        .map((group) => group.dayLabel)
+        .filter(Boolean),
+    )];
+
+    return (
+    `<section class="workout-schedule-timeline-item${index === 0 ? " is-first" : ""}${index === groupedByTime.length - 1 ? " is-last" : ""}">` +
+      `<div class="workout-schedule-timeline-left">` +
+      `<div class="workout-schedule-timeline-time">${escapeHtml(timeGroup.localizedTime)}</div>` +
+      (uniqueDayLabels.length > 0
+        ? uniqueDayLabels.map((dayLabel) =>
+          `<div class="workout-schedule-timeline-day">${escapeHtml(dayLabel)}</div>`
+        ).join("")
+        : `<div class="workout-schedule-timeline-day is-empty"></div>`)
+      +
+      `</div>` +
+      `<div class="workout-schedule-timeline-rail"><div class="workout-schedule-entry-node"></div></div>` +
+      `<div class="workout-schedule-timeline-details">` +
+      (index === 0
+        ? renderScheduleHeader(shared.status, shared.badgeType, shared.opensAt, locale)
+        : "") +
+      `<div class="workout-schedule-timeline-locations">` +
+      timeGroup.entries.map((group) =>
+        renderScheduleLocation(group.location, locale)
+      ).join("") +
+      `</div>` +
+      (index === groupedByTime.length - 1
+        ? renderScheduleMeta(item, {
+          location: "",
+          duration: shared.duration,
+        }, locale)
+        : "") +
+      `</div>` +
+    `</section>`
+    );
+  }).join("");
+
+  return [
+    `<div class="workout-schedule-shell${isEmpty ? " is-empty" : ""}">`,
+    `<div class="workout-schedule-timeline">${timeline}</div>`,
+    `</div>`,
+  ].join("");
+}
+
+function renderScheduleHeader(
+  status: string,
+  badgeType: "info" | "tip" | "warning" | "danger",
+  opensAt: string,
+  locale: SidebarLocale,
+): string {
+  const copy = getWorkoutPageCopy(locale);
+
+  return [
+    `<div class="workout-schedule-entry-header">`,
+    `  <div class="workout-schedule-entry-status">${renderScheduleStatus(status, badgeType)}</div>`,
+    opensAt
+      ? `  <div class="workout-schedule-entry-opens">${escapeHtml(copy.opensLabel)} ${escapeHtml(opensAt)}</div>`
+      : "",
+    `</div>`,
+  ].filter(Boolean).join("");
+}
+
+function renderScheduleMeta(
+  item: WorkoutDetailItem,
+  options: {
+    location: string;
+    duration: string;
+  },
+  locale: SidebarLocale,
+): string {
+  const copy = getWorkoutPageCopy(locale);
+  const instructor = item.instructor?.trim();
+
+  return [
+    `<div class="workout-schedule-entry-meta">`,
+    options.location
+      ? `<div class="workout-schedule-entry-detail is-location"><span class="workout-schedule-entry-label">${escapeHtml(copy.locationLabel)}</span><strong>${escapeHtml(options.location)}</strong></div>`
+      : "",
+    options.duration
+      ? `<div class="workout-schedule-entry-detail is-duration"><span class="workout-schedule-entry-label">${escapeHtml(formatSessionCount(item, locale) || copy.durationLabel)}</span><strong>${escapeHtml(options.duration)}</strong></div>`
+      : "",
+    instructor
+      ? `<div class="workout-schedule-entry-detail is-instructor"><span class="workout-schedule-entry-label">${escapeHtml(copy.instructorLabel)}</span><strong>${escapeHtml(instructor)}</strong></div>`
+      : "",
+    `<div class="workout-schedule-entry-price">${formatPriceRange(item, locale)}</div>`,
+    `</div>`,
+  ].filter(Boolean).join("");
+}
+
+function renderScheduleLocation(
+  location: string,
+  locale: SidebarLocale,
+  className = "workout-schedule-entry-location",
+): string {
+  if (!location) return "";
+  const copy = getWorkoutPageCopy(locale);
+  return `<div class="${className}"><span class="workout-schedule-entry-label">${escapeHtml(copy.locationLabel)}</span><strong>${escapeHtml(location)}</strong></div>`;
+}
+
+function renderScheduleStatus(
+  status: string,
+  badgeType: "info" | "tip" | "warning" | "danger",
+): string {
+  return `<Badge type="${badgeType}" text="${escapeHtml(status)}" />`;
+}
+
+function groupScheduleEntriesByTime(
+  groups: Array<{ dayLabel: string; time: string; localizedTime: string; location: string }>,
+): Array<{
+  time: string;
+  localizedTime: string;
+  entries: Array<{ dayLabel: string; time: string; localizedTime: string; location: string }>;
+}> {
+  const groupedByTime = new Map<
+    string,
+    {
+      time: string;
+      localizedTime: string;
+      entries: Array<{ dayLabel: string; time: string; localizedTime: string; location: string }>;
+    }
+  >();
+  const order: string[] = [];
+
+  groups.forEach((group) => {
+    const existing = groupedByTime.get(group.time);
+    if (existing) {
+      existing.entries.push(group);
+      return;
+    }
+
+    groupedByTime.set(group.time, {
+      time: group.time,
+      localizedTime: group.localizedTime,
+      entries: [group],
+    });
+    order.push(group.time);
+  });
+
+  return order.map((time) => groupedByTime.get(time)!);
 }
 
 const WEEKDAY_ORDER: Record<string, number> = {
@@ -204,7 +373,9 @@ function groupScheduleEntries(
     const key = `${entry.time}__${location}`;
     const existing = groups.get(key);
     if (existing) {
-      existing.days.push(entry.day);
+      if (!existing.days.includes(entry.day)) {
+        existing.days.push(entry.day);
+      }
       return;
     }
 
@@ -505,36 +676,6 @@ export function renderRow(
     locationParts.title,
   );
   const instructorText = item.instructor?.trim() ?? "";
-
-  const details = [
-    hasParentLocationDetails
-      ? `<div class="workout-detail is-location">` +
-        `<div class="workout-detail-icon">📍</div>` +
-        `<div class="workout-detail-copy">` +
-        `<strong>${escapeHtml(localizedLocationTitle)}</strong>` +
-        `<span>${escapeHtml(locationParts.detail || copy.locationLabel)}</span>` +
-        `</div></div>`
-      : "",
-    item.instructor
-      ? `<div class="workout-detail is-instructor">` +
-        `<div class="workout-detail-icon">👤</div>` +
-        `<div class="workout-detail-copy">` +
-        `<strong>${escapeHtml(instructorText)}</strong>` +
-        `<span>${escapeHtml(copy.instructorLabel)}</span>` +
-        `</div></div>`
-      : "",
-    formatDuration(item, locale)
-      ? `<div class="workout-detail is-duration">` +
-        `<div class="workout-detail-icon">🗓</div>` +
-        `<div class="workout-detail-copy">` +
-        `<strong>${escapeHtml(formatDuration(item, locale))}</strong>` +
-        `<span>${escapeHtml(formatSessionCount(item, locale) || copy.durationLabel)}</span>` +
-        `</div></div>`
-      : "",
-  ].filter(Boolean);
-  const status = formatStatus(item.bookingStatus, locale);
-  const badgeType = statusBadgeType(item.bookingStatus);
-  const opensAt = formatOpeningDateTime(item, locale);
   const scheduleCards = renderScheduleCards(item, locale);
   const wrapperTag = item.url ? "a" : "div";
   const wrapperAttributes = item.url
@@ -544,17 +685,10 @@ export function renderRow(
   return [
     ` <${wrapperTag}${wrapperAttributes}>`.trimStart(),
     '  <div class="workout-row-main">',
-    '    <div class="workout-row-top">',
-    `      <div class="workout-row-schedule">${scheduleCards}</div>`,
-    '      <div class="workout-status-block">',
-    `        <Badge type="${badgeType}" text="${escapeHtml(status)}" />`,
-    opensAt
-      ? `        <div class="workout-opens-at">${escapeHtml(copy.opensLabel)} ${escapeHtml(opensAt)}</div>`
+    `    <div class="workout-row-schedule">${scheduleCards}</div>`,
+    hasParentLocationDetails
+      ? `    <div class="workout-row-note">${escapeHtml(localizedLocationTitle)}${locationParts.detail ? `: ${escapeHtml(locationParts.detail)}` : ""}</div>`
       : "",
-    "      </div>",
-    "    </div>",
-    `    <div class="workout-row-details">${details.join("")}</div>`,
-    `    <div class="workout-price-panel">${formatPriceRange(item, locale)}</div>`,
     "  </div>",
     `</${wrapperTag}>`,
   ]
@@ -592,14 +726,17 @@ export function renderGroup(
     "",
     providerHtml,
     "",
+    `<div class="workout-table-card">`,
   ];
 
   for (const item of titleGroup.items) {
     lines.push('<div class="workout-table">');
     lines.push(renderRow(item, locale));
-    lines.push("</div>", "");
+    lines.push("</div>");
+    lines.push("");
     lines.push(...renderDetailsContainers(item, locale));
   }
+  lines.push(`</div>`, "");
   return lines;
 }
 
