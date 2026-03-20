@@ -36,6 +36,8 @@ Diese Website wird aus erhobenen Quelldaten erstellt. Sie dient der Entdeckung u
 
 Übersetzungen auf dieser Seite werden nicht von Menschen geprüft und können ungenau sein.
 
+Wenn du der Meinung bist, dass Inhalte auf dieser Website möglicherweise deine Rechte verletzen oder entfernt werden sollten, kannst du mich gerne kontaktieren; ich werde deine Anfrage sorgfältig prüfen.
+
 Beiträge und Korrekturen sind willkommen.
 
 Verifiziere wichtige Details wie Zeitpläne, Verfügbarkeit, Preise und Buchungsinformationen immer beim ursprünglichen Anbieter, bevor du dich darauf verlässt.

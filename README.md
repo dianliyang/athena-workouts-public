@@ -13,7 +13,16 @@ The docs build fetches published snapshot files from `https://athena-public-snap
 
 ## Deployment
 
-Serve this repo as a static site with Docker Compose. The image builds the VitePress site, then serves the generated files from `nginx`.
+Production deploys go to Cloudflare Pages from GitHub Actions.
+
+The workflow runs on pushes to `main`, on manual dispatch, and on a daily schedule at `04:00 UTC`, which is `06:00` during Berlin summer time (CEST).
+
+Configure these GitHub repository secrets for the deploy workflow:
+
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`
+
+For local serving, this repo can also run as a static site with Docker Compose. The image builds the VitePress site, then serves the generated files from `nginx`.
 
 ### Run with Docker Compose
 

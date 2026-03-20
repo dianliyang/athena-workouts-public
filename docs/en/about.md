@@ -36,6 +36,8 @@ This site is built from scraped source data. It is useful for discovery and comp
 
 Translations on this site are not checked by humans and may be inaccurate.
 
+If you believe any content on this site may infringe your rights or should be removed, please feel free to contact me and I will carefully review your request.
+
 Contributions and corrections are welcome.
 
 Always verify important details such as schedule, availability, pricing, and booking information with the original provider before relying on it.
