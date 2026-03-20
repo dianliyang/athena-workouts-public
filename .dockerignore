@@ -1,0 +1,6 @@
+.github
+node_modules
+docs/.vitepress/cache
+docs/.vitepress/dist
+docs/plans
+npm-debug.log

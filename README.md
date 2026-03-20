@@ -13,18 +13,26 @@ The docs build fetches published snapshot files from `https://athena-public-snap
 
 ## Deployment
 
-Deploy this repo on Cloudflare Pages. Snapshot generation and publishing stay in the separate `athena-public-snapshots` Worker project.
+Serve this repo as a static site with Docker Compose. The image builds the VitePress site, then serves the generated files from `nginx`.
 
-## GitHub Actions Deployment
+### Run with Docker Compose
 
-This repo includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml`.
+Build and start the container:
 
-- Pushes to `main` deploy the site to Cloudflare Pages.
-- A scheduled rebuild runs every day at `03:00 UTC`.
-- You can also trigger it manually with `workflow_dispatch`.
-- Automatic push/scheduled runs skip build and deploy when the snapshot `generatedAt` has not changed. Manual dispatch always forces deployment.
+```bash
+docker compose up --build
+```
 
-Required repository secrets:
+The site is then available at `http://localhost:8080`.
 
-- `CLOUDFLARE_API_TOKEN`
-- `CLOUDFLARE_ACCOUNT_ID`
+You can stop it with `Ctrl+C`, or run it detached with:
+
+```bash
+docker compose up --build -d
+```
+
+Snapshot generation and publishing still stay in the separate `athena-public-snapshots` Worker project.
+
+### Build Configuration
+
+The Docker build uses the same snapshot source configuration as local builds. Set `WORKOUTS_SNAPSHOT_BASE_URL` or `VITEPRESS_WORKOUTS_SNAPSHOT_BASE_URL` when you need a different snapshot source during image builds.
