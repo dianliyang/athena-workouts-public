@@ -3,6 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - "8080:80"
+    labels:
+      - dev.orbstack.domains=sport.orb.local
+      - dev.orbstack.http-port=80
     restart: unless-stopped
