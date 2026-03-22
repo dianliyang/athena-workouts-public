@@ -499,7 +499,7 @@ function formatSessionCount(
   locale: SidebarLocale,
 ): string {
   const copy = getWorkoutPageCopy(locale);
-  const count = item.plannedDates?.length ?? 0;
+  const count = item.sessionCount ?? 0;
   if (count <= 0) return "";
   if (locale === "ja" || locale === "ko" || locale === "zh-CN") {
     return `${count}${copy.sessionPlural}`;

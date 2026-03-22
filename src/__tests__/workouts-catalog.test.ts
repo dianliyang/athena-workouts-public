@@ -1077,4 +1077,112 @@ describe("workouts detail catalog transformations", () => {
       },
     ]);
   });
+
+  test("regroups latest snapshot categories into explicit sidebar families", () => {
+    expect(
+      localizeSidebarItems("de", [
+        { text: "Kitesurfen", link: "/de/workouts/kitesurfen" },
+        { text: "7-Tage-Kitecamp auf Fehmarn", link: "/de/workouts/7-tage-kitecamp-auf-fehmarn" },
+        { text: "Wingsurfen", link: "/de/workouts/wingsurfen" },
+        { text: "MMA - Mix Martial Arts", link: "/de/workouts/mma-mix-martial-arts" },
+        { text: "Chair Dancing & Workout", link: "/de/workouts/chair-dancing-workout" },
+        { text: "Core & Rücken", link: "/de/workouts/core-rucken" },
+        { text: "Body Workout", link: "/de/workouts/body-workout" },
+        { text: "Step Aerobic Mix", link: "/de/workouts/step-aerobic-mix" },
+        { text: "Hip Hop", link: "/de/workouts/hip-hop" },
+        { text: "Sensual Poledance 1", link: "/de/workouts/sensual-poledance-1" },
+        { text: "Yin Yoga", link: "/de/workouts/yin-yoga" },
+        { text: "Zumba und mehr", link: "/de/workouts/zumba-und-mehr" },
+        { text: "Zumba Montags", link: "/de/workouts/zumba-montags" },
+        { text: "Billard", link: "/de/workouts/billard" },
+        { text: "Bowling", link: "/de/workouts/bowling" },
+        { text: "Jugger", link: "/de/workouts/jugger" },
+        { text: "Schach", link: "/de/workouts/schach" },
+        { text: "Skat", link: "/de/workouts/skat" },
+        { text: "Steeldart", link: "/de/workouts/steeldart" },
+        { text: "Schwimmen für SL:", link: "/de/workouts/schwimmen-fur-sl" },
+        { text: "Schwimmen öff. Schwimmbetrieb", link: "/de/workouts/schwimmen-off-schwimmbetrieb" },
+        { text: "Yacht Anfänger*innen:", link: "/de/workouts/yacht-anfanger-innen" },
+        { text: "Yacht Regattatraining:", link: "/de/workouts/yacht-regattatraining" },
+      ]),
+    ).toEqual([
+      {
+        collapsed: false,
+        text: "Boardsport",
+        items: [
+          { text: "7-Tage-Kitecamp auf Fehmarn", link: "/de/workouts/7-tage-kitecamp-auf-fehmarn" },
+          { text: "Kitesurfen", link: "/de/workouts/kitesurfen" },
+          { text: "Wingsurfen", link: "/de/workouts/wingsurfen" },
+        ],
+      },
+      {
+        collapsed: false,
+        text: "Kampfsport",
+        items: [
+          { text: "MMA - Mix Martial Arts", link: "/de/workouts/mma-mix-martial-arts" },
+        ],
+      },
+      {
+        collapsed: false,
+        text: "Tanz",
+        items: [
+          { text: "Hip Hop", link: "/de/workouts/hip-hop" },
+          { text: "Sensual Poledance 1", link: "/de/workouts/sensual-poledance-1" },
+          { text: "Zumba Montags", link: "/de/workouts/zumba-montags" },
+          { text: "Zumba und mehr", link: "/de/workouts/zumba-und-mehr" },
+        ],
+      },
+      {
+        collapsed: false,
+        text: "Fitness",
+        items: [
+          { text: "Body Workout", link: "/de/workouts/body-workout" },
+          { text: "Chair Dancing & Workout", link: "/de/workouts/chair-dancing-workout" },
+          { text: "Core & Rücken", link: "/de/workouts/core-rucken" },
+          { text: "Step Aerobic Mix", link: "/de/workouts/step-aerobic-mix" },
+        ],
+      },
+      {
+        collapsed: false,
+        text: "Spiele",
+        items: [
+          { text: "Billard", link: "/de/workouts/billard" },
+          { text: "Bowling", link: "/de/workouts/bowling" },
+          { text: "Schach", link: "/de/workouts/schach" },
+          { text: "Skat", link: "/de/workouts/skat" },
+          { text: "Steeldart", link: "/de/workouts/steeldart" },
+        ],
+      },
+      {
+        collapsed: false,
+        text: "Schwimmen",
+        items: [
+          { text: "Schwimmen für SL", link: "/de/workouts/schwimmen-fur-sl" },
+          { text: "Schwimmen öff. Schwimmbetrieb", link: "/de/workouts/schwimmen-off-schwimmbetrieb" },
+        ],
+      },
+      {
+        collapsed: false,
+        text: "Weitere Sportarten",
+        items: [
+          { text: "Jugger", link: "/de/workouts/jugger" },
+        ],
+      },
+      {
+        collapsed: false,
+        text: "Yacht",
+        items: [
+          { text: "Yacht Anfänger*innen", link: "/de/workouts/yacht-anfanger-innen" },
+          { text: "Yacht Regattatraining", link: "/de/workouts/yacht-regattatraining" },
+        ],
+      },
+      {
+        collapsed: false,
+        text: "Yoga",
+        items: [
+          { text: "Yin Yoga", link: "/de/workouts/yin-yoga" },
+        ],
+      },
+    ]);
+  });
 });

@@ -42,6 +42,7 @@ export type WorkoutDetailResponse = {
   bookingLabel?: string;
   bookingOpensOn?: string;
   bookingOpensAt?: string;
+  sessionCount?: number;
   plannedDates?: string[];
   durationUrl?: string;
 };

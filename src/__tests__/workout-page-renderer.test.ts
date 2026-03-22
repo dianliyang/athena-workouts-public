@@ -557,6 +557,26 @@ describe("workout page renderer", () => {
     expect(html).not.toContain('class="workout-status-block"');
   });
 
+  test("uses sessionCount instead of deriving the session label from planned dates", () => {
+    const html = renderRow(
+      {
+        ...baseItem,
+        schedule: [
+          { day: "Mon", time: "18:00-19:00", location: "Studio A" },
+        ],
+        location: ["Studio A, Main Campus Hall"],
+        startDate: "2026-04-01",
+        endDate: "2026-07-15",
+        sessionCount: 12,
+        plannedDates: ["2026-04-01"],
+      } as typeof baseItem & { sessionCount: number; plannedDates: string[] },
+      "en",
+    );
+
+    expect(html).toContain(">12 sessions<");
+    expect(html).not.toContain(">1 session<");
+  });
+
   test("uses all top-level locations directly for a single schedule", () => {
     const html = renderRow(
       {
