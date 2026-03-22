@@ -14,7 +14,7 @@ type HeadTag =
 
 type JsonLdNode = Record<string, unknown>;
 
-const siteUrl = "https://sport.oili.dev";
+const siteUrl = "https://sport-kiel.oili.dev";
 
 const localePrefixes: SeoLocale[] = ["de", "en", "ja", "ko", "zh-cn"];
 
@@ -134,8 +134,18 @@ export function buildSeoHead(pageData: PageDataLike): HeadTag[] {
   const description = buildSeoDescription(pageData);
   const title = pageData.title || "Sports in Kiel";
   const locale = getLocaleFromRelativePath(pageData.relativePath);
-  const ogLocale = locale === "zh-cn" ? "zh_CN" : locale === "de" ? "de_DE" : locale === "ja" ? "ja_JP" : locale === "ko" ? "ko_KR" : "en_US";
-  const isWorkoutDetail = /\/workouts\/[^/]+\.md$/.test(pageData.relativePath) &&
+  const ogLocale =
+    locale === "zh-cn"
+      ? "zh_CN"
+      : locale === "de"
+        ? "de_DE"
+        : locale === "ja"
+          ? "ja_JP"
+          : locale === "ko"
+            ? "ko_KR"
+            : "en_US";
+  const isWorkoutDetail =
+    /\/workouts\/[^/]+\.md$/.test(pageData.relativePath) &&
     !pageData.relativePath.endsWith("/workouts/index.md");
 
   return [
@@ -145,7 +155,10 @@ export function buildSeoHead(pageData: PageDataLike): HeadTag[] {
     ["meta", { property: "og:title", content: title }],
     ["meta", { property: "og:description", content: description }],
     ["meta", { property: "og:url", content: canonical }],
-    ["meta", { property: "og:type", content: isWorkoutDetail ? "article" : "website" }],
+    [
+      "meta",
+      { property: "og:type", content: isWorkoutDetail ? "article" : "website" },
+    ],
     ["meta", { property: "og:locale", content: ogLocale }],
     ["meta", { name: "twitter:title", content: title }],
     ["meta", { name: "twitter:description", content: description }],
@@ -184,12 +197,14 @@ export function buildJsonLd(pageData: PageDataLike): JsonLdNode[] {
       item: canonicalUrlForPath(`${locale}/workouts/index.md`),
     },
     ...(pageKind === "workout-category"
-      ? [{
-        "@type": "ListItem",
-        position: 3,
-        name: title,
-        item: canonical,
-      }]
+      ? [
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: title,
+            item: canonical,
+          },
+        ]
       : []),
   ];
 

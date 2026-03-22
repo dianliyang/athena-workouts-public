@@ -20,7 +20,7 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   sitemap: {
-    hostname: "https://sport.oili.dev",
+    hostname: "https://sport-kiel.oili.dev",
   },
   head: [
     [
@@ -34,7 +34,7 @@ export default defineConfig({
       "meta",
       {
         property: "og:image",
-        content: "https://sport.oili.dev/sportkiel-mark.svg",
+        content: "https://sport-kiel.oili.dev/sportkiel-mark.svg",
       },
     ],
     ["meta", { name: "twitter:card", content: "summary" }],
@@ -42,7 +42,7 @@ export default defineConfig({
       "meta",
       {
         name: "twitter:image",
-        content: "https://sport.oili.dev/sportkiel-mark.svg",
+        content: "https://sport-kiel.oili.dev/sportkiel-mark.svg",
       },
     ],
   ],

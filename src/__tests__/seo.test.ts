@@ -12,10 +12,10 @@ import {
 describe("seo helpers", () => {
   test("builds canonical URLs without markdown suffixes", () => {
     expect(canonicalUrlForPath("de/workouts/tischtennis.md")).toBe(
-      "https://sport.oili.dev/de/workouts/tischtennis",
+      "https://sport-kiel.oili.dev/de/workouts/tischtennis",
     );
     expect(canonicalUrlForPath("en/workouts/index.md")).toBe(
-      "https://sport.oili.dev/en/workouts/",
+      "https://sport-kiel.oili.dev/en/workouts/",
     );
   });
 
@@ -27,7 +27,7 @@ describe("seo helpers", () => {
       {
         rel: "alternate",
         hreflang: "en",
-        href: "https://sport.oili.dev/en/workouts/tischtennis",
+        href: "https://sport-kiel.oili.dev/en/workouts/tischtennis",
       },
     ]);
     expect(links).toContainEqual([
@@ -35,7 +35,7 @@ describe("seo helpers", () => {
       {
         rel: "alternate",
         hreflang: "zh-CN",
-        href: "https://sport.oili.dev/zh-cn/workouts/tischtennis",
+        href: "https://sport-kiel.oili.dev/zh-cn/workouts/tischtennis",
       },
     ]);
     expect(links).toContainEqual([
@@ -43,7 +43,7 @@ describe("seo helpers", () => {
       {
         rel: "alternate",
         hreflang: "x-default",
-        href: "https://sport.oili.dev/en/workouts/tischtennis",
+        href: "https://sport-kiel.oili.dev/en/workouts/tischtennis",
       },
     ]);
   });
@@ -79,25 +79,36 @@ describe("seo helpers", () => {
     ]);
     expect(head).toContainEqual([
       "meta",
-      { property: "og:url", content: "https://sport.oili.dev/de/workouts/tischtennis" },
+      {
+        property: "og:url",
+        content: "https://sport-kiel.oili.dev/de/workouts/tischtennis",
+      },
     ]);
     expect(head).toContainEqual([
       "meta",
-      { name: "twitter:description", content: "Table tennis in Kiel with schedules and prices." },
+      {
+        name: "twitter:description",
+        content: "Table tennis in Kiel with schedules and prices.",
+      },
     ]);
     expect(
-      head.some((entry) =>
-        entry[0] === "script" &&
-        entry[1].type === "application/ld+json" &&
-        entry[2].includes('"@type":"CollectionPage"') &&
-        entry[2].includes('"numberOfItems":2'),
+      head.some(
+        (entry) =>
+          entry[0] === "script" &&
+          entry[1].type === "application/ld+json" &&
+          entry[2].includes('"@type":"CollectionPage"') &&
+          entry[2].includes('"numberOfItems":2'),
       ),
     ).toBe(true);
   });
 
   test("builds localized generated descriptions", () => {
-    expect(buildWorkoutPageDescription("en", "Table Tennis", 2)).toContain("2 variants");
-    expect(buildWorkoutPageDescription("de", "Tischtennis", 1)).toContain("1 Variante");
+    expect(buildWorkoutPageDescription("en", "Table Tennis", 2)).toContain(
+      "2 variants",
+    );
+    expect(buildWorkoutPageDescription("de", "Tischtennis", 1)).toContain(
+      "1 Variante",
+    );
     expect(buildWorkoutIndexDescription("ja")).toContain("キール");
   });
 
@@ -116,14 +127,17 @@ describe("seo helpers", () => {
     expect(workoutNodes).toHaveLength(2);
     expect(workoutNodes[0]["@type"]).toBe("BreadcrumbList");
     expect(workoutNodes[1]["@type"]).toBe("CollectionPage");
-    expect((workoutNodes[1].mainEntity as Record<string, unknown>).numberOfItems).toBe(2);
+    expect(
+      (workoutNodes[1].mainEntity as Record<string, unknown>).numberOfItems,
+    ).toBe(2);
 
     const indexNodes = buildJsonLd({
       title: "Workout",
       description: "",
       relativePath: "en/workouts/index.md",
       frontmatter: {
-        description: "Kiel sports catalog with classes, schedules, pricing, and links to local providers.",
+        description:
+          "Kiel sports catalog with classes, schedules, pricing, and links to local providers.",
         seoPageKind: "workout-index",
       },
     });

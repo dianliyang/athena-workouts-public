@@ -767,6 +767,7 @@ export function renderCategoryPage(
   category: string,
   titleGroups: WorkoutTitleGroup[],
   snapshotUpdatedAt?: string,
+  providerNote: Record<string, string> = {},
 ): string {
   const copy = getWorkoutPageCopy(locale);
   const pageTitle = getCategoryLabel(locale, category);
@@ -810,6 +811,20 @@ export function renderCategoryPage(
     variantText,
     "",
   ];
+
+  const renderedProviderNotes = Array.from(
+    new Set(titleGroups.flatMap((group) => group.items.map((item) => item.provider)).filter(Boolean)),
+  )
+    .map((provider) => {
+      const notes = providerNote[provider]?.trim();
+      if (!notes) return "";
+      return `::: details ${escapeHtml(provider)} Note\n${notes}\n:::\n`;
+    })
+    .filter(Boolean);
+
+  if (renderedProviderNotes.length > 0) {
+    lines.push(...renderedProviderNotes, "");
+  }
 
   for (const group of titleGroups) {
     lines.push(...renderGroup(category, group, locale));

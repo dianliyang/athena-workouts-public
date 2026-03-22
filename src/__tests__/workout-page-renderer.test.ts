@@ -326,6 +326,37 @@ describe("workout page renderer", () => {
     expect(markdown).toContain("::: tip Price Note\n- a\n- b\n:::");
   });
 
+  test("renders provider notes below the variant summary and above the variants", () => {
+    const markdown = renderCategoryPage(
+      "en",
+      "Yoga",
+      [
+        {
+          title: "Yoga Flow",
+          items: [
+            {
+              ...baseItem,
+              category: "Yoga",
+              title: "Yoga Flow",
+              provider: "Campus Active",
+            },
+          ],
+        },
+      ],
+      undefined,
+      {
+        "Campus Active": "Bring a campus card at check-in.",
+      },
+    );
+
+    expect(markdown).toContain("1 variant.");
+    expect(markdown).toContain("::: details Campus Active Note");
+    expect(markdown).toContain("Bring a campus card at check-in.");
+    expect(markdown.indexOf("::: details Campus Active Note")).toBeLessThan(
+      markdown.indexOf("## Yoga – Yoga Flow"),
+    );
+  });
+
   test("renders nested price fields from the price object", () => {
     const html = renderRow(
       {

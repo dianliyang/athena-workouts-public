@@ -13,6 +13,8 @@ import {
 import {
   loadWorkoutDetailCatalogFromSnapshot,
   localizeWorkoutCatalogDescriptions,
+  localizeWorkoutPageNote,
+  type WorkoutMetadata,
 } from "../../../src/lib/workoutsApi";
 import { renderCategoryPage, renderIndexPage } from "./workoutPageRenderer";
 
@@ -42,6 +44,7 @@ function writeGeneratedPages(
     group: { titleGroups: WorkoutTitleGroup[] };
   }>,
   sidebar: Array<{ text: string; link: string }>,
+  metadata: WorkoutMetadata,
   snapshotUpdatedAt?: string,
 ): void {
   fs.mkdirSync(root, { recursive: true });
@@ -61,6 +64,7 @@ function writeGeneratedPages(
         page.category,
         page.group.titleGroups,
         snapshotUpdatedAt,
+        localizeWorkoutPageNote(metadata, page.category, locale),
       ),
       "utf8",
     );
@@ -141,7 +145,7 @@ export async function ensureWorkoutPages(): Promise<WorkoutSidebar> {
     const localizedCatalog = buildWorkoutDetailCatalog(
       localizeWorkoutCatalogDescriptions(
         snapshot.catalog,
-        snapshot.descriptionMetadata,
+        snapshot.metadata,
         cfg.locale,
       ) as never,
     );
@@ -159,6 +163,7 @@ export async function ensureWorkoutPages(): Promise<WorkoutSidebar> {
       cfg.docsRoot,
       pages,
       sidebar,
+      snapshot.metadata,
       snapshot.updatedAt,
     );
     sidebars[cfg.locale] = localizeSidebarItems(cfg.locale, sidebar);
